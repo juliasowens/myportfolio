@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: #F3F0EB;
+}
+
+navbar {
+
+}
+
+p {
+  font-size: 1.6rem;
+  font-family: Poppins;
+  font-weight: 300;
+  font-kerning: 10%;
+  line-height: 2.4rem;
+  color: #053B59;
+}
+
+h1 {
+  font-size: 4.8rem;
+  font-family: Poppins;
+  font-weight: 600;
+  color: #16559D;
+  line-height: auto;
+  padding-bottom: 2rem;
+}
+
+h2 {
+  font-size: 4.8rem;
+  font-family: Sacramento;
+  color: #16559D;
+  line-height: auto;
+}
+
+h3 {
+  font-size: 3.6rem;
+  font-family: Poppins;
+  font-weight: 600;
+  color: #053B59;
+  line-height: auto;
+}
+
+h4 {
+  font-size: 2.4rem;
+  font-family: Poppins;
+  font-weight: 600;
+  font-kerning: 10%;
+  color: #053B59;
+  line-height: auto;
+}
+
+h5 {
+  font-size: 2.4rem;
+  font-family: Walter Turncoat;
+  font-kerning: 10%;
+  color: #C06D5B;
+}
+
+h6 {
+  font-size: 2.1rem;
+  font-family: Poppins;
+  font-weight: 300;
+  font-kerning: 10%;
+  color: #053B59;
+  line-height: 2.4rem;
+}
+
+.container {
+  margin: 0 auto;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: minmax(4rem);
+  grid-template-areas:
+    "hero"
+    "offerings"
+    "howitworks"
+    "testimonials"
+    "recent";
+}
+
+section {
+  padding: 15%;
+}
+
+.button1 {
+  position: sticky;
+}
+
+.offerings {
+  background-color: #053B59;
+  padding: 10%;
+}
+
+.white {
+  color: #F3F0EB;
+  padding: 0 0 5rem 5rem;
+}
+
+li.services{
+  font-family: Sacramento;
+  font-size: 4.8rem;
+  line-height: auto;
+  color: #F3F0EB;
+  padding: 5rem;
+}
+
+li.description{
+  font-family: Poppins;
+  font-weight: 300;
+  font-size: 2.1rem;
+  line-height: 3.6rem;
+  font-kerning: 10%;
+}
+
+.howitworks {
+  background-color: #F1DBD4;
+}
+
+.step {
+  font-size: 2.4rem;
+  font-family: Walter Turncoat;
+  font-kerning: 10%;
+  color: #C06D5B;
+}
+
+.red {
+    color: #C06D5B;
+}
+
+.testimonials {
+
+}
+
+.blue {
+  color: #16559D;
+}
+
+.recent {
+  color: #F3F0EB;
+}
+
+footer {
+  background-color: #053B59;
+  padding-top: 5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 70rem;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .container {
+    width: 50%;
+  }
+}
