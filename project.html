@@ -9,21 +9,39 @@
     <link rel="stylesheet" link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400;1,600&family=Sacramento&family=Walter+Turncoat&display=swap">
   </head>
   <body>
-    <header></header>
-    <nav class="navbar">
-      <img src="assets/shapes/color logo.svg" alt="julia owens logo">
-      <img src="assets/shapes/hamburger.svg" alt="menu button">
-    </nav>
+    <!--navigation with logo and hamburger menu-->
+    <header>
+      <nav class="navbar">
+        <a href="index.html"><img src="assets/shapes/color logo.svg" alt="julia owens logo"></a>
+        <button><img src="assets/shapes/hamburger.svg" alt="menu button"></button>
+        <div class="menu">
+          <ul>
+            <a href="#"><li>What I Offer</li></a>
+            <a href="#"><li>How it Works</li></a>
+            <a href="#"><li>Testimonials</li></a>
+            <a href="about.html"><li>About</li></a>
+            <a href="project.html#"><li>Recent Work</li></a>
+            <a href="#"><li>Side Projects</li></a>
+            <a href="#"><li>Writing</li></a>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
     <div class="container">
       <!--hero unit-->
       <section class="hero">
         <h5>CASE STUDY</h5>
         <h1>Draft Slam</h1>
         <h6>a cloud-based app for creative writers</h6>
-        <h5 class="white">VISIT SITE</h5>
+        <button class="orange">
+          <a href="https://juliaowens332427.invisionapp.com/space/Draft-Slam-ck6l47oxkro9c0p6297le0pv2?v=ehgRsINJ%2BSBxaD4OW9oNhQ%3D%3D&linkshare=urlcopied"><h5 class="white">VIEW PROTOTYPE</h5></a>
+          <img src="assets/shapes/clementine fill.svg" alt="visit site button">
+        </button>
       </section>
       <!--other sections below-->
       <section class="challenge">
+        <img src="assets/draft_slam/phone frame solution.png" alt="draft slam mobile">
         <h5>CHALLENGE</h5>
         <h6>There aren’t many cloud-based storage apps designed specifically for the needs of creative writers and professionals.</h6>
         <h5>MY ROLES</h5>
@@ -37,6 +55,7 @@
             <li class="description">Figma and inVision mockups</li>
           </ul>
       </section>
+<!--research-->
       <section class="research">
         <h5>USER RESEARCH FINDINGS</h5>
           <p>Participants cited seeing the edits their collaborators make and clear attainable goals for each collaborator as ways to make collaboration easier.</p>
@@ -57,7 +76,10 @@
             <li>writing for work</li>
             <li>administrative tasks</li>
           </ul>
-        <h2>view survey</h2>
+        <button class="ProjectCTA">
+          <a href="https://docs.google.com/document/d/1DlKDtew6CBG7hVg5gKq52-hgwuiLU38bZFn7hHig17s/edit?usp=sharing"><h2>view survey</h2></a>
+          <img src="assets/shapes/orange line.svg" alt="line">
+        </button>
       </section>
       <section class="competitive">
         <h5>COMPETITIVE ANALYSIS FINDINGS</h5>
@@ -72,26 +94,52 @@
           <li class="services">Werdsmith</li>
           <li class="services">Bear</li>
         </ul>
-        <h2>view analysis</h2>
+        <button class="ProjectCTA">
+          <a href="https://docs.google.com/document/d/1oF_bNhvkIx0kH5_Ym-5o7eCGVHPkSjdam47mjQt0-3o/edit?usp=sharing"><h2>view analysis</h2></a>
+          <img src="assets/shapes/orange line.svg" alt="line">
+        </button>
       </section>
       <section class="personas">
         <h5>USER PERSONAS</h5>
         <p>I considered creative writers who balance side projects with their main employment, and enjoy collaboration. My focus was personas working in theater and visual arts.</p>
-        <h2>view personas</h2>
+        <button class="ProjectCTA">
+          <a href="https://drive.google.com/drive/folders/1q2TQwjEzmHf8jXT_UxTsFDF-i4CrH3ec?usp=sharing"><h2>view personas</h2></a>
+          <img src="assets/shapes/orange line.svg" alt="line">
+        </button>
+        <img src="assets/draft_slam/dan (1).png" alt="user persona dan">
+        <img src="assets/draft_slam/fallon (1).png" alt="user persona fallon">
       </section>
+<!--info architecture-->
       <section class="stories">
         <h5>USER STORIES</h5>
         <p>Based on the competitive analysis and user’s needs, these 10 user stories were generated for the minimum viable product.</p>
+        <img src="assets/draft_slam/User Stories - UX Intensive.png" alt="user stories">
       </section>
       <section class="flows">
         <h5>USER FLOWS</h5>
         <p>User Flows for Draft Slam followed the highest priority user stories. Flows were created for new users to create an account and view shared content. Returning user flows include creating, organizing, saving and uploading content.</p>
-        <h2>view user flows</h2>
+        <button class="ProjectCTA">
+          <a href="https://drive.google.com/drive/folders/1bNcSAy2NV6z0XaHbrkwoSiNqSgtiE_Y_?usp=sharing"><h2>view user flows</h2></a>
+          <img src="assets/shapes/orange line.svg" alt="line">
+        </button>
+        <img src="assets/draft_slam/New User - Create Account.png" alt="user flow">
+        <img src="assets/draft_slam/New User - View Shared Item.png" alt="user flow">
+        <img src="assets/draft_slam/Returning User - Create Content.png" alt="user flow">
+        <img src="assets/draft_slam/Returning User - Organize Files.png" alt="user flow">
       </section>
       <section class="wireframes">
         <h5>WIREFRAMES</h5>
         <p>When creating wireframes I kept the idea of simplicity in mind. I decided to incorporate overlays and drawers into the application to simplify the screens when using them to create content.</p>
-        <h2>view wireframes</h2>
+        <button class="ProjectCTA">
+          <h2>view wireframes</h2>
+          <a href="https://drive.google.com/drive/folders/14-NXchDmLHCyeRx-d-DYSH1okCq44SOu?usp=sharing"><img src="assets/shapes/orange line.svg" alt="line"></a>
+        </button>
+        <img src="assets/draft_slam/wireframe sketches_Page_1.png" alt="wireframe sketch">
+        <img src="assets/draft_slam/wireframe sketches_Page_3.png" alt="wireframe sketch">
+        <img src="assets/draft_slam/wireframe sketches_Page_4.png" alt="wireframe sketch">
+        <img src="assets/draft_slam/wireframe sketches_Page_5.png" alt="wireframe sketch">
+        <img src="assets/draft_slam/wireframe sketches_Page_6.png" alt="wireframe sketch">
+        <img src="assets/draft_slam/Homepage (1).png" alt="digital wireframe">
       </section>
       <section class="usability">
         <h5>USABILITY TESTING</h5>
@@ -116,33 +164,59 @@
             <li class="description">remove upload button at the bottom</li>
             <li class="description">gear icon is confusing</li>
           </ul>
-        <h2>view test results</h2>
+          <button class="ProjectCTA">
+            <a href="https://docs.google.com/document/d/1jV2NQ1ZyY8Ymeej-UNRW56z642ZWE2Lw67IAuODSP7Q/edit?usp=sharing"><h2>view test results</h2></a>
+            <img src="assets/shapes/orange line.svg" alt="line">
+          </button>
       </section>
+<!--visual design-->
       <section class="brand">
         <h5>BRAND CHARACTERISTICS</h5>
         <p>Someone who’s using this app for administrative tasks needs this app to be organized, clear, and direct. A creative project user needs this app to have a fun, playful feel with easy collaboration views. Overall the app should feel fun, organized, and helpful. </p>
-        <h2>view style guide</h2>
+        <button class="ProjectCTA">
+          <a href="https://drive.google.com/file/d/1JCB-HRNy01dsUErcRFU3W6EDlo06Pjr5/view?usp=sharing"><h2>view style guide</h2></a>
+          <img src="assets/shapes/orange line.svg" alt="line">
+        </button>
+        <img src="assets/draft_slam/Draft Slam Moodboard.png" alt="moodboard">
       </section>
       <section class="color">
         <h5>COLOR PALETTE</h5>
         <p>The color palette is inspired by the colors on a legal pad, ink, and a basketball. These	bright colors support the brand’s fun feel, while also reminding the user of the writing they do by hand.</p>
+        <img src="assets/draft_slam/draft slam style guide (1)_Page_10.png" alt="color palette">
       </section>
       <section class="typo">
         <h5>TYPOGRAPHY</h5>
         <p>The Draft Slam logotype is unique to its logo. It shows that the brand is creative, helpful, and active. It reminds users of their own handwriting and achieving their writing goals. Josefin Sans has a clean, neutral, and friendly appearance that pairs well with the custom logo typeface.</p>
+        <img src="assets/draft_slam/draft slam style guide (1)_Page_11.png" alt="logotype">
+        <img src="assets/draft_slam/draft slam style guide (1)_Page_12.png" alt="typography">
       </section>
       <section class="logo">
         <h5>LOGO + DESIGN PROCESS</h5>
         <p>After looking at all of my designs and ideas, I arrived at Draft Slam as the name of my app. It conjures fun images that communicate the collaborative nature of the application. </p>
         <p>The imagery of a slam dunk comes to mind to let the user know they will be achieving their goals with this app. The logo ideas I sketched are inspired by sports, basketball, and documents. These feel whimsical, simple, and brightly colored.</p>
-        <h2>view sketches</h2>
+        <button class="ProjectCTA">
+          <a href="https://drive.google.com/drive/folders/1NLS4Llo0ARUNJqzEZor_Jr8uELhLYQkT?usp=sharing"><h2>view sketches</h2></a>
+          <img src="assets/shapes/orange line.svg" alt="line">
+        </button>
+        <img src="assets/draft_slam/IMG_3636.jpg" alt="logo sketch">
+        <img src="assets/draft_slam/IMG_3640.jpg" alt="logo sketch">
+        <img src="assets/draft_slam/hands.png" alt="logo sketch">
+        <img src="assets/draft_slam/hoop.png" alt="logo sketch">
+        <img src="assets/draft_slam/finals.png" alt="logo sketch">
       </section>
-      <section class="mockups">
+<!--hifi mockups-->
+        <section class="mockups">
         <h5>HIFI MOCKUPS</h5>
         <p>Overall when designing I kept simplicity in mind and wanted to feature the grid and legal paper backgrounds.</p>
-        <h2>view mockups</h2>
+        <button class="ProjectCTA">
+          <a href="https://drive.google.com/open?id=1cLLnkdmASIQtWse7JeBMcdNVVbbRb48t"><h2>view mockups</h2></a>
+          <img src="assets/shapes/orange line.svg" alt="line">
+        </button>
+        <img src="assets/draft_slam/dashboard.png" alt="dashboard mockup">
+        <img src="assets/draft_slam/iPhone 8 - 1.png" alt="homepage mockup">
       </section>
-      <section class="preference">
+<!--usability preference testing-->
+        <section class="preference">
         <h5>USABILITY + PREFERENCE TESTING</h5>
         <h5>TASKS</h5>
           <ul>
@@ -163,17 +237,29 @@
             <li class="description">moved upload to current project drawer</li>
             <li class="description">changed “My Project” to dark blue</li>
           </ul>
-        <h2>view test results</h2>
+        <button class="ProjectCTA">
+          <a href="https://docs.google.com/document/d/15mBvUozJldu1D8ZsiWQzzbkRfkm1ghANxZ6HkSyxa68/edit?usp=sharing"><h2>view test results</h2></a>
+          <img src="assets/shapes/orange line.svg" alt="line">
+        </button>
       </section>
+<!--prototype-->
       <section class="proto">
+        <video> <source src="mobile prototype.mov" type="video/mov"> </video>
+        <video> <source src="desktop prototype video.mov" type="video/mov"> </video>
+        <img src="assets/shapes/phone frame.svg" alt="phone">
       </section>
+<!--conclusion-->
       <section class="conclusion">
         <h5>CONCLUSION</h5>
         <p>Sticking with simplicity worked well for this project. Some of the biggest design flaws were restricting the user’s ability to customize their dashboard, vague content, and vague prototypes. </p>
         <p>The biggest insight I gained from this project was how to write surveys for the problem and to avoid scope creep.</p>
-        <h5>VISIT SITE</h5>
+        <button class="orange">
+          <a href="https://juliaowens332427.invisionapp.com/space/Draft-Slam-ck6l47oxkro9c0p6297le0pv2?v=ehgRsINJ%2BSBxaD4OW9oNhQ%3D%3D&linkshare=urlcopied"><h5 class="white">VIEW PROTOTYPE</h5></a>
+          <img src="assets/shapes/clementine fill.svg" alt="visit site button">
+        </button>
       </section>
     </div>
+<!--footer-->
     <footer>
       <h3 class="white">Get in Touch</h3>
         <p class="white">
@@ -181,7 +267,6 @@
         <a href="mailto:juliasowens@gmail.com">email</a><br>
         <a href="https://www.facebook.com/juliasowens">FB</a> <a href="https://www.instagram.com/juliasowens">IG</a>  <a href="https://www.linkedin.com/juliasowens">LI</a> <a href="https://www.github.com/juliasowens">GH</a><br>
         <a href="https://docs.google.com/document/d/1NyvRas69ttA2l3UneFhfoW3CUNSEx1al49fTAunO5wc/edit?usp=sharing">download my CV</a><br>
-        view full site <br>
         Julia Owens © 2020</p>
     </footer>
   </body>
