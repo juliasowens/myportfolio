@@ -6,165 +6,702 @@ html {
   font-size: 10px;
 }
 
-
 body {
   background-color: #F3F0EB;
+  width: 100%;
 }
 
-header{
-	width:10%;
-	height: 5%;
-  padding: 3rem;
-  position: fixed;
-  display: inline-block;
+/*TYPOGRAPHY*/
+
+/* unvisited link */
+a:link {
+  color: #F3F0EB;
+  text-decoration: none;
 }
+
+/* visited link */
+a:visited {
+  color: #F3F0EB;
+  text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+  color: #EABBAE;
+  text-decoration: none;
+}
+
+/* selected link */
+a:active {
+  color: #F3F0EB;
+  text-decoration: none;
+}
+
+a.menu-opt:link {
+  color: #F3F0EB;
+  text-decoration: none;
+  font-size: 2.4rem;
+  font-family: 'Walter Turncoat';
+  font-kerning: 10%;
+  line-height: 4.8rem;
+}
+
 
 p {
   font-size: 1.6rem;
-  font-family: Poppins;
-  font-weight: 300;
+  font-family: 'Poppins';
   font-kerning: 10%;
   line-height: 2.4rem;
   color: #053B59;
+  padding: 2rem 0 2rem 0;
 }
 
 h1 {
   font-size: 4.8rem;
-  font-family: Poppins;
+  font-family: 'Poppins';
   font-weight: 600;
   color: #16559D;
-  line-height: auto;
-  padding-bottom: 2rem;
+  line-height: 6rem;
 }
 
 h2 {
-  font-size: 4.8rem;
-  font-family: Sacramento;
+  font-size: 3.2rem;
+  font-family: 'Beth Ellen';
   color: #16559D;
-  line-height: auto;
+  line-height: 3.6rem;
+  padding-top: 2rem;
 }
 
 h3 {
-  font-size: 3.6rem;
-  font-family: Poppins;
+  font-size: 4.2rem;
+  font-family: 'Poppins';
   font-weight: 600;
   color: #053B59;
-  line-height: auto;
+  line-height: 4rem;
+  padding-bottom: 1rem;
 }
 
 h4 {
   font-size: 2.4rem;
-  font-family: Poppins;
+  font-family: 'Poppins';
   font-weight: 600;
   font-kerning: 10%;
   color: #053B59;
-  line-height: auto;
+  line-height: 3.6rem;
 }
 
 h5 {
   font-size: 2.4rem;
-  font-family: Walter Turncoat;
+  font-family: 'Walter Turncoat';
   font-kerning: 10%;
+  line-height: 3.6rem;
   color: #C06D5B;
 }
 
 h6 {
   font-size: 2.1rem;
-  font-family: Poppins;
+  font-family: 'Poppins';
   font-weight: 300;
   font-kerning: 10%;
   color: #053B59;
-  line-height: 2.4rem;
+  line-height: 3rem;
+  padding: 2rem 0 2rem 0;
 }
 
-.container {
+/*structure of menu*/
+
+.menu {
+  background-image: url('/assets/shapes/inkbluemenu.svg');
+  width: 100%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 17rem 2rem 17rem 0;
+  background-size: cover;
+  background-position: top left;
+  background-repeat: no-repeat;
+  color: #F3F0EB;
+}
+
+/*structure of site*/
+
+.page-container {
+  width: 100%;
+  margin: 0;
+}
+
+/*header +nav */
+
+header {
+  background: none;
+  position: fixed;
+  padding: 2rem;
+  width: 100%;
+  margin: 0;
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+/*main content of page*/
+
+.content-container {
   margin: 0;
   width: 100%;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-auto-rows: minmax(4rem);
-  grid-template-areas:
-    "hero"
-    "offerings"
-    "howitworks"
-    "testimonials"
-    "recent";
+}
+
+/*all buttons follow this code*/
+
+button {
+  background: none;
+  border: none;
+  color: #F3F0EB;
+  cursor: pointer;
+  font-family: 'Walter Turncoat';
+  font-size: 2.4rem;
+  font-kerning: 10%;
+  line-height: 3.6rem;
+  text-align: left;
+  text-decoration: none;
+  padding: 12rem;
 }
 
 section {
-  padding: 15%;
-}
-
-.button1 {
-  position: sticky;
-}
-
-.offerings {
-  background: #053B59;
   padding: 10%;
 }
 
+/*sections of page*/
+
+/*intro*/
+
+.hero {
+  padding-top: 50%;
+  width: 100%;
+  background-image: url('/assets/shapes/largepinkbackground.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*button with orange fill background and white text, also used on about and project pages*/
+
+.orange-button {
+  background-image: url('/assets/shapes/clementinefill.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15rem;
+
+}
+
+/*menu of 5 offerings, what I can do*/
+
+.offerings {
+  background: #053B59;
+  width: 100%;
+  padding-top: 20rem;
+}
+
+/*changes text to white*/
+
 .white {
   color: #F3F0EB;
-  padding: 0 0 5rem 5rem;
 }
 
-li.services{
-  font-family: Sacramento;
-  font-size: 4.8rem;
-  line-height: auto;
+.service {
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.webdesign {
+  background-image: url('/assets/shapes/poolwhiteline.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 10rem;
+  padding-top: 5rem;
+}
+
+.brand {
+  background-image: url('/assets/shapes/clementinewhiteline.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 7rem;
+}
+
+.ecomm {
+  background-image: url('/assets/shapes/terracottawhiteline.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 9rem;
+}
+
+.test {
+  background-image: url('/assets/shapes/sandwhiteline.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 8rem;
+}
+
+.smallbiz {
+  background-image: url('/assets/shapes/eraserwhiteline.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 10rem;
+  padding-top: 5rem;
+}
+
+/*describes the service*/
+
+ul.description {
+  font-size: 1.8rem;
+  font-family: 'Poppins';
   color: #F3F0EB;
-  padding: 5rem;
+  line-height: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  list-style-position: outside;
+  list-style-image: url('/assets/shapes/offwhitedot.svg');
+  padding: 2rem;
 }
 
-li.description{
-  font-family: Poppins;
-  font-weight: 300;
-  font-size: 2.1rem;
-  line-height: 3.6rem;
-  font-kerning: 10%;
+/*bullet points of the description*/
+
+li {
+  padding: 1rem 0 1rem 0;
 }
+
+/*button with white line + white text, good for dark background*/
+
+.white-button {
+  background-image: url('/assets/shapes/offwhiteline2.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+/*step-by-step outline of the process*/
 
 .howitworks {
   background: #F1DBD4;
+  width: 100%;
+  padding-top: 20rem;
 }
 
-.step {
-  font-size: 2.4rem;
-  font-family: Walter Turncoat;
-  font-kerning: 10%;
-  color: #C06D5B;
+h5.step {
+  padding: 5rem 7rem 0 0;
 }
+
+/*button with red line + text, white background*/
+
+.redline-button {
+  background-image: url('/assets/shapes/redwhitecircle.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*class turns text red*/
 
 .red {
     color: #C06D5B;
 }
 
-.testimonials {
+/*testimonial section*/
 
+.testimonials {
+  width: 100%;
+  padding-top: 20rem;
 }
+
+/*class turns text blue*/
 
 .blue {
   color: #16559D;
 }
 
-.recent {
-  color: #F3F0EB;
+/*class turns text to H2 on buttons*/
+
+.fancy {
+  font-family: 'Beth Ellen';
+  font-size: 3.2rem;
+  font-kerning: 10%;
+  line-height: 4rem;
 }
+
+/*button with red background, white fancy text*/
+
+.redfill-button {
+  background-image: url('/assets/shapes/redfill.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*recent projects section*/
+
+.recent {
+  background-image: url('/assets/shapes/recentbackground.svg');
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 10%;
+}
+
+.recproj {
+  padding: 5rem 0 5rem 0;
+}
+
+.one {
+  grid-area; one;
+  background-image: url('/assets/shapes/redpinkcircle.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 2rem 2rem 4rem 2rem;
+  transform: translate(-20%, 0%);
+}
+
+.two {
+  grid-area; two;
+  background-image: url('/assets/shapes/redpinkcircle.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 2rem 2rem 4rem 2rem;
+  transform: translate(20%, 0%);
+}
+
+.three {
+  grid-area; three;
+  background-image: url('/assets/shapes/redpinkcircle.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 2rem 2rem 4rem 2rem;
+  transform: translate(-20%, 0%);
+}
+
+.four {
+  grid-area; four;
+  background-image: url('/assets/shapes/redpinkcircle.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 2rem 2rem 4rem 2rem;
+  transform: translate(20%, 0%);
+}
+
+.five {
+  grid-area; five;
+  background-image: url('/assets/shapes/redpinkcircle.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 2rem 2rem 4rem 2rem;
+  transform: translate(-20%, 0%);
+}
+
+.six {
+  grid-area; six;
+  background-image: url('/assets/shapes/redpinkcircle.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 2rem;
+  transform: translate(20%, 0%);
+}
+
+.grid-container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  " . one "
+  ".."
+  "two . "
+  ".."
+  " . three"
+  ".."
+  "four . "
+  ".."
+  " . five"
+  ".."
+  "six . ";
+}
+
+
+/* link to project with red line + text, pink fill, takes to case studies */
+
+.pinkline {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+}
+
+/* about page styling */
+
+
+.about {
+  width: 100%;
+  padding-top: 13rem;
+}
+
+.biopic {
+  width: 100%;
+}
+
+/* case study /project page styling */
+
+.case-study-intro {
+  width: 100%;
+  padding-top: 20rem;
+  background-color: #F1DBD4;
+}
+
+.challenge {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.pic {
+  width: 100%;
+}
+
+.title {
+  padding: 2rem 0 2rem 0;
+}
+
+ul.roles {
+  font-size: 2.1rem;
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-kerning: 10%;
+  color: #16559D;
+  line-height: 2rem;
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+ul.description1 {
+  font-size: 2.1rem;
+  font-family: 'Poppins';
+  font-weight: 300;
+  font-kerning: 10%;
+  color: #053B59;
+  line-height: 3rem;
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* orange script with line button for readers to view full reports */
+
+.ProjectCTA {
+  font-family: 'Beth Ellen';
+  font-size: 2.4rem;
+  font-kerning: 10%;
+  line-height: 3.6rem;
+  color: #DA9255;
+  text-align: left;
+  position: relative;
+  padding: 2rem 2rem 2rem 0;
+}
+
+.ProjectCTA img {
+  width: 100%;
+  display: block;
+}
+
+/* footer */
 
 footer {
   background: #053B59;
-  padding-top: 5rem;
+  font-family: 'Poppins';
+  color: #F3F0EB;
+  font-size: 1.6rem;
+  line-height: 3.6rem;
+  padding: 4rem;
 }
 
-@media screen and (min-width: 768px) {
-  .container {
-    width: 100%;
-  }
+address {
+  font-family: 'Poppins';
+  font-size: 2.1rem;
+  line-height: 4rem;
 }
 
-@media screen and (min-width: 1025px) {
-  .container {
+/* media queries */
+
+@media screen and (min-width: 375px) {
+    .page-container {
+      width: 100%;
+    }
+
+
+    .logodesk {
+      display: none;
+    }
+
+    .logomobile {
+      font-size: 2rem;
+      display: inline-block;
+    }
+
+@media screen and (min-width: 600px) {
+  .page-container {
     width: 100%;
   }
+
+  .content-container {
+    width: 100%;
+  }
+
+  .logomobile {
+    display: none;
+  }
+
+  .logodesk {
+    display: inline-block;
+  }
+
+  header {
+    background: none;
+    position: fixed;
+    width: 100%;
+    margin: 0;
+  }
+
+  .hero {
+    background-image: url('/assets/shapes/lightpinkfill.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 30rem 0 0 0;
+  }
+
+  .hero-container {
+    padding: 10rem 10rem 10rem 0;
+  }
+
+  button {
+    padding: 30rem;
+  }
+
+  .offerings {
+    background: url('/assets/shapes/inkbluemenu-d.svg');
+    background color: #F3F0EB;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 0;
+  }
+
+  .service {
+    background-position: center;
+  }
+
+  .webdesign {
+    grid-area: webdesign;
+    background: url('/assets/shapes/poolbluefill-d.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .brand {
+    grid-area: brand;
+    background: url('/assets/shapes/clementinefill2-d.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .ecomm {
+    grid-area: ecomm;
+    background: url('/assets/shapes/terracottafill-d.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .test {
+    grid-area: test;
+    background: url('/assets/shapes/sandfill-d.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
+
+  .smallbiz {
+    grid-area: smallbiz;
+    background: url('/assets/shapes/eraserfill-d.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  /*describes the service*/
+
+  ul.description {
+    font-size: 1.8rem;
+    font-family: 'Poppins';
+    color: #F3F0EB;
+    line-height: 3rem;
+    list-style-position: outside;
+    list-style-image: url('/assets/shapes/offwhitedot.svg');
+    padding: 2rem;
+  }
+
+  /*bullet points of the description*/
+
+  li {
+    padding: 1rem 0 1rem 0;
+  }
+
+  /*button with white line + white text, good for dark background*/
+
+  .white-button {
+    background-image: url('/assets/shapes/offwhiteline2.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }

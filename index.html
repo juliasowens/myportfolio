@@ -6,161 +6,177 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="css/reset.css">
       <link rel="stylesheet" href="css/style.css">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,300;1,400;1,600&family=Sacramento&family=Walter+Turncoat&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,300;1,400;1,600&family=Beth+Ellen&family=Walter+Turncoat&display=swap">
    </head>
    <body>
       <!--navigation with logo and hamburger menu-->
+    <div class="page-container">
       <header>
-         <nav class="navbar">
-            <a href="index.html"><img src="assets/shapes/colorlogo.svg" alt="julia owens logo"></a>
-            <button><img src="assets/shapes/hamburger.svg" alt="menu button"></button>
-            <div class="menu">
-               <ul>
-                  <li><a href="#">What I Offer</a></li>
-                  <li><a href="#">How it Works</a></li>
-                  <li><a href="#">Testimonials</a></li>
-                  <li><a href="about.html">About</a></li>
-                  <li><a href="project.html#">Recent Work</a></li>
-                  <li><a href="#">Side Projects</a></li>
-                  <li><a href="#">Writing</a></li>
-               </ul>
-            </div>
-         </nav>
+        <nav class="nav-container">
+          <div class="logomobile">
+            <a href="index.html">
+              <img src="assets/shapes/ColorHead.svg" alt="julia owens logo" style="width:6rem;">
+            </a>
+            <h2 class="logomobile">julia owens</h2>
+          </div>
+          <div class="logodesk">
+              <a href="index.html">
+                <img src="assets/shapes/colorlogo.svg" alt="julia owens logo" style="width:15rem;">
+              </a>
+          </div>
+          <a href="menu.html">
+            <img class= 'hamburger' src="assets/shapes/hamburger.svg" alt="menu icon" style="width:100%;">
+          </a>
+        </nav>
       </header>
       <main>
-         <div class="container" id="container">
+         <div class="content-container">
             <!--hero unit-->
             <section class="hero">
-               <h1>this-is-going-to-be-easy-and-fun</h1>
-               <p>Remember feeling that way when your teacher assigned an art project instead of a research paper? You can feel that way about your brand. </p>
-               <p>I’m a Philadelphia-based brand consultant, web designer, and community artist. I collaborate with clients in half-day and day-long increments. Book me to help you with web design, branding, or small business consulting.</p>
-               <button class="orange">
-               HOW IT WORKS
-               <img src="assets/shapes/clementinefill.svg" alt="how it works button">
-               </button>
+              <div class="hero-container">
+                  <h1>design done in a day or less!</h1>
+                  <p>Does working on your website feel like your calculus teacher assigned you an art project that's due tomorrow?</p>
+                  <p>I'm here to help you ace that assignment because I love art projects. </p>
+                  <p>I’m a Philadelphia-based brand consultant, web designer, and community artist. I collaborate with clients in half-day and day-long increments. Book me to help you with web design, branding, or small business consulting.</p>
+                  <div class= "orange-button">
+                      <button>HOW it WORKS</button>
+                  </div>
+             </div>
             </section>
             <!--What I Offer-->
-            <section class="offerings">
-               <h1 class="white">get your project done in a day or less!</h1>
-               <ul>
-                  <li class="services">
-                     web design
-                     <img src="assets/shapes/poolbluefill.svg" alt="web design">
-                     <ul>
-                        <li class="description">Re-design, refresh, tweak, or an update to your site.</li>
-                        <li class="description">Create a completely new website, up to 3 pages.</li>
-                        <li class="description">Set-up a Wordpress, Weebly, or Squarespace site.</li>
-                        <li class="description">Custom front-end development of your website.</li>
-                     </ul>
-                  </li>
-                  <li class="services">
-                     brand essentials
-                     <img src="assets/shapes/clementinefill.svg" alt="brand essentials">
-                     <ul>
-                        <li class="description">Generate a style guide with logos, icons, colors and typefaces.</li>
-                        <li class="description">Capture illustrations or photos.</li>
-                        <li class="description">Layout templates for email newsletters, letterhead, or slides.</li>
-                     </ul>
-                  </li>
-                  <li class="services">
-                     e-commerce
-                     <img src="assets/shapes/redfill.svg" alt="e-commerce">
-                     <ul>
-                        <li class="description">Create a new e-commerce website.</li>
-                        <li class="description">Photographing, uploading, and cataloguing new products.</li>
-                     </ul>
-                  </li>
-                  <li class="services">
-                     research + testing
-                     <img src="assets/shapes/sandfill.svg" alt="research">
-                     <ul>
-                        <li class="description">Conduct user surveys to solve problems for your customers.</li>
-                        <li class="description">Analysis of your competition and opportunities in the market.</li>
-                        <li class="description">Google Analytics. SEO and Accessibility compliance review.</li>
-                     </ul>
-                  </li>
-                  <li class="services">
-                     small business consulting
-                     <img src="assets/shapes/eraserpinkfill.svg" alt="small business consulting">
-                     <ul>
-                        <li class="description">Idea-generation for engagement, problem-solving, profit-making, and cross-pollination.</li>
-                     </ul>
-                  </li>
-               </ul>
-               <button class="whiteline">
-               BOOK YOUR PROJECT
-               <img src="assets/shapes/offwhiteline1.svg" alt="book your project button">
-               </button>
+            <section class="offerings" id="offerings">
+               <h3 class="white">what I offer</h3>
+               <h6 class="white">Let's talk about your project to see if my services are right for you! </h6>
+               <div class="services-container">
+                  <div class="service">
+                     <div class="webdesign">
+                        <h2 class="white">web design</h2>
+                     </div>
+                        <ul class="description">
+                            <li>Re-design, refresh, tweak, or an update to your site.</li>
+                            <li>Create a completely new website, up to 3 pages.</li>
+                            <li>Set-up a Wordpress, Weebly, or Squarespace site.</li>
+                            <li>Custom front-end development of your website.</li>
+                        </ul>
+                  </div>
+                  <div class="service">
+                    <div class="brand">
+                       <h2 class="white">brand essentials</h2>
+                    </div>
+                        <ul class="description">
+                          <li>Generate a style guide with logos, icons, colors and typefaces.</li>
+                          <li>Capture illustrations or photos.</li>
+                          <li>Layout templates for email newsletters, letterhead, or slides.</li>
+                        </ul>
+                  </div>
+                  <div class="service">
+                    <div class="ecomm">
+                       <h2 class="white">e-commerce</h2>
+                    </div>
+                        <ul class="description">
+                          <li>Create a new e-commerce website.</li>
+                          <li>Photographing, uploading, and cataloguing new products.</li>
+                        </ul>
+                  </div>
+                  <div class="service">
+                    <div class="test">
+                       <h2 class="white">research + testing</h2>
+                    </div>
+                          <ul class="description">
+                            <li>Conduct user surveys to solve problems for your customers.</li>
+                            <li>Analysis of your competition and opportunities in the market.</li>
+                            <li>Google Analytics. SEO and Accessibility compliance review.</li>
+                          </ul>
+                  </div>
+                  <div class="service">
+                    <div class="smallbiz">
+                      <h2 class="white">small business consulting</h2>
+                    </div>
+                      <ul class="description">
+                        <li>Idea-generation for engagement, problem-solving, profit-making, and cross-pollination.</li>
+                      </ul>
+                  </div>
+               </div>
+               <div class="white-button">
+                  <button>BOOK your PROJECT</button>
+               </div>
             </section>
             <!--How it Works-->
-            <section class="howitworks">
+            <section class="howitworks" id="howitworks">
                <h3>how it works</h3>
-               <h5>STEP 1</h5>
-               <p>Choose from my list, or schedule a call with me to talk about your project needs. Depending on the size, some projects require more than one day, or less than a day.</p>
-               <h5>STEP 2</h5>
-               <p>Schedule a time that works best for you and pay your deposit below.  We will collaborate closely, so you’ll need to be available by text, phone, or video chat on the day your selected.</p>
-               <h5>STEP 3</h5>
-               <p>Once you’ve scheduled your day and paid your deposit, you’ll receive an email with a checklist of work to complete before our meeting.</p>
-               <h5>STEP 4</h5>
-               <p>On the day of your intensive, we will collaborate through a combo of text, phone, or video chat to complete your project!</p>
-               <h5>STEP 5</h5>
-               <p>After our project is finished, I will be available for 30 days of support to help with tweaks, training, or questions. </p>
-               <button class="redline">
-               VIEW MY CALENDAR
-               <img src="assets/shapes/redwhitecircle.svg" alt="view my calendar button">
-               </button>
+               <h5 class="step">STEP 1</h5>
+                 <h6>Choose from my list, or schedule a call with me to talk about your project needs. Depending on the size, some projects require more than one day, or less than a day.</h6>
+               <h5 class="step">STEP 2</h5>
+                 <h6>Schedule a time that works best for you and pay your deposit below.  We will collaborate closely, so you’ll need to be available by text, phone, or video chat on the day your selected.</h6>
+               <h5 class="step">STEP 3</h5>
+                 <h6>Once you’ve scheduled your day and paid your deposit, you’ll receive an email with a checklist of work to complete before our meeting.</h6>
+               <h5 class="step">STEP 4</h5>
+                 <h6>On the day of your intensive, we will collaborate through a combo of text, phone, or video chat to complete your project!</h6>
+               <h5 class="step">STEP 5</h5>
+                 <h6>After our project is finished, I will be available for 30 days of support to help with tweaks, training, or questions. </h6>
+               <div class="redline-button">
+                  <button class= "red">VIEW my CALENDAR</button>
+               </div>
             </section>
             <!--Testimonials-->
-            <section class="testimonials">
-               <h3>testimonials</h3>
-               <h5 class="blue">insert testimonial text here</h5>
-               <h2>insert testimonial author here</h2>
-               <h5 class="blue link">insert project link here</h5>
-               <button class="redfill">
-               let's talk about your project
-               <img src="assets/shapes/redfill.svg" alt="let's talk about your project">
-               </button>
+            <section class="testimonials" id="testimonials">
+               <h3 class="blue">testimonials</h3>
+               <h5 class="blue">“When you work with Julia you get more than just a designer, you get a business consultant and brand manager as well! She came up with some engaging ideas for my business that I hadn’t even thought of! She thinks like a CEO.”</h5>
+               <h2>Jane C. Doe</h2>
+               <h5 class="blue link">ABC Corporation</h5>
+               <div class="redfill-button">
+                  <button class= "fancy">let's talk about your project!</button>
+               </div>
             </section>
             <!--Recent Projects-->
-            <section class="recent">
-               <h1 class="white">recent projects</h1>
-               <button class="pinkline">
-               Draft Slam
-               <img src="assets/shapes/redpinkcircle.svg" alt="view project">
-               </button>
-               <button class="pinkline">
-               Rutabaga Toy Library
-               <img src="assets/shapes/redpinkcircle.svg" alt="view project">
-               </button>
-               <button class="pinkline">
-               Sparrow Property Management
-               <img src="assets/shapes/redpinkcircle.svg" alt="view project">
-               </button>
-               <button class="pinkline">
-               IET Sitelink
-               <img src="assets/shapes/redpinkcircle.svg" alt="view project">
-               </button>
-               <button class="pinkline">
-               Usiloquy Dance Designs
-               <img src="assets/shapes/redpinkcircle.svg" alt="view project">
-               </button>
-               <button class="pinkline">
-               View All Work
-               <img src="assets/shapes/redpinkcircle.svg" alt="view project">
-               </button>
+            <section class="recent" id="recent">
+               <div class="recproj">
+                 <h3 class="white">recent projects</h3>
+               </div>
+               <div class="grid-container">
+                 <div class= "project one">
+                      <a class="pinkline" href="project.html">
+                      <h5 class= "red">Draft Slam</h5>
+                      </a>
+                 </div>
+                 <div class= "project two">
+                      <a class="pinkline" href="project.html">
+                      <h5 class= "red">Rutabaga Toy Library</h5>
+                      </a>
+                 </div>
+                 <div class= "project three">
+                      <a class="pinkline" href="project.html">
+                      <h5 class= "red">IET Sitelink</h5>
+                      </a>
+                 </div>
+                      <div class= "project four">
+                      <a class="pinkline" href="project.html">
+                      <h5 class= "red">Usiloquy Dance Designs</h5>
+                      </a>
+                 </div>
+                 <div class= "project five">
+                      <a class="pinkline" href="project.html">
+                      <h5 class= "red">Sparrow Property Management</h5>
+                      </a>
+                 </div>
+                 <div class= "project six">
+                      <a class="pinkline" href="project.html">
+                      <h5 class= "red">View All Work</h5>
+                      </a>
+                </div>
+              </div>
             </section>
-            <!--footer-->
          </div>
       </main>
-      <footer>
-         <h3>Get in Touch</h3>
-         <address class="white">
+<!--footer-->
+      <footer id="footer">
+         <h3 class='white'>Get in Touch</h3>
+         <address>
             <a href="tel:+3214386879">call</a><br>
             <a href="mailto:juliasowens@gmail.com">email</a><br>
             <a href="https://www.facebook.com/juliasowens">FB</a> <a href="https://www.instagram.com/juliasowens">IG</a>  <a href="https://www.linkedin.com/juliasowens">LI</a> <a href="https://www.github.com/juliasowens">GH</a><br>
             <a href="https://docs.google.com/document/d/1NyvRas69ttA2l3UneFhfoW3CUNSEx1al49fTAunO5wc/edit?usp=sharing">download my CV</a><br>
          </address>
-         view full site <br>
          Julia Owens © 2020
       </footer>
    </body>
