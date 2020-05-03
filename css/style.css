@@ -111,17 +111,16 @@ h6 {
 /*structure of menu*/
 
 .menu {
-  background-image: url('/assets/shapes/inkbluemenu.svg');
+  background-image: url('../assets/shapes/inkbluemenu.svg');
   width: 100%;
   display:flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: flex-end;
-  padding: 17rem 2rem 17rem 0;
+  padding: 5rem;
   background-size: cover;
-  background-position: top left;
+  background-position: top right;
   background-repeat: no-repeat;
-  color: #F3F0EB;
 }
 
 /*structure of site*/
@@ -139,6 +138,7 @@ header {
   padding: 2rem;
   width: 100%;
   margin: 0;
+  z-index: 1;
 }
 
 .nav-container {
@@ -182,7 +182,7 @@ section {
 .hero {
   padding-top: 50%;
   width: 100%;
-  background-image: url('/assets/shapes/largepinkbackground.svg');
+  background-image: url('../assets/shapes/largepinkbackground.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -191,7 +191,7 @@ section {
 /*button with orange fill background and white text, also used on about and project pages*/
 
 .orange-button {
-  background-image: url('/assets/shapes/clementinefill.svg');
+  background-image: url('../assets/buttons/clementinefill.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -214,6 +214,7 @@ section {
 
 .white {
   color: #F3F0EB;
+  line-height: 7rem;
 }
 
 .service {
@@ -225,7 +226,7 @@ section {
 }
 
 .webdesign {
-  background-image: url('/assets/shapes/poolwhiteline.svg');
+  background-image: url('../assets/shapes/poolwhiteline.svg');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -234,15 +235,15 @@ section {
 }
 
 .brand {
-  background-image: url('/assets/shapes/clementinewhiteline.svg');
+  background-image: url('../assets/shapes/clementinewhiteline.svg');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 7rem;
+  padding: 9rem;
 }
 
 .ecomm {
-  background-image: url('/assets/shapes/terracottawhiteline.svg');
+  background-image: url('../assets/shapes/terracottawhiteline.svg');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -250,19 +251,19 @@ section {
 }
 
 .test {
-  background-image: url('/assets/shapes/sandwhiteline.svg');
+  background-image: url('../assets/shapes/sandwhiteline.svg');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 8rem;
+  padding: 12rem;
 }
 
 .smallbiz {
-  background-image: url('/assets/shapes/eraserwhiteline.svg');
+  background-image: url('../assets/shapes/eraserwhiteline.svg');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 10rem;
+  padding:12rem;
   padding-top: 5rem;
 }
 
@@ -278,7 +279,7 @@ ul.description {
   align-items: flex-start;
   text-align: left;
   list-style-position: outside;
-  list-style-image: url('/assets/shapes/offwhitedot.svg');
+  list-style-image: url('../assets/shapes/offwhitedot.svg');
   padding: 2rem;
 }
 
@@ -291,7 +292,7 @@ li {
 /*button with white line + white text, good for dark background*/
 
 .white-button {
-  background-image: url('/assets/shapes/offwhiteline2.svg');
+  background-image: url('../assets/buttons/offwhiteline2.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -310,13 +311,13 @@ li {
 }
 
 h5.step {
-  padding: 5rem 7rem 0 0;
+  padding: 2rem 2rem 0 0;
 }
 
 /*button with red line + text, white background*/
 
 .redline-button {
-  background-image: url('/assets/shapes/redwhitecircle.svg');
+  background-image: url('../assets/buttons/redwhitecircle.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -356,90 +357,92 @@ h5.step {
 /*button with red background, white fancy text*/
 
 .redfill-button {
-  background-image: url('/assets/shapes/redfill.svg');
+  background-image: url('../assets/buttons/redfill.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 5rem 0 5rem;
 }
 
 /*recent projects section*/
 
 .recent {
-  background-image: url('/assets/shapes/recentbackground.svg');
-  background-position: left;
+  background-image: url('../assets/shapes/recentbackground.svg');
+  background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   height: 100%;
   margin: 0;
-  padding: 10%;
 }
 
 .recproj {
-  padding: 5rem 0 5rem 0;
+  padding: 40% 30% 10% 30%;
 }
+
+
 
 .one {
   grid-area; one;
-  background-image: url('/assets/shapes/redpinkcircle.svg');
+  background-image: url('../assets/buttons/redpinkcircle.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  padding: 2rem 2rem 4rem 2rem;
-  transform: translate(-20%, 0%);
+  padding: 5rem;
+  transform: translate(-25%, 0%);
 }
 
 .two {
   grid-area; two;
-  background-image: url('/assets/shapes/redpinkcircle.svg');
+  background-image: url('../assets/buttons/redpinkcircle.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  padding: 2rem 2rem 4rem 2rem;
-  transform: translate(20%, 0%);
+  padding: 7rem;
+  transform: translate(25%, 0%);
 }
 
 .three {
   grid-area; three;
-  background-image: url('/assets/shapes/redpinkcircle.svg');
+  background-image: url('../assets/buttons/redpinkcircle.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  padding: 2rem 2rem 4rem 2rem;
+  padding: 4rem;
   transform: translate(-20%, 0%);
 }
 
 .four {
   grid-area; four;
-  background-image: url('/assets/shapes/redpinkcircle.svg');
+  background-image: url('/assets/buttons/redpinkcircle.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  padding: 2rem 2rem 4rem 2rem;
-  transform: translate(20%, 0%);
+  padding: 7rem;
+  transform: translate(25%, 0%);
 }
 
 .five {
   grid-area; five;
-  background-image: url('/assets/shapes/redpinkcircle.svg');
+  background-image: url('../assets/buttons/redpinkcircle.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  padding: 2rem 2rem 4rem 2rem;
-  transform: translate(-20%, 0%);
+  padding: 6rem;
+  transform: translate(-25%, 0%);
 }
 
 .six {
   grid-area; six;
-  background-image: url('/assets/shapes/redpinkcircle.svg');
+  background-image: url('../assets/buttons/redpinkcircle.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  padding: 2rem;
-  transform: translate(20%, 0%);
+  padding: 4rem;
+  transform: translate(30%, 0%);
 }
 
 .grid-container {
@@ -607,7 +610,7 @@ address {
   }
 
   .hero {
-    background-image: url('/assets/shapes/lightpinkfill.svg');
+    background-image: url('../assets/shapes/lightpinkfill.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -623,7 +626,7 @@ address {
   }
 
   .offerings {
-    background: url('/assets/shapes/inkbluemenu-d.svg');
+    background: url('../assets/shapes/inkbluemenu-d.svg');
     background color: #F3F0EB;
     background-position: top center;
     background-repeat: no-repeat;
@@ -637,7 +640,7 @@ address {
 
   .webdesign {
     grid-area: webdesign;
-    background: url('/assets/shapes/poolbluefill-d.svg');
+    background: url('../assets/shapes/poolbluefill-d.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -645,7 +648,7 @@ address {
 
   .brand {
     grid-area: brand;
-    background: url('/assets/shapes/clementinefill2-d.svg');
+    background: url('../assets/shapes/clementinefill2-d.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -653,7 +656,7 @@ address {
 
   .ecomm {
     grid-area: ecomm;
-    background: url('/assets/shapes/terracottafill-d.svg');
+    background: url('../assets/shapes/terracottafill-d.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -661,7 +664,7 @@ address {
 
   .test {
     grid-area: test;
-    background: url('/assets/shapes/sandfill-d.svg');
+    background: url('../assets/shapes/sandfill-d.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -669,7 +672,7 @@ address {
 
   .smallbiz {
     grid-area: smallbiz;
-    background: url('/assets/shapes/eraserfill-d.svg');
+    background: url('../assets/shapes/eraserfill-d.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -683,7 +686,7 @@ address {
     color: #F3F0EB;
     line-height: 3rem;
     list-style-position: outside;
-    list-style-image: url('/assets/shapes/offwhitedot.svg');
+    list-style-image: url('../assets/shapes/offwhitedot.svg');
     padding: 2rem;
   }
 
@@ -696,7 +699,7 @@ address {
   /*button with white line + white text, good for dark background*/
 
   .white-button {
-    background-image: url('/assets/shapes/offwhiteline2.svg');
+    background-image: url('../assets/buttons/offwhiteline2.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
