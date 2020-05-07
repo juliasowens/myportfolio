@@ -37,15 +37,6 @@ a:active {
   text-decoration: none;
 }
 
-a.menu-opt:link {
-  color: #F3F0EB;
-  text-decoration: none;
-  font-size: 2.4rem;
-  font-family: 'Walter Turncoat';
-  font-kerning: 10%;
-  line-height: 4.8rem;
-}
-
 
 p {
   font-size: 1.6rem;
@@ -68,8 +59,7 @@ h2 {
   font-size: 3.2rem;
   font-family: 'Beth Ellen';
   color: #16559D;
-  line-height: 3.6rem;
-  padding-top: 2rem;
+  line-height: 3.2rem;
 }
 
 h3 {
@@ -108,20 +98,6 @@ h6 {
   padding: 2rem 0 2rem 0;
 }
 
-/*structure of menu*/
-
-.menu {
-  background-image: url('../assets/shapes/inkbluemenu.svg');
-  width: 100%;
-  display:flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-end;
-  padding: 5rem;
-  background-size: cover;
-  background-position: top right;
-  background-repeat: no-repeat;
-}
 
 /*structure of site*/
 
@@ -141,11 +117,55 @@ header {
   z-index: 1;
 }
 
+
+/*Style Navigation Menu */
+
 .nav-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+
+.menu-container #myLinks{
+  display: none;
+}
+
+/* Style the hamburger menu */
+.menu-container a.hamburger {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Style navigation menu links */
+.menu-opt {
+  color: #F3F0EB;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-family: 'Walter Turncoat';
+  font-kerning: 10%;
+  line-height: 2rem;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: flex-start;
+  padding: 10% 0 10% 0;
+  transform: translate(-50%, 10%);
+}
+
+.menu-container {
+  background-image: url('../assets/old/inkfill.svg');
+  background-position: top right;
+  background-repeat: no-repeat;
+  background: cover;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 /*main content of page*/
@@ -230,8 +250,8 @@ section {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 10rem;
-  padding-top: 5rem;
+  padding: 6rem;
+  padding-top: 4rem;
 }
 
 .brand {
@@ -239,7 +259,7 @@ section {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 9rem;
+  padding: 7rem;
 }
 
 .ecomm {
@@ -247,7 +267,7 @@ section {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 9rem;
+  padding: 7rem;
 }
 
 .test {
@@ -255,7 +275,7 @@ section {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 12rem;
+  padding: 7rem;
 }
 
 .smallbiz {
@@ -263,8 +283,8 @@ section {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  padding:12rem;
-  padding-top: 5rem;
+  padding: 7rem;
+  padding-top: 2rem;
 }
 
 /*describes the service*/
@@ -380,7 +400,7 @@ h5.step {
 }
 
 .recproj {
-  padding: 40% 30% 10% 30%;
+  padding: 10%;
 }
 
 
@@ -391,8 +411,8 @@ h5.step {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  padding: 5rem;
-  transform: translate(-25%, 0%);
+  padding: 3rem;
+  transform: translate(-20%, 0%);
 }
 
 .two {
@@ -401,8 +421,8 @@ h5.step {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  padding: 7rem;
-  transform: translate(25%, 0%);
+  padding: 4rem;
+  transform: translate(10%, 0%);
 }
 
 .three {
@@ -417,12 +437,12 @@ h5.step {
 
 .four {
   grid-area; four;
-  background-image: url('/assets/buttons/redpinkcircle.svg');
+  background-image: url('../assets/buttons/redpinkcircle.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  padding: 7rem;
-  transform: translate(25%, 0%);
+  padding: 4rem;
+  transform: translate(10%, 0%);
 }
 
 .five {
@@ -431,8 +451,8 @@ h5.step {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  padding: 6rem;
-  transform: translate(-25%, 0%);
+  padding: 4rem;
+  transform: translate(-20%, 0%);
 }
 
 .six {
@@ -442,7 +462,7 @@ h5.step {
   background-repeat: no-repeat;
   background-size: contain;
   padding: 4rem;
-  transform: translate(30%, 0%);
+  transform: translate(10%, 0%);
 }
 
 .grid-container {

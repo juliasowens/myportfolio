@@ -15,25 +15,39 @@
        <nav class="nav-container">
          <div class="logomobile">
            <a href="index.html">
-             <img src="../assets/shapes/ColorHead.svg" alt="julia owens logo" style="width:6rem;">
+             <img src="assets/header/ColorHead.svg" alt="julia owens logo" style="width:6rem;">
            </a>
            <h2 class="logomobile">julia owens</h2>
          </div>
          <div class="logodesk">
              <a href="index.html">
-               <img src="../assets/header/colorlogo.svg" alt="julia owens logo" style="width:15rem;">
+               <img src="assets/header/colorlogo.svg" alt="julia owens logo" style="width:15rem;">
              </a>
          </div>
-         <a href="menu.html">
-           <img class= 'hamburger' src="../assets/header/hamburger.svg" alt="menu icon" style="width:100%;">
-         </a>
+         <!-- Navigation links (hidden by default) -->
+         <div class="menu-container">
+           <div id="myLinks">
+             <a class="menu-opt" href="index.html#footer">Get in Touch</a>
+             <a class="menu-opt" href="index.html#offerings">What I Offer</a>
+             <a class="menu-opt" href="index.html#howitworks">How it Works</a>
+             <a class="menu-opt" href="index.html#testimonials">Testimonials</a>
+             <a class="menu-opt" href="about.html">About</a>
+             <a class="menu-opt" href="index.html#recent">Recent Projects</a>
+             <a class="menu-opt" href="sideprojects.html">Side Projects</a>
+             <a class="menu-opt" href="writing.html">Writing</a>
+           </div>
+ <!-- "Hamburger menu" / "hamburger" to toggle the navigation links -->
+           <a href="javascript:void(0);" class="hamburger" onclick="myFunction()">
+             <img class= 'hamburger' src="assets/header/hamburger.svg" alt="menu icon">
+           </a>
+         </div>
        </nav>
      </header>
       <main>
          <div class="content-container">
             <!--about content-->
             <section class="about">
-               <img class="biopic" src="../assets/shapes/biopic.svg" alt="picture of julia owens">
+               <img class="biopic" src="assets/shapes/biopic.svg" alt="picture of julia owens">
                <h2>about</h2>
                <p>I strive for the yay-my-teacher-just-assigned-an-art-project feeling when working with startups as they strategize websites, brand presence, and customer engagement. I work with small businesses and nonprofits who imagine solutions for the world’s environmental and social needs. I design with their concepts, ideas, and users in mind. When I figure out a better way to solve a problem, I cannot rest until it is implemented. I love design because it combines art and the written word, and communicates an infinite amount of ideas.</p>
                <p>My diverse experiences enable me to collaborate with a variety of entreprenuers, including an all-women’s art college, an artist-run studio, a harajuku-themed sushi restaurant,  an after-school mural program, a greenhouse-coffee shop, and a children’s historic playground. These experiences broadened my knowledge of art education, hospitality, social justice, play advocacy, and community building.</p>
@@ -55,5 +69,15 @@
          </address>
          Julia Owens © 2020
       </footer>
+      <script>
+      function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+      </script>
    </body>
 </html>
