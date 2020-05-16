@@ -43,7 +43,7 @@ p {
   font-family: 'Poppins';
   font-size: 1.6rem;
   line-height: 2.4rem;
-  padding: 2rem 0 2rem 0;
+  padding: 1rem 0 1rem 0;
 }
 
 h1 {
@@ -114,28 +114,28 @@ header {
   z-index: 1;
 }
 
-
 /*Style Navigation Menu */
 
 .nav-container {
-  height: 100%;
   overflow: hidden;
   position: relative;
+}
+
+.menu-container {
   width: 100%;
+  padding: 20%;
+  align-items: flex-end;
+  background-image: url('../assets/old/inkfill.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
 }
 
 /* Hide the links inside the navigation menu (except for logo/home) */
 
 .myLinks{
-  display: none;
-}
-
-/* Style the hamburger menu */
-.hamburger {
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
+ display: none;
 }
 
 /* Style navigation menu links */
@@ -148,20 +148,16 @@ header {
   font-size: 1.8rem;
   justify-content: flex-start;
   line-height: 2rem;
-  padding: 10% 0 10% 0;
+  padding: 4%;
   text-decoration: none;
-  transform: translate(-50%, 10%);
 }
 
-.menu-container {
-  align-items: flex-end;
-  background-image: url('../assets/old/inkfill.svg');
-  background-position: top right;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  justify-content: flex-end;
-  width: 100%;
+/* Style the hamburger menu */
+.hamburger {
+  display: inline-flex;
+  position: absolute;
+  top: 0;
+  right: 15%;
 }
 
 /*main content of page*/
@@ -228,7 +224,7 @@ section {
 
 .white {
   color: #F3F0EB;
-  line-height: 7rem;
+  line-height: 4rem;
 }
 
 .service {
@@ -244,7 +240,7 @@ section {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  padding: 6rem;
+  padding: 7rem;
   padding-top: 4rem;
 }
 
@@ -261,7 +257,7 @@ section {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  padding: 7rem;
+  padding: 9rem 2rem 9rem 2rem;
 }
 
 .test {
@@ -277,7 +273,7 @@ section {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  padding: 9rem 7rem 7rem 7rem;
+  padding: 7rem 2rem 7rem 7rem;
 }
 
 /*describes the service*/
@@ -288,10 +284,11 @@ ul.description {
   display: flex;
   flex-direction: column;
   font-family: 'Poppins';
-  line-height: 3rem;
+  font-size: 2rem;
+  line-height: 2.4rem;
   list-style-image: url('../assets/shapes/offwhitedot.svg');
   list-style-position: outside;
-  padding: 2rem;
+  padding: 1rem;
   text-align: left;
 }
 
@@ -355,6 +352,7 @@ li {
 
 .blue {
   color: #16559D;
+  padding: 2rem;
 }
 
 /*class turns text to H2 on buttons*/
@@ -389,9 +387,6 @@ li {
   width: 100%;
 }
 
-.recproj {
-  padding: 25% 5% 0 5%;
-}
 
 .grid-container {
   display: grid;
@@ -407,7 +402,10 @@ li {
   " .five five"
   ".."
   "six six. ";
-  padding: 10%;
+}
+
+.recproj {
+  padding: 25% 0 25% 0;
 }
 
 .project {
@@ -419,37 +417,37 @@ li {
 
 .one {
   padding: 3rem;
-  transform: translate(-10%, 30%);
+  transform: translate(-25%, 10%);
 
 }
 
 .two {
-  padding: 5rem;
-  transform: translate(10%, 30%);
+  padding: 4rem;
+  transform: translate(3%, 10%);
 
 }
 
 .three {
   padding: 4rem;
-  transform: translate(-10%, 30%);
+  transform: translate(-25%, 10%);
 
 }
 
 .four {
-  padding: 5rem;
-  transform: translate(10%, 30%);
+  padding: 4rem;
+  transform: translate(-5%, 10%);
 
 }
 
 .five {
   padding: 4rem;
-  transform: translate(-10%, 30%);
+  transform: translate(-15%, 8%);
 
 }
 
 .six {
   padding: 4rem;
-  transform: translate(15%, 30%);
+  transform: translate(3%, 10%);
 
 }
 
@@ -542,6 +540,7 @@ footer {
   background-color: #053B59;
   color: #F3F0EB;
   font-family: 'Poppins';
+  font-size: 2rem;
   line-height: 3.6rem;
   padding: 4rem;
 }
@@ -570,7 +569,7 @@ address {
     }
   }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1024px) {
   .page-container {
     width: 100%;
   }
@@ -597,72 +596,49 @@ address {
 
   .hero {
     background-image: url('../assets/shapes/lightpinkfill.svg');
-    background-position: center;
+    background-position: top left;
     background-repeat: no-repeat;
     background-size: contain;
-    padding: 30rem 0 0 0;
+    padding: 25rem 20rem 10rem 10rem;
   }
 
-  .hero-container {
-    padding: 10rem 10rem 10rem 0;
-  }
-
-  button {
-    padding: 30rem;
+  .orange-button {
+    padding: 10rem;
+    transform: translate(50%, 10%);
   }
 
   .offerings {
-    background-color: #F3F0EB;
-    background-image: url('../assets/shapes/inkbluemenu-d.svg');
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: contain;
+    background-color: #053B59;
+    width: 100%;
+    padding: 20rem;
+    }
 
-    padding: 0;
-  }
-
-  .service {
-    background-position: center;
+  .services-container {
+      display: inline-grid;
+      grid-template-areas:
+      "webdesign brand"
+      "ecomm test"
+      "smallbiz .";
   }
 
   .webdesign {
     background-image: url('../assets/shapes/poolbluefill-d.svg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    grid-area: webdesign;
   }
 
   .brand {
     background-image: url('../assets/shapes/clementinefill2-d.svg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    grid-area: brand;
   }
 
   .ecomm {
     background-image: url('../assets/shapes/terracottafill-d.svg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    grid-area: ecomm;
   }
 
   .test {
     background-image: url('../assets/shapes/sandfill-d.svg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    grid-area: test;
 }
 
   .smallbiz {
     background-image: url('../assets/shapes/eraserfill-d.svg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    grid-area: smallbiz;
   }
 
   /*describes the service*/
@@ -670,10 +646,8 @@ address {
   ul.description {
     color: #F3F0EB;
     font-family: 'Poppins';
-    line-height: 3rem;
     list-style-image: url('../assets/shapes/offwhitedot.svg');
     list-style-position: outside;
-    padding: 2rem;
   }
 
   /*bullet points of the description*/
@@ -682,10 +656,75 @@ address {
     padding: 1rem 0 1rem 0;
   }
 
-  /*button with white line + white text, good for dark background*/
-
-  .white-button {
-    align-items: center;
-    padding: 1rem;
+  .howitworks {
+    background-color: #EABBAE;
+    background-image: url('../assets/shapes/largepinkbackground2.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    padding: 20%;
   }
+
+  .redline-button {
+    padding: 3rem;
+  }
+
+  .testimonials {
+    background-color: #F1DBD4;
+    background-image: url('../assets/old/largewhitebackground.svg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 25% 25% 0 25%;
+    width: 100%;
+  }
+
+  .redfill-button {
+    transform: translate(50%, -50%);
+  }
+
+  /*recent projects section*/
+
+  .recent {
+    background-image: url('../assets/old/threecircles.svg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    width: 100%;
+  }
+
+  .recproj {
+    padding: 5%;
+    text-align: center;
+  }
+
+  .grid-container {
+    display: inline-grid;
+    grid-template-areas:
+    "one two three"
+    "four five six";
+  }
+
+
+  .project {
+    background-image: url('../assets/buttons/redpinkcircle.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: none;
+  }
+
+  .one .two .three .four .five .six {
+    transform: none;
+  }
+
+  /* link to project with red line + text, pink fill, takes to case studies */
+
+  .pinkline {
+    align-items: flex-start;
+    display:flex;
+    justify-content: center;
+  }
+
 }
