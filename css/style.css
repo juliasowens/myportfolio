@@ -15,7 +15,7 @@ body {
 
 /* unvisited link */
 a:link {
-  color: #F3F0EB;
+  color: #EABBAE;
   text-decoration: none;
 }
 
@@ -27,7 +27,7 @@ a:visited {
 
 /* mouse over link */
 a:hover {
-  color: #EABBAE;
+  color: #F3F0EB;
   text-decoration: none;
 }
 
@@ -117,25 +117,20 @@ header {
 /*Style Navigation Menu */
 
 .nav-container {
-  overflow: hidden;
   position: relative;
+  width: 100%;
 }
 
 .menu-container {
-  width: 100%;
-  padding: 20%;
-  align-items: flex-end;
-  background-image: url('../assets/old/inkfill.svg');
-  background-repeat: no-repeat;
-  background-size: contain;
-  display: flex;
-  justify-content: center;
+  width: 100%
 }
 
 /* Hide the links inside the navigation menu (except for logo/home) */
 
 .myLinks{
- display: none;
+  background-image: url('../assets/old/inkfill.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* Style navigation menu links */
@@ -154,10 +149,10 @@ header {
 
 /* Style the hamburger menu */
 .hamburger {
-  display: inline-flex;
+  display: inline;
   position: absolute;
   top: 0;
-  right: 15%;
+  right: 0;
 }
 
 /*main content of page*/
@@ -352,7 +347,7 @@ li {
 
 .blue {
   color: #16559D;
-  padding: 2rem;
+  padding: 2rem 0 2rem 0;
 }
 
 /*class turns text to H2 on buttons*/
@@ -473,12 +468,34 @@ li {
   width: 100%;
 }
 
+.connect-button {
+  align-items: center;
+  background-image: url('../assets/buttons/clementinefill.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  height: 15rem;
+  justify-content: center;
+}
+
 /* case study /project page styling */
 
 .case-study-intro {
   background-color: #F1DBD4;
-  padding-top: 20rem;
+  padding: 50% 10% 30% 10%;
   width: 100%;
+}
+
+.case-button {
+  align-items: center;
+  background-image: url('../assets/buttons/clementinefill.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  height: 15rem;
+  justify-content: center;
 }
 
 .challenge {
@@ -490,6 +507,14 @@ li {
 
 .pic {
   width: 100%;
+}
+
+.proto-frame {
+  width: 100%;
+}
+
+.user-photo {
+  display: none;
 }
 
 .title {
@@ -513,8 +538,9 @@ li {
   display:flex;
   flex-direction: column;
   font-family: 'Poppins';
+  font-size: 1.6rem;
   font-weight: 300;
-  line-height: 3rem;
+  line-height: 2.4rem;
 }
 
 /* orange script with line button for readers to view full reports */
@@ -532,6 +558,17 @@ li {
 .ProjectCTA img {
   display: block;
   width: 100%;
+}
+
+.description2 {
+  align-items: flex-start;
+  color: #053B59;
+  display:flex;
+  flex-direction: column;
+  font-family: 'Poppins';
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 2rem;
 }
 
 /* footer */
@@ -565,13 +602,561 @@ address {
     .logomobile {
       display: inline-block;
       font-size: 2rem;
-
     }
+
+    .content-container img {
+      width: 100%;
+    }
+
   }
+
+@media screen and (min-width: 768px) {
+  .page-container {
+    width: 100%;
+  }
+
+  .logodesk {
+    display: none;
+  }
+
+  .logomobile {
+    display: inline-block;
+    font-size: 2rem;
+
+  }
+
+   .bottom-right {
+    color: #16559D;
+    display: flex;
+    font-family: Beth Ellen;
+    font-size: 2.4rem;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+
+  .hero {
+    padding-top: 25%;
+  }
+
+  .orange-button {
+    padding: 5rem;
+    transform: translate(30%, 0);
+  }
+
+  .offerings {
+    background-color: #053B59;
+    height: 100%;
+    padding: 20% 10% 5% 10%;
+  }
+
+  .services-container {
+    width: 100%;
+  }
+
+  .service {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5% 0 5% 0;
+    width: 100%;
+  }
+
+  .webdesign {
+    padding: 10%;
+  }
+
+  .brand {
+    padding: 12%;
+  }
+
+  .ecomm {
+    padding: 15%;
+  }
+
+  .test {
+    padding: 15%;
+  }
+
+  .smallbiz {
+    padding: 17%;
+  }
+
+  /*describes the service*/
+
+  .description {
+    color: #F3F0EB;
+    font-family: 'Poppins';
+    list-style-image: url('../assets/shapes/offwhitedot.svg');
+    list-style-position: inside;
+    width: 50%;
+  }
+
+  .white-button {
+    align-items: flex-end;
+    background-position: center;
+    display: inline-flex;
+    justify-content: flex-end;
+    transform: translate(50%, 0);
+  }
+
+  .howitworks {
+    background-color: #EABBAE;
+    background-image: url('../assets/shapes/largepinkbackground2.svg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-grid;
+    padding: 20% 10% 5% 20%;
+    width: 100%;
+  }
+
+  .redline-button {
+    padding: 5%;
+  }
+
+  .redfill-button {
+    padding: 3% 8% 3% 16%;
+  }
+
+  .recent {
+    background-image: url('../assets/old/threecircles.svg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    width: 100%;
+  }
+
+  .recproj {
+    padding: 5%;
+    text-align: center;
+  }
+
+  .grid-container {
+    display: inline-grid;
+    grid-template-areas:
+    "one two"
+    "three four"
+    "five six";
+  }
+
+
+  .project {
+    background-image: url('../assets/buttons/redpinkcircle.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: none;
+  }
+
+  .one .two .three .four .five .six {
+    padding: 3%;
+    transform: none;
+  }
+
+  /* link to project with red line + text, pink fill, takes to case studies */
+
+  .pinkline {
+    align-items: flex-start;
+    display:flex;
+    justify-content: center;
+  }
+
+  .biopic {
+    width: 75%;
+  }
+
+  .bio {
+    padding: 5% 0 5% 0;
+  }
+
+  .connect-button {
+    padding: 5% 20% 5% 20%;
+  }
+
+  .content-container img {
+    width: 100%;
+  }
+
+  .case-study-intro {
+    background-color: #F3F0EB;
+    background-image: url('../assets/shapes/lightpinkfill.svg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-flex;
+    flex-direction: column;
+    padding: 35% 10% 50% 10%;
+    width: 100%;
+  }
+
+  .case-button {
+    align-self: flex-start;
+    transform: translate(-25%, 0);
+  }
+
+  .proto-frame {
+    float: right;
+    padding: 25%;
+  }
+
+  .challenge {
+    background-color: #F1DBD4;
+    display: inline-block;
+    text-align: left;
+    padding: 25% 10% 30% 20%;
+    width: 100%;
+  }
+
+  .user-photo {
+    display: none;
+  }
+
+  .title {
+    grid-area: title;
+    padding: 1rem 0 1rem 0;
+    font-size: 2.0rem;
+  }
+
+  .roles {
+    align-items: flex-start;
+    color: #16559D;
+    display:flex;
+    flex-direction: column;
+    font-family: 'Poppins';
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.6rem;
+  }
+
+  .description1 {
+    align-items: flex-start;
+    color: #053B59;
+    display:flex;
+    flex-direction: column;
+    font-family: 'Poppins';
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 2.4rem;
+  }
+
+  /* orange script with line button for readers to view full reports */
+
+  .ProjectCTA {
+    color: #DA9255;
+    font-family: 'Beth Ellen';
+    font-size: 2.4rem;
+    grid-area: ProjectCTA;
+    line-height: 3.6rem;
+    padding: 1rem 1rem 1rem 0;
+    position: relative;
+    text-align: left;
+  }
+
+  .ProjectCTA img {
+    display: block;
+    width: 50%;
+  }
+
+  .findings {
+    grid-area: findings;
+  }
+
+  .participants {
+    grid-area: participants;
+  }
+
+  .mostused {
+    grid-area: mostused;
+  }
+
+  .tasks {
+    grid-area: tasks;
+  }
+
+  .research {
+    display: inline-grid;
+    grid-template-areas:
+    "participants findings"
+    "mostused findings"
+    "tasks findings";
+    grid-template-columns: 50% 50%;
+    padding: 25% 10% 15% 20%;
+  }
+
+  .analysis {
+    grid-area: analysis;
+  }
+
+  .competitors {
+    grid-area: competitors;
+  }
+
+  .competitive {
+    display: grid;
+    grid-template-areas:
+    "competitors analysis";
+    grid-template-columns: 50% 50%;
+    padding: 15% 10% 15% 20%;
+  }
+
+  .persona {
+    grid-area: persona;
+  }
+
+  .persona1-frame {
+    grid-area: persona1-frame;
+    padding: 1rem 1rem 0 1rem;
+  }
+
+  .persona2-frame {
+    grid-area: persona2-frame;
+    padding: 1rem 1rem 0 1rem;
+  }
+
+  .personas {
+    align-items: flex-start;
+    background-color: #F1DBD4;
+    display: inline-grid;
+    grid-template-areas:
+    "persona ."
+    "persona1-frame persona2-frame"
+    "persona1-frame persona2-frame"
+    "persona1-frame persona2-frame";
+    grid-template-columns: 50% 50%;
+    justify-content: flex-start;
+    padding: 25% 10% 15% 20%;
+    transform: none;
+  }
+
+  .stories {
+    display: inline-block;
+    padding: 25% 10% 15% 20%;
+  }
+
+  .flows {
+    display: inline-block;
+    padding: 25% 10% 15% 20%;
+  }
+
+  .wires {
+    grid-area: wires;
+    padding: 20% 5% 0% 5%;
+  }
+
+  .wirepic1 {
+    grid-area: wirepic1;
+    padding: 1rem;
+  }
+
+  .wirepic2 {
+    grid-area: wirepic2;
+    padding: 1rem;
+
+  }
+
+  .wirepic3 {
+    display: none;
+  }
+
+  .wirepic4 {
+    grid-area: wirepic4;
+    padding: 1rem;
+  }
+
+  .wirepic5 {
+    grid-area: wirepic5;
+    padding: 1rem;
+  }
+
+  .wirepic6 {
+    grid-area: wirepic6;
+    padding: 1rem;
+  }
+
+  .wireframes {
+    background-color: #F1DBD4;
+    display: grid;
+    grid-template-areas:
+    "wirepic6 wirepic1 wirepic2"
+    "wirepic6 wirepic4 wirepic5"
+    "wires wires wires";
+    grid-template-columns: 36% 30% 30%;
+    padding: 25% 10% 15% 20%;
+  }
+
+  .impressions {
+    grid-area: impressions;
+  }
+
+  .description2 {
+    align-items: flex-start;
+    color: #053B59;
+    display:flex;
+    flex-direction: column;
+    font-family: 'Poppins';
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1rem;
+  }
+
+  .usability {
+    display: inline-grid;
+    grid-gap: 5%;
+    grid-template-areas:
+    "title impressions"
+    "tasks impressions"
+    "tasks impressions"
+    ". ProjectCTA";
+    grid-template-columns: 40% 70%;
+    padding: 25% 10% 10% 20%;
+  }
+
+  .brandpic {
+    padding: 2rem 0 2rem 0;
+  }
+
+  .characteristics{
+    display: inline-block;
+    padding: 25% 10% 10% 20%;
+  }
+
+  .palette {
+    grid-area: palette;
+    padding: 2rem;
+  }
+
+  .colorpic {
+    grid-area: colorpic;
+    padding: 5%;
+  }
+
+  .typo {
+    grid-area: typo;
+    padding: 2rem;
+  }
+
+  .typepic1 {
+    display: none;
+  }
+
+  .typepic2 {
+    grid-area: typepic2;
+    padding: 5%;
+  }
+
+  .colortype {
+    display: grid;
+    grid-template-areas:
+    "colorpic typepic2"
+    "palette typo";
+    grid-template-columns: 50% 50%;
+    padding: 25% 10% 10% 20%;
+  }
+
+  .process {
+    grid-area: process;
+    padding: 2rem;
+  }
+
+  .sketch1 {
+    grid-area: sketch1;
+    width: 100%;
+    padding: 50% 5% 5% 5%;
+  }
+
+  .sketch2 {
+    grid-area: sketch2;
+    width: 100%;
+    padding: 50% 5% 5% 5%;
+  }
+
+  .sketch3 {
+    grid-area: sketch3;
+    width: 100%;
+    padding: 50% 5% 5% 5%;
+  }
+
+  .designprocess {
+    display: grid;
+    grid-template-areas:
+    "sketch1 sketch2 sketch3"
+    "process process .";
+    grid-template-columns: 33% 33% 33%;
+    padding-top: 25%;
+  }
+
+  .hifi {
+    grid-area: hifi;
+  }
+
+  .hifi1pic {
+    grid-area: hifi1pic;
+    height: 100%;
+    padding: 5%;
+  }
+
+  .hifi2pic {
+    display: none;
+  }
+
+  .mockups {
+    display: grid;
+    grid-template-areas:
+    ". . hifi1pic"
+    "hifi . hifi1pic"
+    ". . hifi1pic";
+    grid-template-columns: 30% 5% 65%;
+    padding-top: 25%;
+  }
+
+  .preference {
+    display: inline-grid;
+    grid-gap: 5%;
+    grid-template-areas:
+    "title impressions"
+    "tasks impressions"
+    "tasks impressions"
+    ". ProjectCTA";
+    grid-template-columns: 40% 70%;
+    padding: 25% 10% 10% 20%;
+  }
+
+  .proto {
+    display: none
+  }
+
+  .protovideo {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+
+  .conclusion {
+    grid-area: conclusion;
+    padding: 5%;
+  }
+
+  .end {
+    display: grid;
+    grid-template-areas:
+    ". conclusion"
+    "proto conclusion"
+    ". conclusion";
+    grid-template-columns: 50% 50%;
+    padding-top: 25%;
+  }
+
+
+}
 
 @media screen and (min-width: 1024px) {
   .page-container {
     width: 100%;
+    overflow: hidden;
   }
 
   .content-container {
@@ -609,60 +1194,70 @@ address {
 
   .offerings {
     background-color: #053B59;
-    width: 100%;
-    padding: 20rem;
-    }
+    height: 100%;
+    padding: 20% 5% 10% 20%;
+  }
 
   .services-container {
-      display: inline-grid;
-      grid-template-areas:
-      "webdesign brand"
-      "ecomm test"
-      "smallbiz .";
+    width: 100%;
+  }
+
+  .service {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5%;
+    width: 100%;
   }
 
   .webdesign {
-    background-image: url('../assets/shapes/poolbluefill-d.svg');
+    padding-top: 3%;
   }
 
   .brand {
-    background-image: url('../assets/shapes/clementinefill2-d.svg');
+    padding: 2% 0 10% 20%;
   }
 
   .ecomm {
-    background-image: url('../assets/shapes/terracottafill-d.svg');
+    padding: 7rem;
   }
 
   .test {
-    background-image: url('../assets/shapes/sandfill-d.svg');
-}
+    padding: 2% 10% 10% 20%;
+  }
 
   .smallbiz {
-    background-image: url('../assets/shapes/eraserfill-d.svg');
+    padding: 16%;
   }
 
   /*describes the service*/
 
-  ul.description {
+  .description {
     color: #F3F0EB;
     font-family: 'Poppins';
     list-style-image: url('../assets/shapes/offwhitedot.svg');
-    list-style-position: outside;
+    list-style-position: inside;
+    width: 50%;
   }
 
-  /*bullet points of the description*/
-
-  li {
-    padding: 1rem 0 1rem 0;
+  .white-button {
+    align-items: flex-end;
+    background-position: center;
+    display: inline-flex;
+    justify-content: flex-end;
+    transform: translate(50%, 0);
   }
 
   .howitworks {
     background-color: #EABBAE;
     background-image: url('../assets/shapes/largepinkbackground2.svg');
-    background-size: contain;
+    background-position: top center;
     background-repeat: no-repeat;
-    height: 100%;
-    padding: 20%;
+    background-size: cover;
+    display: inline-grid;
+    padding: 15% 15% 0 25%;
+    width: 100%;
   }
 
   .redline-button {
@@ -674,7 +1269,7 @@ address {
     background-image: url('../assets/old/largewhitebackground.svg');
     background-position: top center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     padding: 25% 25% 0 25%;
     width: 100%;
   }
@@ -694,6 +1289,9 @@ address {
     width: 100%;
   }
 
+  .white {
+    padding-top: 5rem;
+  }
   .recproj {
     padding: 5%;
     text-align: center;
@@ -727,4 +1325,458 @@ address {
     justify-content: center;
   }
 
+  /* about page styling */
+
+  .bio {
+    grid-area: bio;
+    padding: 3%;
+  }
+
+  .biopic {
+    grid-area: biopic;
+    padding: 10%;
+  }
+
+  .about {
+    align-items: flex-start;
+    background-image: url('../assets/shapes/lightpinkfill.svg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-grid;
+    grid-area: blue;
+    grid-template-columns: 10% 20% 20% 60%;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "blue . . ."
+    "bio bio bio biopic";
+    padding: 20% 5% 25% 20%;
+    width: 100%;
+  }
+
+  .connect-button {
+    display: none;
+  }
+
+  .case-study-intro {
+    background-color: #F3F0EB;
+    background-image: url('../assets/shapes/lightpinkfill.svg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-flex;
+    flex-direction: column;
+    padding: 25% 5% 20% 20%;
+    width: 100%;
+  }
+
+  .case-button {
+    align-self: flex-start;
+    transform: translate(-25%, 0);
+  }
+
+  .proto-frame {
+    position: absolute;
+    width: 25%;
+    float: right;
+    transform: translate(50%,-120%);
+  }
+
+  .challenge {
+    background-image: url('../assets/shapes/lightpinkfill3.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 0% 10% 20% 50%;
+    width: 100%;
+  }
+
+  .user-photo {
+    display: inline-flex;
+    transform: translate(-110%, 180%);
+    width: 110%;
+  }
+
+  .pic {
+    width: 100%;
+  }
+
+  .title {
+    grid-area: title;
+    padding: 1rem 0 1rem 0;
+    font-size: 2.0rem;
+  }
+
+  .roles {
+    align-items: flex-start;
+    color: #16559D;
+    display:flex;
+    flex-direction: column;
+    font-family: 'Poppins';
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.6rem;
+  }
+
+  .description1 {
+    align-items: flex-start;
+    color: #053B59;
+    display:flex;
+    flex-direction: column;
+    font-family: 'Poppins';
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 2.4rem;
+  }
+
+  /* orange script with line button for readers to view full reports */
+
+  .ProjectCTA {
+    color: #DA9255;
+    font-family: 'Beth Ellen';
+    font-size: 2.4rem;
+    grid-area: ProjectCTA;
+    line-height: 3.6rem;
+    padding: 1rem 1rem 1rem 0;
+    position: relative;
+    text-align: left;
+  }
+
+  .ProjectCTA img {
+    display: block;
+    width: 50%;
+  }
+
+  .findings {
+    grid-area: findings;
+  }
+
+  .participants {
+    grid-area: participants;
+  }
+
+  .mostused {
+    grid-area: mostused;
+  }
+
+  .tasks {
+    grid-area: tasks;
+  }
+
+  .research {
+    display: inline-grid;
+    grid-template-areas:
+    "participants findings"
+    "mostused findings"
+    "tasks findings";
+    grid-template-columns: 50% 50%;
+    padding: 15% 10% 15% 20%;
+  }
+
+  .analysis {
+    grid-area: analysis;
+  }
+
+  .competitors {
+    grid-area: competitors;
+  }
+
+  .competitive {
+    display: grid;
+    grid-template-areas:
+    "competitors analysis";
+    grid-template-columns: 50% 50%;
+    padding: 15% 10% 15% 20%;
+  }
+
+  .persona {
+    grid-area: persona;
+    padding: 75% 2rem 0 1rem;
+  }
+
+  .persona1-frame {
+    grid-area: persona1-frame;
+    padding: 0 1rem 0 1rem;
+    width: 100%;
+  }
+
+  .persona2-frame {
+    grid-area: persona2-frame;
+    padding: 0 1rem 0 1rem;
+    width: 100%;
+  }
+
+  .personas {
+    background-color: #F1DBD4;
+    display: grid;
+    grid-template-areas:
+    ". persona persona1-frame persona2-frame .";
+    grid-template-columns: 5% 30% 30% 30% 5%;
+    padding: 10% 5% 10% 5%;
+    transform: none;
+  }
+
+  .userstory {
+    grid-area: userstory;
+    padding: 5rem 0 0 2rem;
+  }
+
+  .stories-pic {
+    grid-area: stories-pic;
+    width: 100%;
+  }
+
+  .stories {
+    display: grid;
+    grid-template-areas:
+    ". stories-pic userstory .";
+    grid-template-columns: 0 70% 30% 0;
+    padding-top: 25%;
+  }
+
+  .userflows {
+    grid-area: userflows;
+    padding: 5rem 2rem 0 0;
+  }
+
+  .flowpics {
+    grid-area: flowpics;
+  }
+
+  .flows {
+    display: grid;
+    grid-template-areas:
+    ". userflows flowpics";
+    grid-template-columns: 0 40% 60%;
+    padding-top: 25%;
+  }
+
+  .wires {
+    grid-area: wires;
+    padding: 20% 5% 0% 5%;
+  }
+
+  .wirepic1 {
+    grid-area: wirepic1;
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .wirepic2 {
+    grid-area: wirepic2;
+    padding: 1rem;
+    width: 100%;
+
+  }
+
+  .wirepic3 {
+    display: none;
+  }
+
+  .wirepic4 {
+    grid-area: wirepic4;
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .wirepic5 {
+    grid-area: wirepic5;
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .wirepic6 {
+    grid-area: wirepic6;
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .wireframes {
+    background-color: #F1DBD4;
+    display: grid;
+    grid-template-areas:
+    "wirepic6 wirepic1 wirepic2 wires"
+    "wirepic6 wirepic4 wirepic5 wires";
+    grid-template-columns: 30% 25% 25% 20%;
+    padding: 25% 5% 5% 5%;
+  }
+
+  .impressions {
+    grid-area: impressions;
+  }
+
+  .description2 {
+    align-items: flex-start;
+    color: #053B59;
+    display:flex;
+    flex-direction: column;
+    font-family: 'Poppins';
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1rem;
+  }
+
+  .usability {
+    display: inline-grid;
+    grid-template-areas:
+    "title title . impressions"
+    "tasks . . impressions"
+    "tasks . . impressions"
+    "ProjectCTA ProjectCTA ProjectCTA .";
+    grid-template-columns: 50% 5% 5% 70%;
+    padding: 25% 10% 10% 20%;
+  }
+
+  .branding {
+    grid-area: branding;
+    padding: 3rem 0 0 1rem;
+  }
+
+  .brandpic {
+    grid-area: brandpic;
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .characteristics{
+    display: grid;
+    grid-template-areas:
+    ". brandpic branding .";
+    grid-template-columns: 0 65% 35% 0;
+    padding-top: 25%;
+  }
+
+  .palette {
+    grid-area: palette;
+    padding: 2rem;
+  }
+
+  .colorpic {
+    grid-area: colorpic;
+    padding: 50% 5% 0 5%;
+    width: 100%;
+  }
+
+  .typo {
+    grid-area: typo;
+    padding: 2rem;
+  }
+
+  .typepic1 {
+    grid-area: typepic1;
+    width: 100%;
+    padding: 5%;
+  }
+
+  .typepic2 {
+    grid-area: typepic2;
+    width: 100%;
+    padding: 5%;
+  }
+
+  .colortype {
+    display: grid;
+    grid-template-areas:
+    "palette colorpic typepic1"
+    "typo colorpic typepic2"
+    "typo . .";
+    grid-template-columns: 40% 30% 30%;
+    padding-top: 25%;
+  }
+
+  .process {
+    grid-area: process;
+    padding: 2rem;
+  }
+
+  .sketch1 {
+    grid-area: sketch1;
+    width: 100%;
+    padding: 50% 5% 5% 5%;
+  }
+
+  .sketch2 {
+    grid-area: sketch2;
+    width: 100%;
+    padding: 50% 5% 5% 5%;
+  }
+
+  .sketch3 {
+    grid-area: sketch3;
+    width: 100%;
+    padding: 50% 5% 5% 5%;
+  }
+
+  .designprocess {
+    display: grid;
+    grid-template-areas:
+    "sketch1 sketch2 sketch3 process";
+    grid-template-columns: 20% 20% 20% 40%;
+    padding-top: 25%;
+  }
+
+  .hifi {
+    grid-area: hifi;
+  }
+
+  .hifi1pic {
+    grid-area: hifi1pic;
+    height: 100%;
+    padding: 5%;
+  }
+
+  .hifi2pic {
+    display: none;
+  }
+
+  .mockups {
+    display: grid;
+    grid-template-areas:
+    ". . hifi1pic"
+    "hifi . hifi1pic"
+    ". . hifi1pic";
+    grid-template-columns: 30% 5% 65%;
+    padding-top: 25%;
+  }
+
+  .preference {
+  display: inline-grid;
+  grid-template-areas:
+  "title title . impressions"
+  "tasks . . impressions"
+  "tasks . . impressions"
+  "ProjectCTA ProjectCTA ProjectCTA .";
+  grid-template-columns: 50% 5% 5% 70%;
+  padding: 25% 10% 10% 20%;
+  }
+
+  .proto {
+    display: none
+  }
+
+  .protovideo {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+
+  .conclusion {
+    grid-area: conclusion;
+    padding: 5%;
+  }
+
+  .end {
+    display: grid;
+    grid-template-areas:
+    ". conclusion"
+    "proto conclusion"
+    ". conclusion";
+    grid-template-columns: 50% 50%;
+    padding-top: 25%;
+  }
 }
