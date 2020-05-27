@@ -24,43 +24,44 @@
                <img src="assets/header/colorlogo.svg" alt="julia owens logo" style="width:15rem;">
              </a>
          </div>
-         <div class="bottom-links">
-           <a class="bottom-right" href="mailto:juliasowens@gmail.com">get in touch</a>
-           <a class="bottom-left" href="https://www.facebook.com/juliasowens">FB</a> <a href="https://www.instagram.com/juliasowens">IG</a>  <a href="https://www.linkedin.com/juliasowens">LI</a> <a href="https://www.github.com/juliasowens">GH</a>
-         </div>
          <!-- Navigation links (hidden by default) -->
-         <div class="menu-container">
-           <div id="myLinks">
-             <a class="menu-opt" href="index.html#footer">Get in Touch</a>
-             <a class="menu-opt" href="index.html#offerings">What I Offer</a>
-             <a class="menu-opt" href="index.html#howitworks">How it Works</a>
-             <a class="menu-opt" href="index.html#testimonials">Testimonials</a>
-             <a class="menu-opt" href="about.html">About</a>
-             <a class="menu-opt" href="index.html#recent">Recent Projects</a>
-             <a class="menu-opt" href="sideprojects.html">Side Projects</a>
-             <a class="menu-opt" href="writing.html">Writing</a>
-           </div>
+         <div id="menu-container" class="overlay">
+            <!-- Button to close the overlay navigation -->
+            <div class="myLinks">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+              <a class="menu-opt" href="index.html#footer">Get in Touch</a>
+              <a class="menu-opt" href="index.html#offerings">What I Offer</a>
+              <a class="menu-opt" href="index.html#howitworks">How it Works</a>
+              <a class="menu-opt" href="index.html#testimonials">Testimonials</a>
+              <a class="menu-opt" href="about.html">About</a>
+              <a class="menu-opt" href="index.html#recent">Recent Projects</a>
+              <a class="menu-opt" href="sideprojects.html">Side Projects</a>
+              <a class="menu-opt" href="writing.html">Writing</a>
+            </div>
+          </div>
  <!-- "Hamburger menu" / "hamburger" to toggle the navigation links -->
-           <a href="javascript:void(0);" class="hamburger" onclick="myFunction()">
-             <img class= 'hamburger' src="assets/header/hamburger.svg" alt="menu icon">
-           </a>
-         </div>
+          <span onclick="openNav()" class="hamburger">
+             <img class='hamburger' src="assets/header/hamburger.svg" alt="menu icon">
+          </span>
        </nav>
      </header>
       <main>
         <div class="content-container">
             <!--hero unit-->
             <section class="case-study-intro">
+              <div class="intro">
                <h5 class="title">CASE STUDY</h5>
                <h1>Draft Slam</h1>
                <h6>a cloud-based app for creative writers</h6>
-               <div class= "case-button" id="case-button">
+             </div>
+             <img class="proto-frame1" src="assets/draft_slam/phoneframesolution.png" alt="draft slam mobile">
+             <div class= "case-button" id="case-button">
                     <button>View Prototype</button>
-               </div>
+             </div>
             </section>
             <!--other sections below-->
             <section class="challenge">
-               <img class="proto-frame" src="assets/draft_slam/phoneframesolution.png" alt="draft slam mobile">
+               <img class="proto-frame2" src="assets/draft_slam/phoneframesolution.png" alt="draft slam mobile">
                <img class="user-photo" src="assets/draft_slam/userphoto.png" alt="draft slam users">
                <h5 class="title">CHALLENGE</h5>
                <h6>There aren’t many cloud-based storage apps designed specifically for the needs of creative writers and professionals.</h6>
@@ -302,49 +303,54 @@
             <!--prototype-->
             <section class="end">
               <div class="proto">
-               <h5 class="title">PROTOTYPES</h3>
-              </div>
-              <div class="protovideo">
-               <video>
-                  <mov src="assets/draft_slam/mobileprototype.mov" type="video/mov">
-               </video>
-               <video>
-                  <mov src="assets/draft_slam/desktopprototypevideo.mov" type="video/mov">
-               </video>
-               <img class="frame" src="assets/shapes/phoneframe.svg" alt="phone">
+                 <div class="protovideomobile">
+                   <video width= "100%" controls>
+                     <source src="assets/draft_slam/mobileprototype.mp4" type="video/mp4">
+                   </video>
+                   <img class="phoneframe" src="assets/shapes/phoneframe.svg">
+                </div>
               </div>
             <!--conclusion-->
               <div class="conclusion">
-                <h5 class="title">CONCLUSION</h5>
-                <p>Sticking with simplicity worked well for this project. Some of the biggest design flaws were restricting the user’s ability to customize their dashboard, vague content, and vague prototypes. </p>
-                <p>The biggest insight I gained from this project was how to write surveys for the problem and to avoid scope creep.</p>
-                <div class= "case-button" id="case-button">
-                     <button>View Prototype</button>
-                </div>
+                 <h5 class="title">CONCLUSION</h5>
+                 <p>Sticking with simplicity worked well for this project. Some of the biggest design flaws were restricting the user’s ability to customize their dashboard, vague content, and vague prototypes. </p>
+                 <p>The biggest insight I gained from this project was how to write surveys for the problem and to avoid scope creep.</p>
+                 <button class="ProjectCTA">
+                    view desktop prototype
+                    <img src="assets/buttons/orangeline.svg" alt="line">
+                 </button>
               </div>
+             </div>
             </section>
          </div>
       </main>
       <!--footer-->
       <footer>
-         <h3 class='white'>Get in Touch</h3>
-         <address>
+        <div class="desk-links">
+          <ul class="bottom-left">
+              <li><a href="https://www.facebook.com/juliasowens">FB</a></li>
+              <li><a href="https://www.instagram.com/juliasowens">IG</a></li>
+              <li><a href="https://www.linkedin.com/juliasowens">LI</a></li>
+              <li><a href="https://www.github.com/juliasowens">GH</a></li>
+          </ul>
+          <a class="bottom-right" href="mailto:juliasowens@gmail.com">get in touch</a>
+        </div>
+        <h3 class='white'>Get in Touch</h3>
+        <address>
             <a href="tel:+3214386879">call</a><br>
             <a href="mailto:juliasowens@gmail.com">email</a><br>
             <a href="https://www.facebook.com/juliasowens">FB</a> <a href="https://www.instagram.com/juliasowens">IG</a>  <a href="https://www.linkedin.com/juliasowens">LI</a> <a href="https://www.github.com/juliasowens">GH</a><br>
             <a href="https://docs.google.com/document/d/1NyvRas69ttA2l3UneFhfoW3CUNSEx1al49fTAunO5wc/edit?usp=sharing">download my CV</a><br>
-         </address>
-         Julia Owens © 2020
+        </address>
+        Julia Owens © 2020
       </footer>
       <script>
-      function myFunction() {
-        var x = document.getElementById("myLinks");
-        if (x.style.display === "block") {
-          x.style.display = "none";
-        } else {
-          x.style.display = "block";
-        }
-      }
+        function openNav() {
+            document.getElementById("menu-container").style.width = "100%";
+          }
+        function closeNav() {
+            document.getElementById("menu-container").style.width = "0%";
+          }
       </script>
    </body>
 </html>

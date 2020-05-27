@@ -25,21 +25,24 @@
              </a>
          </div>
          <!-- Navigation links (hidden by default) -->
-         <div class="menu-container">
-           <div id="myLinks">
-             <a class="menu-opt" href="index.html#footer">Get in Touch</a>
-             <a class="menu-opt" href="index.html#offerings">What I Offer</a>
-             <a class="menu-opt" href="index.html#howitworks">How it Works</a>
-             <a class="menu-opt" href="index.html#testimonials">Testimonials</a>
-             <a class="menu-opt" href="about.html">About</a>
-             <a class="menu-opt" href="index.html#recent">Recent Projects</a>
-             <a class="menu-opt" href="sideprojects.html">Side Projects</a>
-             <a class="menu-opt" href="writing.html">Writing</a>
-           </div>
+         <div id="menu-container" class="overlay">
+            <!-- Button to close the overlay navigation -->
+            <div class="myLinks">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+              <a class="menu-opt" href="index.html#footer">Get in Touch</a>
+              <a class="menu-opt" href="index.html#offerings">What I Offer</a>
+              <a class="menu-opt" href="index.html#howitworks">How it Works</a>
+              <a class="menu-opt" href="index.html#testimonials">Testimonials</a>
+              <a class="menu-opt" href="about.html">About</a>
+              <a class="menu-opt" href="index.html#recent">Recent Projects</a>
+              <a class="menu-opt" href="sideprojects.html">Side Projects</a>
+              <a class="menu-opt" href="writing.html">Writing</a>
+            </div>
+          </div>
  <!-- "Hamburger menu" / "hamburger" to toggle the navigation links -->
-           <a href="javascript:void(0);" class="hamburger" onclick="myFunction()">
-             <img class= 'hamburger' src="assets/header/hamburger.svg" alt="menu icon">
-           </a>
+          <span onclick="openNav()" class="hamburger">
+             <img class='hamburger' src="assets/header/hamburger.svg" alt="menu icon">
+          </span>
          </div>
        </nav>
      </header>
@@ -62,6 +65,15 @@
          <!--footer-->
       </main>
       <footer>
+        <div class="desk-links">
+          <ul class="bottom-left">
+              <li><a href="https://www.facebook.com/juliasowens">FB</a></li>
+              <li><a href="https://www.instagram.com/juliasowens">IG</a></li>
+              <li><a href="https://www.linkedin.com/juliasowens">LI</a></li>
+              <li><a href="https://www.github.com/juliasowens">GH</a></li>
+          </ul>
+          <a class="bottom-right" href="index.html#footer">get in touch</a>
+        </div>
          <h3 class='white'>Get in Touch</h3>
          <address>
             <a href="tel:+3214386879">call</a><br>
@@ -72,14 +84,12 @@
          Julia Owens © 2020
       </footer>
       <script>
-      function myFunction() {
-        var x = document.getElementById("myLinks");
-        if (x.style.display === "block") {
-          x.style.display = "none";
-        } else {
-          x.style.display = "block";
-        }
-      }
+        function openNav() {
+            document.getElementById("menu-container").style.width = "100%";
+          }
+        function closeNav() {
+            document.getElementById("menu-container").style.width = "0%";
+          }
       </script>
    </body>
 </html>
