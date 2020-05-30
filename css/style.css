@@ -8,7 +8,12 @@ html {
 
 body {
   background-color: #F3F0EB;
+  margin: 0;
   width: 100%;
+}
+
+section {
+  padding: 10%;
 }
 
 /*TYPOGRAPHY*/
@@ -194,10 +199,6 @@ button {
   text-decoration: none;
 }
 
-section {
-  padding: 10%;
-}
-
 /*sections of page*/
 
 /*intro*/
@@ -220,8 +221,8 @@ section {
   background-repeat: no-repeat;
   background-size: contain;
   display: flex;
-  height: 15rem;
   justify-content: center;
+  width: 100%;
 }
 
 /*menu of 5 offerings, what I can do*/
@@ -318,7 +319,7 @@ li {
 /*testimonial section*/
 
 .testimonials {
-  padding-top: 20rem;
+  padding-top: 20%;
   width: 100%;
 }
 
@@ -335,6 +336,7 @@ li {
   font-family: 'Beth Ellen';
   font-size: 3.2rem;
   line-height: 4rem;
+  margin:auto;
 }
 
 /*button with red background, white fancy text*/
@@ -347,7 +349,6 @@ li {
   background-size: contain;
   display: flex;
   justify-content: center;
-  padding: 0 5rem 0 5rem;
 }
 
 /*recent projects section*/
@@ -379,7 +380,7 @@ li {
 }
 
 .recproj {
-  padding: 25% 0 25% 0;
+  padding: 20% 0 20% 0;
 }
 
 .project {
@@ -397,7 +398,7 @@ li {
 
 .two {
   padding: 4rem;
-  transform: translate(3%, 10%);
+  transform: translate(2%, 10%);
 
 }
 
@@ -421,7 +422,7 @@ li {
 
 .six {
   padding: 4rem;
-  transform: translate(3%, 10%);
+  transform: translate(2%, 10%);
 
 }
 
@@ -648,9 +649,12 @@ address {
     padding-top: 25%;
   }
 
+  .hero-container {
+    width: 60%;
+  }
+
   .orange-button {
-    padding: 5rem;
-    transform: translate(30%, 0);
+    width: 60%;
   }
 
   .offerings {
@@ -709,8 +713,8 @@ address {
   }
 
   .redfill-button {
-    padding: 3% 8% 3% 12%;
-    transform: translate(30%, -50%);
+    max-width: 50%;
+    transform: translate(100%, -50%);
   }
 
   .recent {
@@ -1226,7 +1230,6 @@ address {
     margin: 0;
     position: fixed;
     width: 100%;
-
   }
 
   .overlay {
@@ -1272,6 +1275,7 @@ address {
     background-position: top left;
     background-repeat: no-repeat;
     background-size: contain;
+    max-width: 1024px;
     padding: 25rem 20rem 10rem 10rem;
   }
 
@@ -1287,6 +1291,7 @@ address {
   }
 
   .services-container {
+    max-width: 1024px;
     width: 100%;
   }
 
@@ -1309,6 +1314,11 @@ address {
     width: 100%;
   }
 
+  .step {
+    margin: auto;
+    max-width: 65%;
+  }
+
   .redline-button {
     padding: 3rem;
   }
@@ -1319,12 +1329,20 @@ address {
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
+    max-width: 100%;
     padding: 25% 25% 0 25%;
     width: 100%;
   }
 
+  .blue {
+    grid-area: about;
+    max-width: 90%;
+  }
+
   .redfill-button {
+    max-width: 65%;
     padding: 5%;
+    transform: translate(50%, -30%);
   }
 
   /*recent projects section*/
@@ -1379,12 +1397,12 @@ address {
 
   .bio {
     grid-area: bio;
-    padding: 3%;
+    padding: 0;
   }
 
   .biopic {
     grid-area: biopic;
-    padding: 10%;
+    padding: 5%;
   }
 
   .about {
@@ -1395,12 +1413,13 @@ address {
     background-size: cover;
     display: inline-grid;
     grid-area: blue;
-    grid-template-columns: 10% 20% 20% 60%;
+    grid-template-columns: 20% 40% 40%;
     grid-template-rows: 1fr;
     grid-template-areas:
-    "blue . . ."
-    "bio bio bio biopic";
-    padding: 20% 5% 25% 20%;
+    ". about ."
+    ". bio biopic";
+    max-width: 100%;
+    padding: 20% 5% 20% 5%;
     width: 100%;
   }
 
@@ -1778,6 +1797,7 @@ address {
 
   .hifi {
     grid-area: hifi;
+    padding: 5%;
   }
 
   .hifi1pic {
@@ -1796,18 +1816,17 @@ address {
     ". hifi1pic"
     "hifi hifi1pic"
     ". hifi1pic";
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 50% 50%;
     padding: 20% 5% 5% 5%;
   }
 
   .preference {
   display: inline-grid;
   grid-template-areas:
-  "title title impressions"
-  "tasks . impressions"
-  "tasks . impressions"
-  "ProjectCTA ProjectCTA .";
-  grid-template-columns: 50% 5% 70%;
+  "title impressions"
+  "tasks impressions"
+  "ProjectCTA impressions";
+  grid-template-columns: 50% 50%;
   padding: 20% 10% 10% 20%;
   }
 
@@ -1829,12 +1848,11 @@ address {
   .phoneframe {
     position: absolute;
     z-index: -1;
-
   }
 
   .conclusion {
     grid-area: conclusion;
-    padding: 10%;
+    padding: 5%;
   }
 
   .end {
@@ -1843,8 +1861,8 @@ address {
     "proto ."
     "proto conclusion"
     "proto .";
-    grid-template-columns: 35% 60%;
-    padding: 20% 10% 20% 20%;
+    grid-template-columns: 50% 50%;
+    padding: 20% 10% 15% 20%;
   }
 
 
