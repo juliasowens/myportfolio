@@ -12,7 +12,7 @@
       <!--navigation with logo and hamburger menu-->
     <div class="page-container">
       <header>
-        <nav class="nav-container">
+        <div class= "nav-container" id="nav-container">
           <div class="logomobile">
             <a href="index.html">
               <img src="assets/header/ColorHead.svg" alt="julia owens logo" style="width:6rem;">
@@ -43,19 +43,21 @@
            <span onclick="openNav()" class="hamburger">
               <img class='hamburger' src="assets/header/hamburger.svg" alt="menu icon">
            </span>
-        </nav>
+        </div>
       </header>
       <main>
          <div class="content-container">
             <!--hero unit-->
             <section class="hero">
               <div class="hero-container">
-                  <h1>design done in a day or less!</h1>
-                  <p>Does working on your website feel like your calculus teacher assigned you an art project that's due tomorrow?</p>
-                  <p>I'm here to help you ace that assignment because I love art projects. </p>
-                  <p>I’m a Philadelphia-based brand consultant, web designer, and community artist. I collaborate with clients in half-day and day-long increments. Book me to help you with web design, branding, or small business consulting.</p>
-                  <div class= "orange-button">
-                      <button>HOW it WORKS</button>
+                  <h1>let's get your design done in a day or less!</h1>
+                  <div class="paragraph">
+                    <p>Does working on your website feel like your calculus teacher assigned you an art project that's due tomorrow?</p>
+                    <p>I'm here to help you ace that assignment because I love art projects. </p>
+                    <p>I’m a Philadelphia-based brand consultant, web designer, and community artist. I collaborate with clients in half-day and day-long increments. Book me to help you with web design, branding, or small business consulting.</p>
+                    <div class= "orange-button">
+                        <button>HOW it WORKS</button>
+                    </div>
                   </div>
              </div>
             </section>
@@ -197,16 +199,26 @@
           </ul>
           <a class="bottom-right" href="mailto:juliasowens@gmail.com">get in touch</a>
         </div>
-         <h3 class='white'>Get in Touch</h3>
+         <h4 class='white'>Get in Touch</h4>
          <address>
             <a href="tel:+3214386879">call</a><br>
             <a href="mailto:juliasowens@gmail.com">email</a><br>
             <a href="https://www.facebook.com/juliasowens">FB</a> <a href="https://www.instagram.com/juliasowens">IG</a>  <a href="https://www.linkedin.com/juliasowens">LI</a> <a href="https://www.github.com/juliasowens">GH</a><br>
             <a href="https://docs.google.com/document/d/1NyvRas69ttA2l3UneFhfoW3CUNSEx1al49fTAunO5wc/edit?usp=sharing">download my CV</a><br>
          </address>
-         Julia Owens © 2020
+         <p class="white">Julia Owens © 2020</p>
       </footer>
       <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+              document.getElementById("nav-container").style.top = "0";
+            } else {
+              document.getElementById("nav-container").style.top = "-25rem";
+            }
+            prevScrollpos = currentScrollPos;
+          }
         function openNav() {
             document.getElementById("menu-container").style.width = "100%";
           }

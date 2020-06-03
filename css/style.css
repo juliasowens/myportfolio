@@ -101,23 +101,18 @@ h6 {
 
 }
 
-/*header +nav */
+/*header +nav */ /*Style Navigation Menu */
 
-header {
-  background: none;
+.nav-container{
   margin: 0;
   padding: 2rem;
   position: fixed;
+  top: 0;
+  transition: top 0.3s;
   width: 100%;
   z-index: 1;
 }
 
-/*Style Navigation Menu */
-
-.nav-container {
-  position: relative;
-  width: 100%;
-}
 
 .overlay {
   background-image: url('../assets/old/inkfill.svg');
@@ -172,9 +167,10 @@ header {
 /* Style the hamburger menu */
 .hamburger {
   display: inline;
+  padding: 10%;
   position: absolute;
-  top: 0;
   right: 0;
+  top: 0;
 }
 
 /*main content of page*/
@@ -210,6 +206,10 @@ button {
   background-size: cover;
   padding-top: 50%;
   width: 100%;
+}
+
+.paragraph {
+  padding: 5% 0 0 0;
 }
 
 /*button with orange fill background and white text, also used on about and project pages*/
@@ -392,25 +392,25 @@ li {
 
 .one {
   padding: 3rem;
-  transform: translate(-25%, 10%);
+  transform: translate(-15%, 10%);
 
 }
 
 .two {
-  padding: 4rem;
-  transform: translate(2%, 10%);
+  padding: 3rem;
+  transform: translate(0, 10%);
 
 }
 
 .three {
   padding: 4rem;
-  transform: translate(-25%, 10%);
+  transform: translate(-15%, 10%);
 
 }
 
 .four {
-  padding: 4rem;
-  transform: translate(-5%, 10%);
+  padding: 3rem;
+  transform: translate(0, 10%);
 
 }
 
@@ -421,8 +421,8 @@ li {
 }
 
 .six {
-  padding: 4rem;
-  transform: translate(2%, 10%);
+  padding: 3rem;
+  transform: translate(0, 10%);
 
 }
 
@@ -583,7 +583,7 @@ footer {
   font-family: 'Poppins';
   font-size: 2rem;
   line-height: 3.6rem;
-  padding: 4rem;
+  padding: 3rem;
 }
 
 address {
@@ -593,7 +593,7 @@ address {
 
 /* media queries */
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 320px) {
     .page-container {
       width: 100%;
     }
@@ -634,27 +634,44 @@ address {
   }
 
   .overlay {
-    background: none;
+    background-image: url('../assets/old/inkfill.svg');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    position: fixed; /* Stay in place */
+    right: 0;
+    top: 0;
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+    width: 0;
+    z-index: 1; /* Sit on top */
+  }
+
+  .overlay .closebtn {
+    position: absolute;
+    right: 0;
+    top: 20rem;
   }
 
   /* Style navigation menu links */
   .myLinks a {
-    color: #16559D;
-    font-size: 1.8rem;
+    font-size: 2.4rem;
     line-height: 2rem;
     padding: 2rem;
+    transform: translate(-15%,0);
   }
 
   .hero {
-    padding-top: 25%;
+    padding-top: 20%;
   }
 
   .hero-container {
-    width: 60%;
+    width: 70%;
   }
 
   .orange-button {
-    width: 60%;
+    width: 75%;
   }
 
   .offerings {
@@ -1232,57 +1249,30 @@ address {
     width: 100%;
   }
 
-  .overlay {
-    background: none;
-    position: fixed; /* Stay in place */
-    right: 0;
-    top: 0;
-    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
-    width: 0;
-    z-index: 1; /* Sit on top */
-  }
-
-  /* Hide the links inside the navigation menu (except for logo/home) */
-
-  .myLinks{
-    top: 15%;
-    position: relative;
-    width: 100%; /* 100% width */
-    text-align: right; /* Centered text/links */
-  }
-
-  /* Style navigation menu links */
-  .myLinks a {
-    color: #16559D;
-    display: block;
-    font-family: 'Walter Turncoat';
-    font-size: 2rem;
-    line-height: 2rem;
-    padding: 2rem;
-    text-decoration: none;
-    transition: 0.3s;
-  }
-
-  .overlay .closebtn {
-    position: absolute;
-    right: 0;
-    top: -4rem;
-
-  }
-
   .hero {
     background-image: url('../assets/shapes/lightpinkfill.svg');
     background-position: top left;
     background-repeat: no-repeat;
-    background-size: contain;
-    max-width: 1024px;
-    padding: 25rem 20rem 10rem 10rem;
+    background-size: cover;
+    max-width: 1600px;
+    padding: 25% 10% 5% 10%;
   }
 
-  .orange-button {
-    padding: 10rem;
-    transform: translate(50%, 10%);
+  .hero-container {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
   }
+
+  .paragraph {
+    flex-direction: column;
+    padding: 0 5% 0 5%;
+    max-width: 50%;
+    width: 100%;
+  }
+
 
   .offerings {
     background-color: #053B59;
@@ -1864,6 +1854,5 @@ address {
     grid-template-columns: 50% 50%;
     padding: 20% 10% 15% 20%;
   }
-
 
 }

@@ -12,7 +12,7 @@
      <!--navigation with logo and hamburger menu-->
    <div class="page-container">
      <header>
-       <nav class="nav-container">
+        <div class= "nav-container" id="nav-container">
          <div class="logomobile">
            <a href="index.html">
              <img src="assets/header/ColorHead.svg" alt="julia owens logo" style="width:6rem;">
@@ -44,7 +44,7 @@
              <img class='hamburger' src="assets/header/hamburger.svg" alt="menu icon">
           </span>
          </div>
-       </nav>
+       </div>
      </header>
       <main>
          <div class="content-container">
@@ -74,16 +74,26 @@
           </ul>
           <a class="bottom-right" href="index.html#footer">get in touch</a>
         </div>
-         <h3 class='white'>Get in Touch</h3>
-         <address>
-            <a href="tel:+3214386879">call</a><br>
-            <a href="mailto:juliasowens@gmail.com">email</a><br>
-            <a href="https://www.facebook.com/juliasowens">FB</a> <a href="https://www.instagram.com/juliasowens">IG</a>  <a href="https://www.linkedin.com/juliasowens">LI</a> <a href="https://www.github.com/juliasowens">GH</a><br>
-            <a href="https://docs.google.com/document/d/1NyvRas69ttA2l3UneFhfoW3CUNSEx1al49fTAunO5wc/edit?usp=sharing">download my CV</a><br>
-         </address>
-         Julia Owens © 2020
+        <h4 class='white'>Get in Touch</h4>
+        <address>
+           <a href="tel:+3214386879">call</a><br>
+           <a href="mailto:juliasowens@gmail.com">email</a><br>
+           <a href="https://www.facebook.com/juliasowens">FB</a> <a href="https://www.instagram.com/juliasowens">IG</a>  <a href="https://www.linkedin.com/juliasowens">LI</a> <a href="https://www.github.com/juliasowens">GH</a><br>
+           <a href="https://docs.google.com/document/d/1NyvRas69ttA2l3UneFhfoW3CUNSEx1al49fTAunO5wc/edit?usp=sharing">download my CV</a><br>
+        </address>
+        <p class="white">Julia Owens © 2020</p>
       </footer>
       <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+          if (prevScrollpos > currentScrollPos) {
+            document.getElementById("nav-container").style.top = "0";
+          } else {
+            document.getElementById("nav-container").style.top = "-25rem";
+          }
+          prevScrollpos = currentScrollPos;
+        }
         function openNav() {
             document.getElementById("menu-container").style.width = "100%";
           }
