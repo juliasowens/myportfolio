@@ -33,7 +33,7 @@ a:visited {
 /* mouse over link */
 a:hover {
   color: #F3F0EB;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 p {
