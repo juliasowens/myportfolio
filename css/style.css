@@ -223,6 +223,7 @@ h6 {
   display: flex;
   justify-content: center;
   padding: 20%;
+  text-decoration: none;
   width: 100%;
 }
 
@@ -243,6 +244,7 @@ h6 {
 
 .white a {
   color: #F3F0EB;
+  text-decoration: none;
 }
 
 .service {
@@ -289,6 +291,7 @@ li {
   display: flex;
   justify-content: center;
   padding: 25%;
+  text-decoration: none;
   width: 100%;
 }
 
@@ -314,6 +317,7 @@ li {
   background-size: contain;
   display: flex;
   justify-content: center;
+  text-decoration: none;
   width: 100%;
 }
 
@@ -321,6 +325,7 @@ li {
     color: #C06D5B;
     padding: 30%;
     text-align: center;
+    text-decoration: none;
 }
 
 /*testimonial section*/
@@ -339,6 +344,7 @@ li {
 
 .blue a {
   color: #16559D;
+  text-decoration: underline;
 }
 
 /*class turns text to H2 on buttons*/
@@ -361,6 +367,7 @@ li {
   display: flex;
   justify-content: center;
   padding: 30%;
+  text-decoration: none;
 }
 
 /*recent projects section*/
@@ -458,17 +465,6 @@ li {
 
 .biopic {
   width: 100%;
-}
-
-.connect-button {
-  align-items: center;
-  background-image: url('../assets/buttons/clementinefill.svg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  display: flex;
-  height: 15rem;
-  justify-content: center;
 }
 
 /* case study /project page styling */
