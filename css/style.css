@@ -20,7 +20,7 @@ section {
 
 /* unvisited link */
 a:link {
-  color: #EABBAE;
+  color: #F3F0EB;
   text-decoration: none;
 }
 
@@ -32,7 +32,7 @@ a:visited {
 
 /* mouse over link */
 a:hover {
-  color: #DA9255;
+  color: #F3F0EB;
   text-decoration: underline;
 }
 
@@ -182,7 +182,7 @@ h6 {
 
 /*all buttons follow this code*/
 
-button {
+.button {
   background: none;
   border: none;
   color: #F3F0EB;
@@ -190,8 +190,8 @@ button {
   font-family: 'Walter Turncoat';
   font-size: 2.4rem;
   line-height: 3.6rem;
-  padding: 12rem;
-  text-align: left;
+  padding: 5%;
+  text-align: center;
   text-decoration: none;
 }
 
@@ -222,6 +222,7 @@ button {
   background-size: contain;
   display: flex;
   justify-content: center;
+  padding: 20%;
   width: 100%;
 }
 
@@ -238,6 +239,10 @@ button {
 .white {
   color: #F3F0EB;
   line-height: 4rem;
+}
+
+.white a {
+  color: #F3F0EB;
 }
 
 .service {
@@ -283,7 +288,8 @@ li {
   background-size: contain;
   display: flex;
   justify-content: center;
-  padding: 1rem;
+  padding: 25%;
+  width: 100%;
 }
 
 /*step-by-step outline of the process*/
@@ -308,18 +314,19 @@ li {
   background-size: contain;
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
-/*class turns text red*/
-
-.red {
+.red a {
     color: #C06D5B;
+    padding: 30%;
+    text-align: center;
 }
 
 /*testimonial section*/
 
 .testimonials {
-  padding-top: 20%;
+  padding: 20% 10% 0 10%;
   width: 100%;
 }
 
@@ -328,6 +335,10 @@ li {
 .blue {
   color: #16559D;
   padding: 2rem 0 2rem 0;
+}
+
+.blue a {
+  color: #16559D;
 }
 
 /*class turns text to H2 on buttons*/
@@ -349,6 +360,7 @@ li {
   background-size: contain;
   display: flex;
   justify-content: center;
+  padding: 30%;
 }
 
 /*recent projects section*/
@@ -471,16 +483,6 @@ li {
   display: none;
 }
 
-.case-button {
-  align-items: center;
-  background-image: url('../assets/buttons/clementinefill.svg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  display: flex;
-  height: 15rem;
-  justify-content: center;
-}
 
 .challenge {
   display: flex;
@@ -530,14 +532,19 @@ li {
   font-family: 'Beth Ellen';
   font-size: 2rem;
   line-height: 3.6rem;
-  padding: 2rem 2rem 2rem 0;
+  padding: 5% 0 20% 0;
   position: relative;
   text-align: left;
 }
 
-.ProjectCTA img {
-  display: block;
-  width: 100%;
+.ProjectCTA a {
+  color: #DA9255;
+  text-decoration: none;
+  background-image: url('../assets/buttons/orangeline.svg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  padding: 2%;
 }
 
 .description2 {
@@ -670,6 +677,10 @@ address {
     width: 70%;
   }
 
+  .button {
+    text-align: left;
+  }
+
   .orange-button {
     width: 75%;
   }
@@ -729,9 +740,15 @@ address {
     padding: 5%;
   }
 
+  .testimonials {
+    display: inline-block;
+  }
+
   .redfill-button {
+    float: right;
     max-width: 50%;
-    transform: translate(100%, -50%);
+    padding: 15%;
+    transform: translate(0, -20%);
   }
 
   .recent {
@@ -1281,6 +1298,7 @@ address {
   }
 
   .services-container {
+    display: inline-block;
     max-width: 1024px;
     width: 100%;
   }
@@ -1291,6 +1309,10 @@ address {
   .test,
   .smallbiz {
     padding: 8%;
+  }
+
+  .white-button {
+    padding: 20%;
   }
 
   .howitworks {
@@ -1307,10 +1329,6 @@ address {
   .step {
     margin: auto;
     max-width: 65%;
-  }
-
-  .redline-button {
-    padding: 3rem;
   }
 
   .testimonials {
@@ -1331,7 +1349,7 @@ address {
 
   .redfill-button {
     max-width: 65%;
-    padding: 5%;
+    padding: 20%;
     transform: translate(50%, -30%);
   }
 
@@ -1417,8 +1435,8 @@ address {
     display: none;
   }
 
-  .case-button {
-    grid-area: case-button;
+  .orange-button {
+    grid-area: orange-button;
   }
 
   .proto-frame1 {
@@ -1440,7 +1458,7 @@ address {
     display: grid;
     grid-template-areas:
     "intro proto-frame1"
-    "case-button proto-frame1"
+    "orange-button proto-frame1"
     ". proto-frame1";
     grid-template-columns: 50% 30%;
     padding: 20% 5% 20% 20%;
@@ -1452,10 +1470,7 @@ address {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    padding: 0% 10% 20% 50%;
+    padding: 15% 25% 15% 25%;
     width: 100%;
   }
 
@@ -1464,14 +1479,9 @@ address {
   }
 
   .user-photo {
-    display: inline-flex;
-    transform: translate(-110%, 180%);
-    width: 110%;
+    display: inline-block;
   }
 
-  .pic {
-    width: 100%;
-  }
 
   .title {
     grid-area: title;
@@ -1785,29 +1795,24 @@ address {
     padding-top: 25%;
   }
 
-  .hifi {
-    grid-area: hifi;
-    padding: 5%;
+  .mockups {
+    display: inline-flex;
+    flex-direction: row;
+    padding: 20% 5% 5% 15%;
+    width: 100%;
   }
 
   .hifi1pic {
-    grid-area: hifi1pic;
-    height: 100%;
-    padding: 20%;
+    object-fit: contain;
+    padding: 0 5% 0 15%;
+    width: 100%;
+  }
+
+  .hifi {
   }
 
   .hifi2pic {
     display: none;
-  }
-
-  .mockups {
-    display: grid;
-    grid-template-areas:
-    ". hifi1pic"
-    "hifi hifi1pic"
-    ". hifi1pic";
-    grid-template-columns: 50% 50%;
-    padding: 20% 5% 5% 5%;
   }
 
   .preference {
