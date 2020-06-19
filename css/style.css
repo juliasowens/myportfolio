@@ -1286,7 +1286,6 @@ address {
     width: 100%;
   }
 
-
   .offerings {
     background-color: #053B59;
     height: 100%;
@@ -1341,6 +1340,10 @@ address {
   .blue {
     grid-area: about;
     max-width: 90%;
+  }
+
+  .button {
+    grid-area: button;
   }
 
   .redfill-button {
@@ -1410,29 +1413,20 @@ address {
   }
 
   .about {
-    align-items: flex-start;
     background-image: url('../assets/shapes/lightpinkfill.svg');
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
-    display: inline-grid;
-    grid-area: blue;
+    display: grid;
     grid-template-columns: 20% 40% 40%;
     grid-template-rows: 1fr;
     grid-template-areas:
     ". about ."
-    ". bio biopic";
+    ". bio biopic"
+    ". button .";
     max-width: 100%;
     padding: 20% 5% 20% 5%;
     width: 100%;
-  }
-
-  .connect-button {
-    display: none;
-  }
-
-  .orange-button {
-    grid-area: orange-button;
   }
 
   .proto-frame1 {
