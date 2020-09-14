@@ -4,6 +4,7 @@
 
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -62,7 +63,7 @@ h2 {
 h3 {
   color: #053B59;
   font-family: 'Poppins';
-  font-size: 4.2rem;
+  font-size: 3.6rem;
   font-weight: 600;
   line-height: 4rem;
   padding-bottom: 1rem;
@@ -173,6 +174,10 @@ h6 {
   top: 0;
 }
 
+.top-right {
+  display: none;
+}
+
 /*main content of page*/
 
 .content-container {
@@ -195,6 +200,7 @@ h6 {
   text-decoration: none;
 }
 
+
 /*sections of page*/
 
 /*intro*/
@@ -204,6 +210,7 @@ h6 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  margin: 0;
   padding-top: 50%;
   width: 100%;
 }
@@ -227,12 +234,27 @@ h6 {
   width: 100%;
 }
 
+
 /*menu of 5 offerings, what I can do*/
 
 .offerings {
   background-color: #053B59;
-  padding-top: 20rem;
+  padding-top: 20%;
   width: 100%;
+}
+
+.services-container h2{
+  color: #F3F0EB;
+  font-size: 2.4rem;
+  padding: 5% 10% 10% 10%;
+}
+
+.services-container h3{
+  color: #F3F0EB;
+}
+
+.services-container h6{
+  color: #F3F0EB;
 }
 
 /*changes text to white*/
@@ -252,12 +274,54 @@ h6 {
   width: 100%;
 }
 
-.webdesign,
-.brand,
-.ecomm,
-.test,
+.webdesign {
+  background-image: url('../assets/old/poolwhiteline.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 20%;
+  text-decoration: none;
+  width: 100%;
+}
+
+.brand{
+  background-image: url('../assets/old/clementinewhiteline.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 20%;
+  text-decoration: none;
+  width: 100%;
+}
+
+.ecomm{
+  background-image: url('../assets/old/terracottawhiteline.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 20%;
+  text-decoration: none;
+  width: 100%;
+}
+
+.test{
+  background-image: url('../assets/old/sandwhiteline.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 20%;
+  text-decoration: none;
+  width: 100%;
+}
+
 .smallbiz {
-  padding: 10%;
+  background-image: url('../assets/old/eraserwhiteline.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 20%;
+  text-decoration: none;
+  width: 100%;
 }
 
 /*describes the service*/
@@ -267,10 +331,10 @@ ul.description {
   display: inline-block;
   font-family: 'Poppins';
   font-size: 2rem;
-  line-height: 2.4rem;
+  line-height: 3rem;
   list-style-image: url('../assets/shapes/offwhitedot.svg');
   list-style-position: outside;
-  padding: 1rem;
+  padding: 3rem;
   text-align: left;
 }
 
@@ -299,12 +363,22 @@ li {
 
 .howitworks {
   background-color: #F1DBD4;
-  padding-top: 20rem;
+  padding-top: 20%;
   width: 100%;
 }
 
+.steps {
+  padding: 15% 5% 15% 0;
+}
+
 .step {
-  padding: 2rem 2rem 0 0;
+  display: inline-block;
+  text-align: left;
+  padding: 3rem 0 0 0;
+}
+
+.stepaction {
+  padding: 2% 10% 2% 0;
 }
 
 /*button with red line + text, white background*/
@@ -331,7 +405,7 @@ li {
 /*testimonial section*/
 
 .testimonials {
-  padding: 20% 10% 0 10%;
+  padding: 20% 10% 20% 10%;
   width: 100%;
 }
 
@@ -378,6 +452,7 @@ li {
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0;
+  padding-top: 20%;
   width: 100%;
 }
 
@@ -396,10 +471,6 @@ li {
   " .five five"
   ".."
   "six six. ";
-}
-
-.recproj {
-  padding: 20% 0 20% 0;
 }
 
 .project {
@@ -454,6 +525,10 @@ li {
   padding: 5rem;
 }
 
+.infoover {
+  display: none;
+}
+
 /* about page styling */
 
 
@@ -475,10 +550,9 @@ li {
   width: 100%;
 }
 
-.proto-frame1 {
+.app-frame1 {
   display: none;
 }
-
 
 .challenge {
   display: flex;
@@ -487,16 +561,29 @@ li {
   width: 100%;
 }
 
-.proto-frame2 {
+.app-frame2 {
+  background-image: url('../assets/draft_slam/phoneframe.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
   width: 100%;
 }
 
-.user-photo {
+.app-frame3 {
   display: none;
 }
 
 .title {
-  padding: 2rem 0 2rem 0;
+  padding: 3rem 0 0 0;
+}
+
+h3.title {
+  font-size: 2.4rem;
+  padding: 0;
 }
 
 .roles {
@@ -519,6 +606,13 @@ li {
   font-size: 1.6rem;
   font-weight: 300;
   line-height: 2.4rem;
+}
+
+.description1 li {
+line-height: 2.4rem;
+list-style-image: url('../assets/shapes/inkbluedot.svg');
+list-style-position: outside;
+padding: 1rem;
 }
 
 /* orange script with line button for readers to view full reports */
@@ -554,6 +648,22 @@ li {
   line-height: 2rem;
 }
 
+.description2 li {
+  line-height: 2rem;
+  list-style-image: url('../assets/shapes/inkbluedot.svg');
+  list-style-position: outside;
+  padding: 1rem;
+}
+
+.sketches img {
+  padding: 5% 0 5% 0;
+}
+
+.mockups img{
+  padding: 5% 0 5% 0;
+  width: 100%;
+}
+
 .proto {
    width: 100%;
  }
@@ -563,7 +673,7 @@ li {
    display: flex;
    grid-area: protovideomobile;
    justify-content: center;
-   padding: 10%;
+   padding: 5%;
    position: relative;
 }
 
@@ -577,6 +687,10 @@ li {
    padding: 10% 5% 5% 5%;
  }
 
+.conclusion h5{
+   padding: 20% 0 0 0;
+ }
+
 
 /* footer */
 
@@ -585,8 +699,25 @@ footer {
   color: #F3F0EB;
   font-family: 'Poppins';
   font-size: 2rem;
-  line-height: 3.6rem;
-  padding: 3rem;
+  line-height: 4rem;
+  padding: 5%;
+}
+
+footer a {
+  color: #F3F0EB;
+  font-family: 'Poppins';
+  font-size: 2.4rem;
+  padding: 2rem 0 2rem 0;
+}
+
+footer h4 {
+   color: #F3F0EB;
+   font-size: 3rem;
+   padding: 0 0 2rem 0;
+}
+
+footer p {
+   color: #F3F0EB;
 }
 
 address {
@@ -633,7 +764,6 @@ address {
   .logomobile {
     display: inline-block;
     font-size: 2rem;
-
   }
 
   .overlay {
@@ -675,33 +805,120 @@ address {
 
   .button {
     text-align: left;
+    padding: 0;
+  }
+
+  .paragraph {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .paragraph> .button {
+    padding: 5% 0 0 0;
+    width: 70%;
   }
 
   .orange-button {
-    width: 75%;
+    padding: 30% 0 30% 0;
+    width: 100%;
   }
 
   .offerings {
     background-color: #053B59;
   }
 
-  .services-container {
-    width: 100%;
+  .services-container h2{
+    color: #F3F0EB;
+    font-size: 3rem;
+    line-height: 4rem;
+    text-align: center;
+  }
+
+  .services-container h3{
+    color: #F3F0EB;
+  }
+
+  .services-container h6{
+    color: #F3F0EB;
+  }
+
+  /*changes text to white*/
+
+  .white-button {
+      padding: 20%;
+      text-decoration: none;
+      width: 100%;
+    }
+
+  .white {
+    text-align: center;
+    text-decoration: none;
+    color: #F3F0EB;
+    line-height: 4rem;
+  }
+
+  .white a {
+    color: #F3F0EB;
+    text-decoration: none;
   }
 
   .service {
-    display: inline-block;
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    padding: 5% 0 0 0;
     width: 100%;
   }
 
-  .webdesign,
-  .brand,
-  .ecomm,
-  .test,
+  .webdesign {
+    background-image: url('../assets/old/poolwhiteline.svg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 10% 0 10% 0;
+    text-decoration: none;
+    width: 50%;
+  }
+
+  .brand{
+    background-image: url('../assets/old/clementinewhiteline.svg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 10% 0 10% 0;
+    text-decoration: none;
+    width: 50%;
+  }
+
+  .ecomm{
+    background-image: url('../assets/old/terracottawhiteline.svg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 10% 0 10% 0;
+    text-decoration: none;
+    width: 50%;
+  }
+
+  .test{
+    background-image: url('../assets/old/sandwhiteline.svg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 10% 0 10% 0;
+    text-decoration: none;
+    width: 50%;
+  }
+
   .smallbiz {
-    display: block;
-    float: left;
-    padding: 5%;
+    background-image: url('../assets/old/eraserwhiteline.svg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 10% 5% 10% 5%;
+    text-decoration: none;
     width: 50%;
   }
 
@@ -709,16 +926,12 @@ address {
 
   ul.description {
     display: block;
-    float: right;
     padding: 5%;
     width: 50%;
   }
 
-  .white-button {
-    background-position: center;
-    display: block;
-    text-align: center;
-    width: 100%;
+  li {
+    padding: 1rem 0 1rem 0;
   }
 
   .howitworks {
@@ -728,16 +941,34 @@ address {
     background-repeat: no-repeat;
     background-size: cover;
     display: inline-grid;
-    padding: 20% 10% 5% 20%;
+    padding: 15% 10% 5% 20%;
     width: 100%;
   }
 
   .redline-button {
-    padding: 5%;
+    display: inline-flex;
+    background-size: contain;
   }
+
+  .red {
+    padding: 0 30% 0 30%;
+  }
+
+  .red a {
+      color: #C06D5B;
+      padding: 50%;
+      text-align: center;
+      text-decoration: none;
+  }
+
+  .steps {
+    padding: 0;
+  }
+
 
   .testimonials {
     display: inline-block;
+    padding: 15% 15% 0 15%;
   }
 
   .redfill-button {
@@ -753,11 +984,12 @@ address {
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
+    padding: 10% 0 10% 0;
     width: 100%;
   }
 
   .recproj {
-    padding: 5%;
+    padding: 3%;
     text-align: center;
   }
 
@@ -767,6 +999,7 @@ address {
     "one two"
     "three four"
     "five six";
+    padding: 5% 0 0 0;
   }
 
 
@@ -779,7 +1012,7 @@ address {
   }
 
   .one .two .three .four .five .six {
-    padding: 3%;
+    padding: 0;
     transform: none;
   }
 
@@ -791,34 +1024,57 @@ address {
     justify-content: center;
   }
 
+  .about {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    padding: 15% 10% 0 10%;
+    width: 100%;
+  }
+
   .biopic {
-    width: 75%;
+    padding: 0 20% 0 20%;
+    width: 100%;
   }
 
   .bio {
-    padding: 5% 0 5% 0;
+    padding: 5% 0 0 0;
   }
 
-  .connect-button {
-    padding: 5% 20% 5% 20%;
+  .about> .button {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 5% 25% 5% 25%;
+    width: 100%;
   }
 
   .content-container img {
     width: 100%;
   }
 
-  .case-button {
-    grid-area: case-button;
-  }
 
-  .proto-frame1 {
-    display: grid;
-    grid-area: proto-frame1;
+  .app-frame1 {
+    align-items: center;
+    background-image: url('../assets/draft_slam/phoneframe.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    grid-area: app-frame1;
+    justify-content: center;
+    padding: 15%;
     width: 100%;
   }
 
   .intro {
     grid-area: intro;
+    padding: 10%;
+  }
+
+  .case-study-intro> .button {
+    grid-area: button;
+    padding: 10%;
   }
 
   .case-study-intro {
@@ -829,11 +1085,11 @@ address {
     background-size: cover;
     display: grid;
     grid-template-areas:
-    "intro proto-frame1"
-    "case-button proto-frame1"
-    ". proto-frame1";
-    grid-template-columns: 60% 40%;
-    padding: 50% 15% 20% 15%;
+    "intro app-frame1"
+    "button app-frame1"
+    ". app-frame1";
+    grid-template-columns: 50% 50%;
+    padding: 20% 10% 20% 10%;
     width: 100%;
   }
 
@@ -841,23 +1097,36 @@ address {
     background-color: #F1DBD4;
     display: inline-block;
     text-align: left;
-    padding: 20% 10% 30% 20%;
+    padding: 0 10% 10% 10%;
     width: 100%;
   }
 
-  .proto-frame2 {
+  .app-frame2 {
     display: none;
   }
 
-  .user-photo {
-    display: inline-block;
-    padding: 5%;
+  .app-frame3 {
+    align-items: center;
+    background-image: url('../assets/draft_slam/phoneframehorizontal.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    padding: 18%;
+    width: 100%;
   }
+
 
   .title {
     grid-area: title;
     padding: 1rem 0 1rem 0;
     font-size: 2.0rem;
+  }
+
+  h3.title {
+    font-size: 3rem;
+    padding: 0;
   }
 
   .roles {
@@ -914,6 +1183,7 @@ address {
 
   .tasks {
     grid-area: tasks;
+    padding: 0;
   }
 
   .research {
@@ -922,8 +1192,8 @@ address {
     "participants findings"
     "mostused findings"
     "tasks findings";
-    grid-template-columns: 50% 50%;
-    padding: 20% 10% 15% 20%;
+    grid-template-columns: 40% 60%;
+    padding: 10%;
   }
 
   .analysis {
@@ -939,7 +1209,7 @@ address {
     grid-template-areas:
     "competitors analysis";
     grid-template-columns: 50% 50%;
-    padding: 15% 10% 15% 20%;
+    padding: 0 10% 10% 10%;
   }
 
   .persona {
@@ -967,33 +1237,37 @@ address {
     "persona1-frame persona2-frame";
     grid-template-columns: 50% 50%;
     justify-content: flex-start;
-    padding: 20% 10% 15% 20%;
+    padding: 10%;
     transform: none;
   }
 
   .stories {
     display: inline-block;
-    padding: 20% 10% 15% 20%;
+    padding: 10% 10% 0 10%;
   }
 
   .flows {
     display: inline-block;
-    padding: 20% 10% 15% 20%;
+    padding: 10% 10% 10% 10%;
+  }
+
+  .flowpics {
+    padding: 5% 0 0 0;
   }
 
   .wires {
     grid-area: wires;
-    padding: 20% 5% 0% 5%;
+    padding: 5% 0 0 0;
   }
 
   .wirepic1 {
     grid-area: wirepic1;
-    padding: 1rem;
+    padding: 0 1rem 0 0;
   }
 
   .wirepic2 {
     grid-area: wirepic2;
-    padding: 1rem;
+    padding: 0 1rem 0 0;
 
   }
 
@@ -1003,17 +1277,17 @@ address {
 
   .wirepic4 {
     grid-area: wirepic4;
-    padding: 1rem;
+    padding: 0 1rem 0 0;
   }
 
   .wirepic5 {
     grid-area: wirepic5;
-    padding: 1rem;
+    padding: 0 1rem 0 0;
   }
 
   .wirepic6 {
     grid-area: wirepic6;
-    padding: 1rem;
+    padding: 0 1rem 2rem 0;
   }
 
   .wireframes {
@@ -1024,11 +1298,12 @@ address {
     "wirepic6 wirepic4 wirepic5"
     "wires wires wires";
     grid-template-columns: 36% 30% 30%;
-    padding: 20% 10% 15% 20%;
+    padding: 10%;
   }
 
   .impressions {
     grid-area: impressions;
+    padding: 0 0 10% 0;
   }
 
   .description2 {
@@ -1043,14 +1318,22 @@ address {
   }
 
   .usability {
-    display: inline-grid;
+    display: grid;
     grid-gap: 5%;
     grid-template-areas:
-    "title impressions"
+    "title ."
     "tasks impressions"
-    "tasks ProjectCTA";
-    grid-template-columns: 30% 70%;
-    padding: 20% 10% 10% 20%;
+    "ProjectCTA impressions"
+    ". impressions";
+    grid-template-columns: 45% 55%;
+    padding: 10%;
+  }
+
+
+
+  .usability> .ProjectCTA{
+    padding: 5% 0 0 0;
+    width: 100%;
   }
 
   .brandpic {
@@ -1059,7 +1342,7 @@ address {
 
   .characteristics{
     display: inline-block;
-    padding: 20% 10% 10% 20%;
+    padding: 0 10% 0 10%;
   }
 
   .palette {
@@ -1092,79 +1375,87 @@ address {
     "colorpic typepic2"
     "palette typo";
     grid-template-columns: 50% 50%;
-    padding: 20% 10% 10% 20%;
-  }
-
-  .process {
-    grid-area: process;
-    padding: 2rem;
-  }
-
-  .sketch1 {
-    grid-area: sketch1;
-    width: 100%;
-    padding: 50% 5% 5% 5%;
-  }
-
-  .sketch2 {
-    grid-area: sketch2;
-    width: 100%;
-    padding: 50% 5% 5% 5%;
-  }
-
-  .sketch3 {
-    grid-area: sketch3;
-    width: 100%;
-    padding: 50% 5% 5% 5%;
+    padding: 15% 10% 0 10%;
   }
 
   .designprocess {
-    display: grid;
-    grid-template-areas:
-    "sketch1 sketch2 sketch3"
-    "process process .";
-    grid-template-columns: 33% 33% 33%;
-    padding-top: 20%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 15% 10% 0 10%;
+    width: 100%;
   }
+
+  .process {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 200%;
+  }
+
+  .process> .ProjectCTA{
+    padding: 0;
+    width: 100%;
+  }
+
+  .sketches img {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 80%;
+  }
+
+  img.sketch1{
+    display: none;
+  }
+
+  img.sketch3{
+    display: none;
+  }
+
 
   .hifi {
     grid-area: hifi;
+    padding: 0;
   }
 
-  .hifi1pic {
-    grid-area: hifi1pic;
-    height: 100%;
+  img.hifi1pic {
     padding: 5%;
-  }
-
-  .hifi2pic {
-    display: none;
   }
 
   .mockups {
     display: grid;
     grid-template-areas:
-    ". hifi1pic"
-    "hifi hifi1pic"
-    ". hifi1pic";
-    grid-template-columns: 40% 60%;
-    padding-top: 20%;
+    ". app-frame1"
+    "hifi app-frame1"
+    ". app-frame1";
+    grid-template-columns: 50% 50%;
+    padding: 15% 10% 0 10%;
   }
 
-  .preference {
-    display: inline-grid;
+  .usability {
+    display: grid;
     grid-gap: 5%;
     grid-template-areas:
-    "title impressions"
+}
+
+  .preference {
+    display: grid;
+    grid-gap: 5%;
+    grid-template-areas:
+    "title title"
     "tasks impressions"
-    "tasks ProjectCTA";
-    grid-template-columns: 30% 70%;
-    padding: 20% 10% 10% 20%;
+    "ProjectCTA impressions"
+    ". impressions";
+    grid-template-columns: 45% 55%;
+    padding: 10%;
   }
 
   .proto {
-     grid-area: proto;
-     width: 100%;
+    grid-area: proto;
+    padding: 0 10% 0 0;
    }
 
    .protovideomobile {
@@ -1173,11 +1464,12 @@ address {
      grid-area: protovideomobile;
      justify-content: center;
      position: relative;
+     width: 100%;
   }
 
-   video {
-     width: 75%;
-   }
+  .protovideomobile video{
+    width: 100%;
+  }
 
    .phoneframe {
      position: absolute;
@@ -1187,24 +1479,29 @@ address {
 
    .conclusion {
      grid-area: conclusion;
-     padding: 10%;
+     padding: 0;
+     max-width: 75%;
+   }
+
+   .conclusion h5{
+      padding: 0;
+    }
+
+   .conclusion> .ProjectCTA{
+     padding: 0;
+     width: 100%;
    }
 
    .end {
      display: grid;
+     grid-gap: 5%;
      grid-template-areas:
-     "proto ."
-     "proto conclusion"
-     "proto .";
+     "proto conclusion";
      grid-template-columns: 40% 60%;
-     padding: 20% 5% 20% 10%;
+     padding: 10% 0 20% 10%;
    }
 
-   .desk-links {
-     display: inline-block;
-     width: 100%;
-     z-index: 1;
-   }
+
 
    .bottom-left {
      bottom: 0;
@@ -1243,6 +1540,13 @@ address {
     overflow: hidden;
   }
 
+  header {
+    background: none;
+    margin: 0;
+    position: fixed;
+    width: 100%;
+  }
+
   .content-container {
     width: 100%;
   }
@@ -1255,11 +1559,37 @@ address {
     display: inline-block;
   }
 
-  header {
-    background: none;
-    margin: 0;
-    position: fixed;
+  .desk-links {
+    display: inline-block;
     width: 100%;
+  }
+
+  .top-right {
+    display: inline-block;
+    float: right;
+    clear: right;
+    padding: 3% 7% 3% 0;
+  }
+
+  .top-right a {
+    color: #16559D;
+    font-family: Walter Turncoat;
+    font-size: 2rem;
+    padding: 2rem;
+    text-decoration: none;
+ }
+
+  /* Style the hamburger menu */
+  .hamburger {
+    padding: 10%;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .button {
+    grid-area: button;
+    padding: 5% 0 0 0;
   }
 
   .hero {
@@ -1277,6 +1607,7 @@ address {
     flex-direction: row;
     justify-content: flex-start;
     width: 100%;
+    padding: 0 5% 5% 5%;
   }
 
   .paragraph {
@@ -1286,14 +1617,18 @@ address {
     width: 100%;
   }
 
+  .orange-button {
+    width: 100%;
+    text-align: center;
+  }
+
   .offerings {
     background-color: #053B59;
     height: 100%;
-    padding: 20% 5% 10% 20%;
+    padding: 10%;
   }
 
   .services-container {
-    display: inline-block;
     max-width: 1024px;
     width: 100%;
   }
@@ -1303,12 +1638,21 @@ address {
   .ecomm,
   .test,
   .smallbiz {
-    padding: 8%;
+    padding: 10%;
+  }
+
+  .white {
+      padding: 0 30% 0 30%;
+      text-align: center;
+      text-decoration: none;
   }
 
   .white-button {
-    padding: 20%;
+    padding: 20% 25% 20% 25%;
+    text-decoration: none;
+    width: 100%;
   }
+
 
   .howitworks {
     background-color: #EABBAE;
@@ -1317,13 +1661,30 @@ address {
     background-repeat: no-repeat;
     background-size: cover;
     display: inline-grid;
-    padding: 15% 15% 0 25%;
+    padding: 10% 10% 0 25%;
     width: 100%;
   }
 
   .step {
     margin: auto;
-    max-width: 65%;
+    max-width: 30%;
+    padding: 3rem 0 0 0;
+  }
+
+  .redline-button {
+    display: inline-flex;
+    background-size: contain;
+  }
+
+  .red {
+    padding: 0 30% 0 30%;
+  }
+
+  .red a {
+      color: #C06D5B;
+      padding: 25%;
+      text-align: center;
+      text-decoration: none;
   }
 
   .testimonials {
@@ -1342,12 +1703,8 @@ address {
     max-width: 90%;
   }
 
-  .button {
-    grid-area: button;
-  }
-
   .redfill-button {
-    max-width: 65%;
+    max-width: 50%;
     padding: 20%;
     transform: translate(50%, -30%);
   }
@@ -1360,14 +1717,15 @@ address {
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
+    padding: 5%;
     width: 100%;
   }
 
   .white {
     padding-top: 5rem;
   }
+
   .recproj {
-    padding: 5%;
     text-align: center;
   }
 
@@ -1376,6 +1734,7 @@ address {
     grid-template-areas:
     "one two three"
     "four five six";
+    padding: 5% 0 0 0;
   }
 
 
@@ -1385,7 +1744,20 @@ address {
     background-repeat: no-repeat;
     background-size: contain;
     padding: 15%;
+    text-align: center;
     transform: none;
+  }
+
+  .project a:hover + .infoover{
+    display: block;
+    bottom: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    position: relative;
+    opacity: 1;
   }
 
   .one .two .three .four .five .six {
@@ -1399,6 +1771,7 @@ address {
     display:flex;
     justify-content: center;
   }
+
 
   /* about page styling */
 
@@ -1429,54 +1802,60 @@ address {
     width: 100%;
   }
 
-  .proto-frame1 {
-    display: grid;
-    grid-area: proto-frame1;
-    width: 100%;
-  }
-
-  .intro {
-    grid-area: intro;
-  }
-
   .case-study-intro {
-    background-color: #F3F0EB;
-    background-image: url('../assets/shapes/lightpinkfill.svg');
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: contain;
-    display: grid;
-    grid-template-areas:
-    "intro proto-frame1"
-    "orange-button proto-frame1"
-    ". proto-frame1";
-    grid-template-columns: 50% 30%;
-    padding: 20% 5% 20% 20%;
-    width: 100%;
+    padding: 15%;
+  }
+
+  .case-study-intro> .button {
+    padding: 0;
+    max-width: 60%;
+  }
+
+  .app-frame1 {
+    padding: 20%;
   }
 
   .challenge {
     background-image: url('../assets/shapes/lightpinkfill3.svg');
-    background-position: center;
+    background-position: flex-start;
     background-repeat: no-repeat;
     background-size: contain;
-    padding: 15% 25% 15% 25%;
+    display: inline-flex;
+    justify-content: flex-start;
+    max-width: 100%;
+    padding: 10% 20% 10% 20%;
     width: 100%;
   }
 
-  .proto-frame2 {
-    display: none;
+  .challenge h5 {
+    padding: 0;
+  }
+
+  .challenge h6 {
+    max-width: 75%;
+    padding: 0 0 5%0;
+  }
+
+  .app-frame3 {
+    padding: 20%;
+    width: 100%;
   }
 
   .user-photo {
-    display: inline-block;
+    max-width: 100%;
+    padding: 0;
   }
-
 
   .title {
     grid-area: title;
-    padding: 1rem 0 1rem 0;
     font-size: 2.0rem;
+    padding: 5% 0 0 0;
+    text-align: left;
+  }
+
+  h3.title {
+    font-size: 3.6rem;
+    padding: 0;
   }
 
   .roles {
@@ -1487,7 +1866,7 @@ address {
     font-family: 'Poppins';
     font-size: 1.6rem;
     font-weight: 600;
-    line-height: 1.6rem;
+    padding: 0 0 5% 0;
   }
 
   .description1 {
@@ -1536,13 +1915,13 @@ address {
   }
 
   .research {
-    display: inline-grid;
+    display: grid;
     grid-template-areas:
     "participants findings"
     "mostused findings"
     "tasks findings";
     grid-template-columns: 50% 50%;
-    padding: 15% 10% 15% 20%;
+    padding: 10% 20% 0 20%;
   }
 
   .analysis {
@@ -1558,33 +1937,12 @@ address {
     grid-template-areas:
     "competitors analysis";
     grid-template-columns: 50% 50%;
-    padding: 15% 10% 15% 20%;
-  }
-
-  .persona {
-    grid-area: persona;
-    padding: 75% 2rem 0 1rem;
-  }
-
-  .persona1-frame {
-    grid-area: persona1-frame;
-    padding: 0 1rem 0 1rem;
-    width: 100%;
-  }
-
-  .persona2-frame {
-    grid-area: persona2-frame;
-    padding: 0 1rem 0 1rem;
-    width: 100%;
+    padding: 10% 20% 10% 20%;
   }
 
   .personas {
     background-color: #F1DBD4;
-    display: grid;
-    grid-template-areas:
-    ". persona persona1-frame persona2-frame .";
-    grid-template-columns: 5% 30% 30% 30% 5%;
-    padding: 10% 5% 10% 5%;
+    padding: 10% 10% 10% 20%;
     transform: none;
   }
 
@@ -1603,7 +1961,7 @@ address {
     grid-template-areas:
     "stories-pic userstory";
     grid-template-columns: 60% 40%;
-    padding: 20% 5% 5% 5%;
+    padding: 10% 10% 0 20%;
   }
 
   .userflows {
@@ -1613,29 +1971,31 @@ address {
 
   .flowpics {
     grid-area: flowpics;
+    width: 100%;
   }
 
   .flows {
     display: grid;
     grid-template-areas:
-    ". userflows flowpics";
-    grid-template-columns: 0 40% 60%;
-    padding-top: 25%;
+    "userflows . flowpics";
+    grid-template-columns: 40% 5% 60%;
+    padding: 10% 10% 10% 20%;
   }
 
   .wires {
     grid-area: wires;
+    padding: 5%;
   }
 
   .wirepic1 {
     grid-area: wirepic1;
-    padding: 1rem;
+    padding: 1rem 1rem 0 0;
     width: 100%;
   }
 
   .wirepic2 {
     grid-area: wirepic2;
-    padding: 1rem;
+    padding: 1rem 1rem 0 0;
     width: 100%;
 
   }
@@ -1646,35 +2006,40 @@ address {
 
   .wirepic4 {
     grid-area: wirepic4;
-    padding: 1rem;
+    padding: 1rem 1rem 0 0;
     width: 100%;
   }
 
   .wirepic5 {
     grid-area: wirepic5;
-    padding: 1rem;
+    padding: 1rem 1rem 0 0;
     width: 100%;
   }
 
   .wirepic6 {
-    grid-area: wirepic6;
-    padding: 1rem;
-    width: 100%;
+    display: none;
   }
 
   .wireframes {
     background-color: #F1DBD4;
     display: grid;
     grid-template-areas:
-    "wirepic1 wirepic2 wirepic6 wires"
-    "wirepic4 wirepic5 wirepic6 wires";
-    grid-template-columns: 20% 20% 25% 30%;
-    padding: 20% 5% 10% 5%;
+    "wirepic1 wirepic2 wires"
+    "wirepic4 wirepic5 wires";
+    grid-template-columns: 20% 20% 60%;
+    padding: 10% 10% 10% 20%;
   }
+
 
   .impressions {
     grid-area: impressions;
+    padding: 0;
   }
+
+  .impressions ul {
+    padding: 0 0 5rem 0;
+  }
+
 
   .description2 {
     align-items: flex-start;
@@ -1687,24 +2052,26 @@ address {
     line-height: 1rem;
   }
 
+
   .usability {
-    display: inline-grid;
+    display: grid;
     grid-template-areas:
-    "title . impressions"
-    "tasks . impressions"
-    "tasks . impressions"
-    "ProjectCTA ProjectCTA .";
-    grid-template-columns: 50% 5% 70%;
-    padding: 20% 10% 10% 20%;
+    "title title"
+    "tasks impressions"
+    "ProjectCTA impressions"
+    ". impressions";
+    grid-template-columns: 50% 50%;
+    padding: 10% 20% 10% 20%;
+    width: 100%;
   }
 
   .branding {
     grid-area: branding;
-    padding: 10%;
   }
 
   .brandpic {
     grid-area: brandpic;
+    padding: 0 5% 0 0;
     width: 100%;
   }
 
@@ -1712,112 +2079,121 @@ address {
     display: grid;
     grid-template-areas:
     "brandpic branding";
-    grid-template-columns: 60% 40%;
-    padding: 20% 5% 5% 5%;
+    grid-template-columns: 50% 50%;
+    padding: 0 10% 10% 20%;
   }
 
   .palette {
     grid-area: palette;
-    padding: 2rem;
+    padding: 0;
   }
 
   .colorpic {
     grid-area: colorpic;
-    padding: 50% 5% 0 5%;
     width: 100%;
   }
 
   .typo {
     grid-area: typo;
-    padding: 2rem;
+    padding: 0;
   }
 
   .typepic1 {
-    grid-area: typepic1;
-    width: 100%;
-    padding: 5%;
+    display: none;
   }
 
   .typepic2 {
     grid-area: typepic2;
-    width: 100%;
-    padding: 5%;
   }
 
   .colortype {
     display: grid;
     grid-template-areas:
-    "palette colorpic typepic1"
-    "typo colorpic typepic2"
-    "typo . .";
-    grid-template-columns: 40% 30% 30%;
-    padding-top: 25%;
+    "palette . colorpic"
+    "typo . typepic2";
+    grid-template-columns: 50% 5% 40%;
+    padding: 0 10% 10% 20%;
   }
 
-  .process {
-    grid-area: process;
-    padding: 2rem;
-  }
-
-  .sketch1 {
-    grid-area: sketch1;
-    width: 100%;
-    padding: 50% 5% 5% 5%;
-  }
-
-  .sketch2 {
-    grid-area: sketch2;
-    width: 100%;
-    padding: 50% 5% 5% 5%;
-  }
-
-  .sketch3 {
-    grid-area: sketch3;
-    width: 100%;
-    padding: 50% 5% 5% 5%;
-  }
 
   .designprocess {
-    display: grid;
-    grid-template-areas:
-    "sketch1 sketch2 sketch3 process";
-    grid-template-columns: 20% 20% 20% 40%;
-    padding-top: 25%;
+    align-self: center;
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 1600px;
+    padding: 0 10% 10% 20%;
+}
+
+  .process {
+    align-self: center;
+    flex-direction: column;
+    padding: 0 10% 0 10%;
+    width: 100%;
   }
 
-  .mockups {
-    display: inline-flex;
+
+  .sketches {
+    display: flex;
     flex-direction: row;
-    padding: 20% 5% 5% 15%;
     width: 100%;
   }
 
-  .hifi1pic {
-    object-fit: contain;
-    padding: 0 5% 0 15%;
-    width: 100%;
+  .sketches img {
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    width: 35%;
+  }
+
+  img.sketch1 {
+    display: block;
+    padding: 0;
+  }
+
+  img.sketch2 {
+    display: block;
+    padding: 0;
+  }
+
+  img.sketch3 {
+    display: block;
+    padding: 0;
   }
 
   .hifi {
+    max-width: 100%;
+    padding: 0;
   }
 
-  .hifi2pic {
-    display: none;
+  .hifi1pic {
+    width: 100%;
+  }
+
+  .mockups {
+    display: grid;
+    grid-template-areas:s
+    "hifi app-frame1";
+    grid-template-columns: 50% 50%;
+    padding: 0 15% 15% 20%;
   }
 
   .preference {
   display: inline-grid;
   grid-template-areas:
-  "title impressions"
+  "title title"
   "tasks impressions"
-  "ProjectCTA impressions";
+  "ProjectCTA impressions"
+  ". impressions";
   grid-template-columns: 50% 50%;
-  padding: 20% 10% 10% 20%;
+  padding: 0 20% 10% 20%;
+  width: 100%;
   }
 
 
  .proto {
     grid-area: proto;
+    padding: 20%;
     width: 100%;
   }
 
@@ -1837,7 +2213,6 @@ address {
 
   .conclusion {
     grid-area: conclusion;
-    padding: 5%;
   }
 
   .end {
@@ -1846,8 +2221,8 @@ address {
     "proto ."
     "proto conclusion"
     "proto .";
-    grid-template-columns: 50% 50%;
-    padding: 20% 10% 15% 20%;
+    grid-template-columns: 50% 60%;
+    padding: 0 10% 10% 10%;
   }
 
 }
