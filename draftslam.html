@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Julia Owens</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="css/reset.css">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,300;1,400;1,600&family=Beth+Ellen&family=Walter+Turncoat&display=swap">
+   </head>
+   <body>
+     <!--navigation with logo and hamburger menu-->
+   <div class="page-container">
+     <header>
+       <div class= "nav-container" id="nav-container" style="top: 0;">
+         <div class="logomobile">
+           <a href="index.html">
+             <img src="assets/header/ColorHead.svg" alt="julia owens logo" style="width:6rem;">
+           </a>
+           <h2 class="logomobile">julia owens</h2>
+         </div>
+         <div class="logodesk">
+             <a href="index.html">
+               <img src="assets/header/colorlogo.svg" alt="julia owens logo" style="width:15rem;">
+             </a>
+         </div>
+         <div class="top-right">
+           <a href="about.html">About</a>
+           <a href="index.html#recent">Recent Projects</a>
+         </div>
+         <!-- Navigation links (hidden by default) -->
+         <div id="menu-container" class="overlay">
+            <!-- Button to close the overlay navigation -->
+            <div class="myLinks">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+              <a href="about.html">About</a>
+              <a href="index.html#recent">Recent Projects</a>
+              <a href="index.html#offerings">What I Offer</a>
+              <a href="index.html#howitworks">How it Works</a>
+              <a href="index.html#testimonials">Testimonials</a>
+            </div>
+          </div>
+ <!-- "Hamburger menu" / "hamburger" to toggle the navigation links -->
+          <span onclick="openNav()" class="hamburger">
+             <img class='hamburger' src="assets/header/hamburger.svg" alt="menu icon">
+          </span>
+       </div>
+     </header>
+      <main>
+        <div class="content-container">
+            <!--hero unit-->
+            <section class="case-study-intro">
+              <div class="intro">
+               <h5 class="title">CASE STUDY</h5>
+               <h1>Draft Slam</h1>
+               <h6>a cloud-based app for creative writers</h6>
+             </div>
+             <div class="app-frame1">
+               <img class="homepg1" src="assets/draft_slam/mobilehomepage.png" alt="draft slam mobile homepage"
+                                         srcset="assets/draft_slam/mobilehomepage.png 1x,
+                                                assets/draft_slam/mobileHomepage-large@2x.png 2x">
+             </div>
+             <div class="button">
+                <a href="https://juliaowens332427.invisionapp.com/overview/Draft-Slam-Final-Prototype-Desktop-ck6gyjaqh02ms019wtq7n0pqh/screens?v=ehgRsINJ%2BSBxaD4OW9oNhQ%3D%3D&linkshare=urlcopied" class="orange-button">View Prototype</a>
+             </div>
+            </section>
+            <!--other sections below-->
+            <section class="challenge">
+               <div class="app-frame2">
+                  <img class="homepg2" src="assets/draft_slam/mobilehomepage.png" alt="draft slam mobile homepage">
+               </div>
+               <div class="app-frame3">
+                 <img class="user-photo" src="assets/draft_slam/userphoto.jpg" alt="draft slam users"
+                                           srcset="assets/draft_slam/userphoto.jpg 1x,
+                                                  assets/draft_slam/userphoto-large.jpg 2x">
+               </div>
+               <h5 class="title">CHALLENGE</h5>
+               <h6>There aren’t many cloud-based storage apps designed specifically for the needs of creative writers and professionals.</h6>
+               <h5 class="title">MY ROLES</h5>
+               <ul class="roles">
+                  <li>user research</li>
+                  <li>information architecture</li>
+                  <li>wireframe sketches</li>
+                  <li>digital wireframes</li>
+                  <li>usability testing</li>
+                  <li>brand characteristics</li>
+                  <li>Figma and inVision mockups</li>
+               </ul>
+            </section>
+            <!--research-->
+            <section class="research">
+              <div class="findings">
+               <h5 class="title">USER RESEARCH FINDINGS</h5>
+               <h6>What do you wish about cloud storage apps?</h6>
+               <div class="graph">
+                 <img src="assets/draft_slam/pie.svg" alt="pie chart">
+                 <div class="list">
+                  <div class="key">
+                      <img src="assets/draft_slam/bluept.svg" style="width:2rem;">
+                      <p>integrated with each other</p>
+                  </div>
+                  <div class="key">
+                      <img src="assets/draft_slam/darkpt.svg" style="width:2rem;">
+                      <p>had less apps that did more</p>
+                  </div>
+                  <div class="key">
+                      <img src="assets/draft_slam/orangept.svg" style="width:2rem;">
+                      <p>did one thing well</p>
+                  </div>
+                </div>
+               </div>
+               <h6>What will cloud storage help you achieve in the next year?</h6>
+               <div class="graph">
+                  <div class="data">
+                      <img src="assets/draft_slam/organize.svg" alt="more organization">
+                      <p>more organization</p>
+                  </div>
+                  <div class="data">
+                      <img src="assets/draft_slam/nopaper.svg" alt="use less paper">
+                      <p>use less paper</p>
+                  </div>
+                  <div class="data">
+                      <img src="assets/draft_slam/growbiz.svg" alt="grow my business">
+                      <p>grow my business</p>
+                  </div>
+               </div>
+              </div>
+              <div class="participants">
+               <h5 class="title">USER SURVEY PARTICIPANTS</h5>
+               <ul class="roles">
+                  <li>college degree +</li>
+                  <li>women between 27-35</li>
+                  <li>from Philadelphia</li>
+               </ul>
+              </div>
+              <div class="mostused">
+               <h5 class="title">MOST USED APPS</h5>
+               <ul class="roles">
+                 <li>Google Drive</li>
+                 <li>Dropbox</li>
+               </ul>
+              </div>
+              <div class= "tasks">
+               <h5 class="title">TASKS</h5>
+               <ul class="roles">
+                  <li>saving images</li>
+                  <li>managing finances</li>
+                  <li>writing for work</li>
+                  <li>administrative tasks</li>
+               </ul>
+               <div class="ProjectCTA">
+                 <a href="https://docs.google.com/document/d/1DlKDtew6CBG7hVg5gKq52-hgwuiLU38bZFn7hHig17s/edit?usp=sharing">
+                 view survey
+                 </a>
+               </div>
+              </div>
+            </section>
+            <section class="competitive">
+              <div class="analysis">
+               <h5 class="title">COMPETITIVE ANALYSIS FINDINGS</h5>
+               <ul class="description1">
+                  <li>There is need for a writing app with collaboration and a template library.</li>
+                  <li>Appeal to all writers / use all device platforms to reach a wider audience.</li>
+                  <li>Simplicity in design and layout with less screens and concise directions.</li>
+               </ul>
+              </div>
+              <div class="competitors">
+               <h5 class="title">COMPETITORS</h5>
+               <ul class="roles">
+                  <li>Evernote</li>
+                  <li>Werdsmith</li>
+                  <li>Bear</li>
+               </ul>
+               <div class="ProjectCTA">
+                 <a href="https://docs.google.com/document/d/1oF_bNhvkIx0kH5_Ym-5o7eCGVHPkSjdam47mjQt0-3o/edit?usp=sharing">
+                 view analysis
+                 </a>
+               </div>
+              </div>
+            </section>
+            <section class="personas">
+              <div class="persona">
+                 <h5 class="title">USER PERSONAS</h5>
+                 <p>I considered creative writers who balance side projects with their main employment, and enjoy collaboration. My focus was personas working in theater and visual arts.</p>
+              </div>
+              <div class="persona1">
+                 <h4 class="title">Fallon</h4>
+                 <h2 class="quote">
+                   "I'd love my work to be published on Hyperallergic."
+                 </h2>
+                 <div class="upframe">
+                   <img class="up" src="assets/draft_slam/fallon.png" alt="user persona fallon"
+                                           srcset="assets/draft_slam/fallon.png 1x,
+                                                  assets/draft_slam/fallon-desk@2x.png 2x">
+                 </div>
+                 <div class="tasks">
+                   <ul class="roles">
+                     <li>age: 27</li>
+                     <li>gender: female</li>
+                     <li>location: philly, pa</li>
+                     <li>user: task-oriented</li>
+                     <li>tech use: high</li>
+                     <li>occupation: museum curator</li>
+                   </ul>
+                </div>
+                <div class="impressions">
+                 <h5 class="title">GOALS</h5>
+                   <ul class="description2">
+                     <li>organize documents</li>
+                     <li>apply to creative opportunities</li>
+                     <li>reduce paper and clutter</li>
+                   </ul>
+                 <h5 class="title">FRUSTRATIONS</h5>
+                 <ul class="description2">
+                   <li>lack of integration among apps</li>
+                   <li>open individual files to see the content</li>
+                   <li>edits from collaborators aren’t visible</li>
+                 </ul>
+                 <h5 class="title">MOTIVATIONS</h5>
+                 <ul class="description2">
+                   <li>track edits, goals, and progress</li>
+                   <li>needs app integration</li>
+                   <li>apply to writing opportunities</li>
+                 </ul>
+                 </div>
+              </div>
+              <div class="persona2">
+                <h4 class="title">Dan</h4>
+                <h2 class="quote">
+                  "I've challenged myself to write 2,000 sketches in 2 years."
+                </h2>
+                <div class="upframe">
+                  <img class="up" src="assets/draft_slam/fallon.png" alt="user persona dan"
+                                            srcset="assets/draft_slam/dan.png 1x,
+                                                   assets/draft_slam/dan-desk@2x.png 2x">
+                </div>
+                <div class="tasks">
+                  <ul class="roles">
+                    <li>age: 35</li>
+                    <li>gender: male</li>
+                    <li>location: ny, ny</li>
+                    <li>user: creation-oriented</li>
+                    <li>tech use: high</li>
+                    <li>occupation: scriptwriter</li>
+                  </ul>
+                </div>
+                <div class="impressions">
+                  <h5 class="title">GOALS</h5>
+                    <ul class="description2">
+                      <li>focus more time on writing</li>
+                      <li>work with a partner to generate ideas</li>
+                      <li>stay on track with current projects</li>
+                    </ul>
+                  <h5 class="title">FRUSTRATIONS</h5>
+                  <ul class="description2">
+                    <li>apps aren't robust</li>
+                    <li>complicated navigation</li>
+                    <li>too many app options</li>
+                  </ul>
+                  <h5 class="title">MOTIVATIONS</h5>
+                  <ul class="description2">
+                    <li>store writing, ideas, and inspiration</li>
+                    <li>desires focused work spaces</li>
+                    <li>sharing capabilities</li>
+                  </ul>
+                 </div>
+               </div>
+            </section>
+            <!--info architecture-->
+            <section class="stories">
+              <div class="userstory">
+                <h5 class="title">USER STORIES</h5>
+                <p>Based on the competitive analysis and user’s needs, these 10 user stories were generated for the minimum viable product.</p>
+              </div>
+              <table class="userstories">
+                <thead><tr class="firstrow"><th>ROLE</th><th>TASK</th><th>IMPORTANCE</th></tr></thead><tbody>
+                  <tr><td>As a returning user</td><td>Create content</td><td>High</td></tr>
+                  <tr><td>As a returning user</td><td>Save content</td><td>High</td></tr>
+                  <tr><td>As a returning user</td><td>Upload files</td><td>High</td></tr>
+                  <tr><td>As a returning user</td><td>Organize content</td><td>Medium</td></tr>
+                  <tr><td>As a returning user</td><td>Share item/folder</td><td>Medium</td></tr>
+                  <tr><td>As a returning user</td><td>Track a goal</td><td>Medium</td></tr>
+                  <tr><td>As a returning user</td><td>Delete content</td><td>Low</td></tr>
+                  <tr><td>As a returning user</td><td>Find content</td><td>Low</td></tr>
+                  <tr><td>As a returning user</td><td>Connect with users</td><td>Low</td></tr>
+                  <tr><td>As a returning user</td><td>View menu</td><td>Low</td></tr>
+                  <tr><td>As a returning user</td><td>Contact customer service</td><td>Low</td></tr>
+                  <tr><td>As a returning user</td><td>Edit profile</td><td>Low</td></tr>
+                </tbody></table>
+            </section>
+            <section class="flows">
+               <div class="userflows">
+                  <h5 class="title">USER FLOWS</h5>
+                  <p>User Flows for Draft Slam followed the highest priority user stories. Flows were created for new users to create an account and view shared content. Returning user flows include creating, organizing, saving and uploading content.</p>
+                  <p>The story shown here is what makes DraftSlam unique. When starting a new project, writers have the option to choose a template or create their own. This flow is meant to be easy to use so that users can spend more time creating.</p>
+                  <div class="ProjectCTA">
+                    <a href="https://drive.google.com/drive/folders/1bNcSAy2NV6z0XaHbrkwoSiNqSgtiE_Y_?usp=sharing">
+                    view all user flows
+                  </a>
+                 </div>
+               </div>
+               <div class="flowpics">
+                <img class=pic src="assets/draft_slam/userflow.svg" alt="user flow">
+               </div>
+            </section>
+            <section class="wireframes">
+              <div class="wires">
+                <h5 class="title">WIREFRAMES</h5>
+                <p>When creating wireframes I kept the idea of simplicity in mind. I decided to incorporate overlays and drawers into the application to simplify the screens when using them to create content.</p>
+                <div class="ProjectCTA">
+                  <a href="https://drive.google.com/drive/folders/14-NXchDmLHCyeRx-d-DYSH1okCq44SOu?usp=sharing">
+                  view wireframes
+                  </a>
+                </div>
+              </div>
+              <img class="wirepic1" src="assets/draft_slam/wireframe_1.png" alt="wireframe sketch">
+              <img class="wirepic2" src="assets/draft_slam/wireframe_3.png" alt="wireframe sketch">
+              <img class="wirepic3" src="assets/draft_slam/wireframe_4.png" alt="wireframe sketch">
+              <img class="wirepic4" src="assets/draft_slam/wireframe_5.png" alt="wireframe sketch">
+              <img class="wirepic5" src="assets/draft_slam/wireframe_6.png" alt="wireframe sketch">
+              <img class="wirepic6" src="assets/draft_slam/Homepage.png" alt="digital wireframe">
+            </section>
+            <section class="usability">
+               <h3 class="title">Usability Testing</h3>
+               <div class="tasks">
+                 <h5 class="title">TASKS</h5>
+                 <ul class="roles">
+                   <li>Create new account</li>
+                   <li>Add content</li>
+                   <li>Organize content</li>
+                 </ul>
+               </div>
+               <div class="impressions">
+                 <h5 class="title">IMPRESSIONS</h5>
+                 <ul class="description2">
+                   <li>positive reaction to design</li>
+                   <li>unsure of the purpose of the site</li>
+                   <li>completed first two tasks without errors</li>
+                   <li>last task revealed some problem areas</li>
+                   <li>wanted templates + folders to be editable</li>
+                 </ul>
+                 <h5 class="title">CHANGES MADE</h5>
+                 <ul class="description2">
+                   <li>rework content strategy</li>
+                   <li>about paragraph needs more detail</li>
+                   <li>remove upload button at the bottom</li>
+                   <li>gear icon is confusing</li>
+                 </ul>
+               </div>
+               <div class="ProjectCTA">
+                   <a href="https://drive.google.com/open?id=1cLLnkdmASIQtWse7JeBMcdNVVbbRb48t">
+                    view first iteration
+                   </a>
+               </div>
+            </section>
+            <!--visual design-->
+            <section class="characteristics">
+              <img class="brandpic" src="assets/draft_slam/DraftSlamMoodboard.png" alt="moodboard"
+                                        srcset="assets/draft_slam/DraftSlamMoodboard.png 1x,
+                                               assets/draft_slam/DraftSlamMoodboard-large.png 2x">
+              <div class="branding">
+                <h5 class="title">BRAND CHARACTERISTICS</h5>
+                <p>Someone who’s using this app for administrative tasks needs this app to be organized, clear, and direct. A creative project user needs this app to have a fun, playful feel with easy collaboration views. Overall the app should feel fun, organized, and helpful. </p>
+                <div class="ProjectCTA">
+                  <a href="https://drive.google.com/file/d/1JCB-HRNy01dsUErcRFU3W6EDlo06Pjr5/view?usp=sharing">
+                  view style guide
+                  </a>
+                </div>
+              </div>
+
+            </section>
+            <section class="colortype">
+              <img class="colorpic" src="assets/draft_slam/color.svg" alt="color palette">
+              <div class="palette">
+                <h5 class="title">COLOR PALETTE</h5>
+                <p>The color palette is inspired by the colors on a legal pad, ink, and a basketball. These	bright colors support the brand’s fun feel, while also reminding the user of the writing they do by hand.</p>
+              </div>
+              <img class="typepic2" src="assets/draft_slam/typography.svg" alt="typography">
+              <div class="typo">
+                <h5 class="title">TYPOGRAPHY</h5>
+                <p>The Draft Slam logotype is unique to its logo. It shows that the brand is creative, helpful, and active. Josefin Sans has a clean, neutral, and friendly appearance that pairs well with the custom logo typeface.</p>
+              </div>
+            </section>
+            <section class="designprocess">
+              <div class="sketches">
+                 <img class="sketch1" src="assets/draft_slam/hands.png" alt="logo sketch">
+                 <img class="sketch2" src="assets/draft_slam/hoop.png" alt="logo sketch">
+                 <img class="sketch3" src="assets/draft_slam/finals.png" alt="logo sketch">
+              </div>
+              <div class="process">
+                <h5 class="title">LOGO + DESIGN PROCESS</h5>
+                <p>After looking at all of my designs and ideas, I arrived at Draft Slam as the name of my app. It conjures fun images that communicate the collaborative nature of the application. </p>
+                <p>The imagery of a slam dunk comes to mind to let the user know they will be achieving their goals with this app. The logo ideas I sketched are inspired by sports, basketball, and documents. These feel whimsical, simple, and brightly colored.</p>
+                <div class="ProjectCTA">
+                  <a href="https://drive.google.com/drive/folders/1VW2Xj5q3cBUqij_8syM8RnIowPVrgO0R?usp=sharing">
+                    view sketches
+                  </a>
+                </div>
+               </div>
+            </section>
+            <!--hifi mockups-->
+            <section class="mockups">
+              <div class="hifi">
+               <h5 class="title">HIFI MOCKUPS</h5>
+               <p>Overall when designing I kept simplicity in mind and wanted to feature the grid and legal paper backgrounds.</p>
+               <div class="ProjectCTA">
+                    <a href="https://drive.google.com/drive/folders/1i6RWImoq3ni3WKAChgQfj9tFVfTNEVob?usp=sharing">
+                    view mockups
+                    </a>
+               </div>
+              </div>
+              <div class="app-frame1">
+                  <img class="hifi1pic" src="assets/draft_slam/mobiledash.png" alt="draft slam dashboard mockup"
+                                        srcset="assets/draft_slam/mobiledash.png 1x,
+                                               assets/draft_slam/mobiledash-large@2x.png 2x">
+              </div>
+            </section>
+            <!--usability preference testing-->
+            <section class="preference">
+               <h3 class="title">Usability + Preference Testing</h3>
+               <div class="tasks">
+                 <h5 class="title">TASKS</h5>
+                 <ul class="roles">
+                   <li>Login to account</li>
+                   <li>Add content</li>
+                   <li>Organize content</li>
+                 </ul>
+               </div>
+               <div class="impressions">
+                 <h5 class="title">IMPRESSIONS</h5>
+                   <ul class="description2">
+                     <li>struggled to login on mobile app</li>
+                     <li>confusing prototype</li>
+                     <li>preferred a bold dashboard</li>
+                   </ul>
+                 <h5 class="title">CHANGES MADE</h5>
+                 <ul class="description2">
+                   <li>redesign hamburger icon</li>
+                   <li>add login button to mobile home</li>
+                   <li>moved upload to project drawer</li>
+                   <li>changed “My Project” to dark blue</li>
+                 </ul>
+                </div>
+                <div class="ProjectCTA">
+                     <a href="https://docs.google.com/document/d/15R1W0thkRILzWswNlWn8nGe3oX8BhRS92Soeq4hZsY8/edit">
+                     view test results
+                     </a>
+                </div>
+            </section>
+            <!--prototype-->
+            <section class="end">
+              <div class="proto">
+                 <div class="protovideomobile">
+                   <video width= "100%" controls>
+                     <source src="assets/draft_slam/mobileprototype1.mp4" type="video/mp4">
+                   </video>
+                   <img class="phoneframe" src="assets/draft_slam/phoneframe.svg" alt="frame">
+                </div>
+              </div>
+            <!--conclusion-->
+              <div class="conclusion">
+                 <h5 class="title">CONCLUSION</h5>
+                 <p>Sticking with simplicity worked well for this project. Some of the biggest design flaws were restricting the user’s ability to customize their dashboard, vague content, and vague prototypes. </p>
+                 <p>The biggest insight I gained from this project was how to write surveys for the problem and to avoid scope creep.</p>
+                 <div class="ProjectCTA">
+                   <a href="https://juliaowens332427.invisionapp.com/overview/Draft-Slam-Final-Prototype-Desktop-ck6gyjaqh02ms019wtq7n0pqh/screens?v=ehgRsINJ%2BSBxaD4OW9oNhQ%3D%3D&linkshare=urlcopied">
+                   view desktop prototype
+                   </a>
+                 </div>
+              </div>
+            </section>
+         </div>
+      </main>
+      <!--footer-->
+      <footer>
+        <footer id="footer">
+          <div class="desk-links">
+            <ul class="bottom-left">
+                <li><a href="https://www.facebook.com/juliasowens">FB</a></li>
+                <li><a href="https://www.instagram.com/juliasowens">IG</a></li>
+                <li><a href="https://www.linkedin.com/juliasowens">LI</a></li>
+                <li><a href="https://www.github.com/juliasowens">GH</a></li>
+            </ul>
+            <a class="bottom-right" href="mailto:juliasowens@gmail.com">get in touch</a>
+          </div>
+          <h4>Get in Touch</h4>
+          <address>
+              <ul class="contactinfo">
+               <li><a href="tel:+3214386879">call</a></li>
+               <li><a href="sideprojects.html">side projects</a></li>
+               <li><a href="https://docs.google.com/document/d/1NyvRas69ttA2l3UneFhfoW3CUNSEx1al49fTAunO5wc/edit?usp=sharing">download my CV</a></li>
+              </ul>
+              <div class="social">
+                 <a href="mailto:juliasowens@gmail.com">email</a> <br>
+                 <a href="https://www.facebook.com/juliasowens">social: FB</a> <a href="https://www.instagram.com/juliasowens">IG</a>  <a href="https://www.linkedin.com/juliasowens">LI</a> <a href="https://www.github.com/juliasowens">GH</a>
+              </div>
+          </address>
+          <p>Julia Owens © 2020</p>
+        </footer>
+      <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+          if (prevScrollpos > currentScrollPos) {
+            document.getElementById("nav-container").style.top = "0";
+          } else {
+            document.getElementById("nav-container").style.top = "-25rem";
+          }
+          prevScrollpos = currentScrollPos;
+        }
+        function openNav() {
+            document.getElementById("menu-container").style.width = "100%";
+          }
+        function closeNav() {
+            document.getElementById("menu-container").style.width = "0%";
+          }
+      </script>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-165975518-1"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-165975518-1');
+      </script>
+   </body>
+</html>

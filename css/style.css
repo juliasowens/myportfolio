@@ -473,47 +473,59 @@ li {
   "six six. ";
 }
 
-.project {
-  background-image: url('../assets/buttons/redpinkcircle.svg');
+
+.one {
+  background-image: url('../assets/buttons/redpink1.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-}
-
-.one {
-  padding: 3rem;
   transform: translate(-15%, 10%);
-
+  padding: 4rem;
 }
 
 .two {
-  padding: 3rem;
+  background-image: url('../assets/buttons/redpink2.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
   transform: translate(0, 10%);
-
+  padding: 4rem;
 }
 
 .three {
-  padding: 4rem;
+  background-image: url('../assets/buttons/redpink3.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
   transform: translate(-15%, 10%);
-
+  padding: 4rem;
 }
 
 .four {
-  padding: 3rem;
+  background-image: url('../assets/buttons/redpink4.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
   transform: translate(0, 10%);
-
+  padding: 4rem;
 }
 
 .five {
-  padding: 4rem;
+  background-image: url('../assets/buttons/redpink5.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
   transform: translate(-15%, 8%);
-
+  padding: 4rem;
 }
 
 .six {
-  padding: 3rem;
+  background-image: url('../assets/buttons/redpink6.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
   transform: translate(0, 10%);
-
+  padding: 4rem;
 }
 
 /* link to project with red line + text, pink fill, takes to case studies */
@@ -1095,15 +1107,14 @@ address li {
 
 
   .project {
-    background-image: url('../assets/buttons/redpinkcircle.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
     transform: none;
+    padding: 4rem;
   }
 
   .one .two .three .four .five .six {
-    padding: 0;
     transform: none;
   }
 
@@ -1832,7 +1843,7 @@ address li {
   }
 
   .red {
-    padding: 0 30% 0 30%;
+    padding: 0;
   }
 
   .red a {
@@ -1876,11 +1887,11 @@ address li {
     width: 100%;
   }
 
-  .recproj {
+.recproj {
     text-align: center;
   }
 
-  .grid-container {
+.grid-container {
     display: inline-grid;
     grid-template-areas:
     "one two three"
@@ -1888,41 +1899,44 @@ address li {
     padding: 5% 0 0 0;
   }
 
+.project {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      align-items: center;
+      display: inline-flex;
+      justify-content: center;
+      padding: 2rem;
+      position: relative;
+      text-align: center;
+      transform: none;
+    }
 
-  .project {
-    background-image: url('../assets/buttons/redpinkcircle.svg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    padding: 15%;
-    text-align: center;
-    transform: none;
-  }
+.one, .two, .three, .four, .five, .six {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      padding: 12rem;
+      position: relative;
+      width: 100%;
+}
 
-  .project:hover + .infoover{
-    display: block;
-    bottom: 0;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
-    position: relative;
-    opacity: 1;
-  }
+.pinkline, .infoover {
+     display: block;
+     position: absolute;
+ }
 
-  .one .two .three .four .five .six {
-    transform: none;
-  }
+.infoover {
+      opacity: 0;
+}
 
-  /* link to project with red line + text, pink fill, takes to case studies */
+.project:hover .infoover {
+      opacity: 1;
+}
 
-  .pinkline {
-    align-items: flex-start;
-    display: flex;
-    justify-content: center;
-  }
-
+.project:hover .pinkline {
+  opacity: 0;
+}
 
   /* about page styling */
 
