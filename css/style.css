@@ -61,7 +61,7 @@ h2 {
 }
 
 h3 {
-  color: #053B59;
+  color: #16559D;
   font-family: 'Poppins';
   font-size: 3.6rem;
   font-weight: 600;
@@ -1105,6 +1105,13 @@ address li {
     padding: 5% 0 0 0;
   }
 
+  .grid-container2 {
+        display: grid;
+        grid-template-areas:
+        "one two three";
+        padding: 0;
+        grid-template-columns: 33% 33% 33%;
+      }
 
   .project {
     background-position: center;
@@ -1837,6 +1844,10 @@ address li {
     padding: 3rem 0 0 0;
   }
 
+  .stepaction {
+    max-width: 75%;
+  }
+
   .redline-button {
     display: inline-flex;
     background-size: contain;
@@ -1899,6 +1910,13 @@ address li {
     padding: 5% 0 0 0;
   }
 
+.grid-container2 {
+      display: inline-grid;
+      grid-template-areas:
+      "one two three";
+      padding: 5%;
+    }
+
 .project {
       background-position: center;
       background-repeat: no-repeat;
@@ -1924,6 +1942,7 @@ address li {
 .pinkline, .infoover {
      display: block;
      position: absolute;
+     padding: 2rem;
  }
 
 .infoover {
