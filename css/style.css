@@ -104,7 +104,7 @@ h6 {
 
 /* header +nav */ /* Style Navigation Menu */
 
-.nav-container{
+.nav-container {
   margin: 0;
   padding: 2rem;
   position: fixed;
@@ -205,13 +205,13 @@ h6 {
 
 /* intro */
 
-.hero {
+.hero, .landing {
   background-image: url('../assets/shapes/largepinkbackground.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0;
-  padding-top: 50%;
+  padding-top: 15rem;
   width: 100%;
 }
 
@@ -234,6 +234,24 @@ h6 {
   width: 100%;
 }
 
+.case-study-intro {
+  background-color: #F1DBD4;
+  padding: 50% 10% 30% 10%;
+  width: 100%;
+}
+
+.title {
+  padding: 3rem 0 0 0;
+}
+
+h3.title {
+  font-size: 2.4rem;
+  padding: 0;
+}
+
+.app-frame1 {
+  display: none;
+}
 
 /* menu of 5 offerings, what I can do */
 
@@ -556,15 +574,7 @@ li {
 
 /* case study /project page styling */
 
-.case-study-intro {
-  background-color: #F1DBD4;
-  padding: 50% 10% 30% 10%;
-  width: 100%;
-}
 
-.app-frame1 {
-  display: none;
-}
 
 .challenge {
   display: flex;
@@ -589,14 +599,6 @@ li {
   display: none;
 }
 
-.title {
-  padding: 3rem 0 0 0;
-}
-
-h3.title {
-  font-size: 2.4rem;
-  padding: 0;
-}
 
 .roles {
   align-items: flex-start;
@@ -860,6 +862,10 @@ address li {
     width: 100%;
   }
 
+  .content-container img {
+    width: 100%;
+  }
+
   .logodesk {
     display: none;
   }
@@ -902,7 +908,11 @@ address li {
     padding-top: 20%;
   }
 
-  .hero-container {
+  .landing {
+    min-height: 100%;
+  }
+
+  .hero-container, .landing-container{
     width: 70%;
   }
 
@@ -925,6 +935,49 @@ address li {
 
   .orange-button {
     padding: 30% 0 30% 0;
+    width: 100%;
+  }
+
+  .app-frame1 {
+    align-items: center;
+    background-image: url('../assets/draft_slam/phoneframe.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    grid-area: app-frame1;
+    justify-content: center;
+    padding: 15%;
+    width: 100%;
+  }
+
+  img.homepg1 {
+    width: 100%;
+  }
+
+  .intro {
+    grid-area: intro;
+    padding: 10%;
+  }
+
+  .case-study-intro > .button {
+    grid-area: button;
+    padding: 10%;
+  }
+
+  .case-study-intro {
+    background-color: #F3F0EB;
+    background-image: url('../assets/shapes/lightpinkfill.svg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-areas:
+    "intro app-frame1"
+    "button app-frame1"
+    ". app-frame1";
+    grid-template-columns: 50% 50%;
+    padding: 20% 10% 20% 10%;
     width: 100%;
   }
 
@@ -1082,7 +1135,6 @@ address li {
   }
 
   .recent {
-    background-image: url('../assets/old/threecircles.svg');
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1158,49 +1210,8 @@ address li {
     width: 100%;
   }
 
-  .content-container img {
-    width: 100%;
-  }
 
 
-  .app-frame1 {
-    align-items: center;
-    background-image: url('../assets/draft_slam/phoneframe.svg');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    grid-area: app-frame1;
-    justify-content: center;
-    padding: 15%;
-    width: 100%;
-  }
-
-  .intro {
-    grid-area: intro;
-    padding: 10%;
-  }
-
-  .case-study-intro > .button {
-    grid-area: button;
-    padding: 10%;
-  }
-
-  .case-study-intro {
-    background-color: #F3F0EB;
-    background-image: url('../assets/shapes/lightpinkfill.svg');
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: grid;
-    grid-template-areas:
-    "intro app-frame1"
-    "button app-frame1"
-    ". app-frame1";
-    grid-template-columns: 50% 50%;
-    padding: 20% 10% 20% 10%;
-    width: 100%;
-  }
 
   .challenge {
     background-color: #F1DBD4;
@@ -1765,16 +1776,17 @@ address li {
     width: 100%;
   }
 
-  .hero {
+  .hero, .landing {
     background-image: url('../assets/shapes/lightpinkfill.svg');
     background-position: top left;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100%;
     max-width: 1600px;
     padding: 25% 10% 5% 10%;
   }
 
-  .hero-container {
+  .hero-container, .landing-container {
     align-items: flex-start;
     display: flex;
     flex-direction: row;
@@ -1793,6 +1805,31 @@ address li {
   .orange-button {
     width: 100%;
     text-align: center;
+  }
+
+  .case-study-intro {
+    padding: 15%;
+  }
+
+  .case-study-intro > .button {
+    padding: 0;
+    max-width: 60%;
+  }
+
+  .app-frame1 {
+    padding: 20%;
+  }
+
+  .title {
+    grid-area: title;
+    font-size: 2rem;
+    padding: 2% 0 0 0;
+    text-align: left;
+  }
+
+  h3.title {
+    font-size: 3.6rem;
+    padding: 0;
   }
 
   .offerings {
@@ -1866,7 +1903,7 @@ address li {
 
   .testimonials {
     background-color: #F1DBD4;
-    background-image: url('../assets/old/largewhitebackground.svg');
+    background-image: url('../assets/shapes/largewhitebackground.svg');
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1889,7 +1926,7 @@ address li {
   /* recent projects section */
 
   .recent {
-    background-image: url('../assets/old/threecircles.svg');
+    background-image: url('../assets/shapes/threecircles.svg');
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1986,18 +2023,7 @@ address li {
     width: 100%;
   }
 
-  .case-study-intro {
-    padding: 15%;
-  }
 
-  .case-study-intro > .button {
-    padding: 0;
-    max-width: 60%;
-  }
-
-  .app-frame1 {
-    padding: 20%;
-  }
 
   .challenge {
     background-image: url('../assets/shapes/lightpinkfill3.svg');
@@ -2030,17 +2056,7 @@ address li {
     padding: 0;
   }
 
-  .title {
-    grid-area: title;
-    font-size: 2rem;
-    padding: 2% 0 0 0;
-    text-align: left;
-  }
 
-  h3.title {
-    font-size: 3.6rem;
-    padding: 0;
-  }
 
   h2.quote {
     padding: 0;
