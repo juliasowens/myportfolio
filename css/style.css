@@ -599,6 +599,38 @@ li {
   display: none;
 }
 
+.app-frame5 {
+  display: none;
+}
+
+.app-frame6 {
+  background-image: url('../assets/careshare/desktopframe.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 25% 25% 50% 25%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.app-frame7 {
+  display: none;
+}
+
+.app-frame8 {
+  background-image: url('../assets/careshare/desktopframe.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 25% 25% 50% 25%;
+  width: 100%;
+}
+
 
 .roles {
   align-items: flex-start;
@@ -743,12 +775,10 @@ tr:nth-child(even) {
 
 
 .colorpic {
-    background-color: #ffffff;
     padding: 10%;
   }
 
 .typepic2 {
-    background-color: #ffffff;
     padding: 10%;
   }
 
@@ -948,6 +978,19 @@ address li {
     grid-area: app-frame1;
     justify-content: center;
     padding: 15%;
+    width: 100%;
+  }
+
+  .app-frame5 {
+    align-items: center;
+    background-image: url('../assets/careshare/desktopframe.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    grid-area: app-frame1;
+    justify-content: center;
+    padding: 0 25% 25% 25%;
     width: 100%;
   }
 
@@ -1237,7 +1280,6 @@ address li {
     width: 100%;
   }
 
-
   .title {
     font-size: 2rem;
     grid-area: title;
@@ -1350,6 +1392,7 @@ address li {
     display: inline-grid;
     grid-gap: 5%;
     grid-template-areas:
+    "title title"
     "participants findings"
     "mostused findings"
     "tasks findings"
@@ -1414,6 +1457,19 @@ address li {
    padding: 5% 0 5% 0;
  }
 
+ .persona3 {
+   grid-area: persona3;
+   display: grid;
+   grid-gap: 5%;
+   grid-template-areas:
+   "upframe title"
+   "upframe quote"
+   "upframe ."
+   "tasks impressions";
+   grid-template-columns: 45% 55%;
+   padding: 5% 0 5% 0;
+ }
+
 
   .personas {
     background-color: #F1DBD4;
@@ -1421,7 +1477,8 @@ address li {
     grid-template-areas:
     "persona"
     "persona1"
-    "persona2";
+    "persona2"
+    "persona3";
     grid-template-columns: 100%;
     justify-content: flex-start;
     padding: 10%;
@@ -1439,7 +1496,7 @@ address li {
   }
 
   .flowpics {
-    padding: 5% 0 0 0;
+    padding: 10% 25% 0 25%;
   }
 
   .wires {
@@ -1564,7 +1621,7 @@ address li {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    width: 200%;
+    width: 100%;
   }
 
   .process > .ProjectCTA{
@@ -1605,6 +1662,14 @@ address li {
     ". app-frame1"
     "hifi app-frame1"
     ". app-frame1";
+    grid-template-columns: 50% 50%;
+    padding: 15% 10% 0 10%;
+  }
+
+  .mockups2 {
+    display: grid;
+    grid-template-areas:
+    "hifi app-frame8";
     grid-template-columns: 50% 50%;
     padding: 15% 10% 0 10%;
   }
@@ -1829,7 +1894,7 @@ address li {
 
   h3.title {
     font-size: 3.6rem;
-    padding: 0;
+    padding: 0 0 5% 0;
   }
 
   .offerings {
@@ -2172,6 +2237,7 @@ address li {
   .research {
     display: grid;
     grid-template-areas:
+    "title title"
     "participants findings"
     "mostused findings"
     "tasks findings";
@@ -2223,6 +2289,15 @@ address li {
     padding: 10% 0 10% 0;
   }
 
+  .persona3 {
+    grid-template-areas:
+    "upframe ."
+    "upframe title"
+    "tasks quote"
+    "tasks impressions";
+    padding: 10% 0 10% 0;
+  }
+
   .userstory {
     grid-area: userstory;
     padding: 10%;
@@ -2231,11 +2306,13 @@ address li {
   table.userstories {
       grid-area: userstories;
       font-size: 1.6rem;
+      padding: 10%;
   	}
 
   .stories {
     display: grid;
     grid-template-areas:
+    "title title"
     "userstories userstory";
     grid-template-columns: 50% 50%;
     padding: 10% 10% 0 20%;
@@ -2247,15 +2324,18 @@ address li {
   }
 
   .flowpics {
+    align-items: center;
+    justify-content: center;
     grid-area: flowpics;
-    width: 100%;
+    width: 80%;
+    padding: 0 10% 10% 10%;
   }
 
   .flows {
     display: grid;
     grid-template-areas:
     "userflows . flowpics";
-    grid-template-columns: 40% 5% 60%;
+    grid-template-columns: 40% 5% 55%;
     padding: 10% 10% 10% 20%;
   }
 
@@ -2297,6 +2377,10 @@ address li {
     display: none;
   }
 
+  .app-frame8 {
+    grid-area: app-frame8;
+  }
+
   .wireframes {
     background-color: #F1DBD4;
     display: grid;
@@ -2304,6 +2388,15 @@ address li {
     "wirepic1 wirepic2 wires"
     "wirepic4 wirepic5 wires";
     grid-template-columns: 20% 20% 60%;
+    padding: 10% 10% 10% 20%;
+  }
+
+  .wireframes1 {
+    background-color: #F1DBD4;
+    display: grid;
+    grid-template-areas:
+    "app-frame8 . wires";
+    grid-template-columns: 35% 5% 60%;
     padding: 10% 10% 10% 20%;
   }
 
@@ -2404,17 +2497,17 @@ address li {
 
   img.sketch1 {
     display: block;
-    padding: 0;
+    padding: 5%;
   }
 
   img.sketch2 {
     display: block;
-    padding: 0;
+    padding: 5%;
   }
 
   img.sketch3 {
     display: block;
-    padding: 0;
+    padding: 5%;
   }
 
   .hifi {
@@ -2430,6 +2523,14 @@ address li {
     display: grid;
     grid-template-areas:
     "hifi app-frame1";
+    grid-template-columns: 50% 50%;
+    padding: 0 10% 10% 20%;
+  }
+
+  .mockups2 {
+    display: grid;
+    grid-template-areas:
+    "hifi app-frame8";
     grid-template-columns: 50% 50%;
     padding: 0 10% 10% 20%;
   }
