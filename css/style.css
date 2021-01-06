@@ -1936,7 +1936,7 @@ address li {
     background-repeat: no-repeat;
     background-size: cover;
     display: inline-grid;
-    padding: 10% 10% 0 25%;
+    padding: 10% 10% 10% 25%;
     width: 100%;
   }
 
@@ -1956,14 +1956,13 @@ address li {
   }
 
   .red {
-    padding: 0;
+    padding: 5%;
   }
 
   .red a {
       color: #C06D5B;
-      padding: 15%;
-      text-align: center;
-      text-decoration: none;
+      text-align: left;
+      text-decoration: underline;
   }
 
   .testimonials {
