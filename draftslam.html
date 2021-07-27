@@ -507,16 +507,15 @@
           <p>Julia Owens © 2020</p>
         </footer>
       <script>
-        var prevScrollpos = window.pageYOffset;
         window.onscroll = function() {
         var currentScrollPos = window.pageYOffset;
-          if (prevScrollpos > currentScrollPos) {
-            document.getElementById("nav-container").style.top = "0";
-          } else {
-            document.getElementById("nav-container").style.top = "-25rem";
+            if (currentScrollPos > 20) {
+              document.getElementById("nav-container").style.display = "none";
+            } else {
+              document.getElementById("nav-container").style.display = "initial";
+            }
+            prevScrollpos = currentScrollPos;
           }
-          prevScrollpos = currentScrollPos;
-        }
         function openNav() {
             document.getElementById("menu-container").style.width = "100%";
           }
