@@ -470,7 +470,7 @@ li {
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0;
-  padding-top: 15rem;
+  padding: 15%;
   width: 100%;
 }
 
@@ -881,6 +881,11 @@ address li {
       width: 100%;
     }
 
+    .recproj2 {
+          text-align: center;
+          padding: 40% 0 0 0;
+        }
+
     .desk-links {
       display: none;
     }
@@ -1188,6 +1193,11 @@ address li {
 
   .recproj {
     padding: 3%;
+    text-align: center;
+  }
+
+  .recproj2 {
+    padding: 10% 0 0 0;
     text-align: center;
   }
 
