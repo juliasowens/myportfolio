@@ -206,13 +206,22 @@ h6 {
 /* intro */
 
 .hero, .landing {
+  align-items: flex-start;
   background-image: url('../assets/shapes/largepinkbackground.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex; 
+  flex-direction: column;
   margin: 0;
-  padding-top: 15rem;
+  padding: 15% 10% 0 10%;
   width: 100%;
+
+
+
+
+
+
 }
 
 .paragraph {
