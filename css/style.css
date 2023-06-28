@@ -2553,7 +2553,6 @@ address li {
 
  .proto {
     grid-area: proto;
-    padding: 20%;
     width: 100%;
   }
 
@@ -2578,11 +2577,8 @@ address li {
   .end {
     display: grid;
     grid-template-areas:
-    "proto ."
-    "proto conclusion"
-    "proto .";
+    "proto conclusion";
     grid-template-columns: 50% 60%;
-    padding: 0 10% 10% 10%;
   }
 
   .social {
