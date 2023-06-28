@@ -1741,7 +1741,7 @@ address li {
      grid-template-areas:
      "proto conclusion";
      grid-template-columns: 40% 60%;
-     padding: 10% 0 10% 0;
+     padding: 10%;
    }
 
    .bottom-left {
