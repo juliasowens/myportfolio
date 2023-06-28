@@ -2579,7 +2579,7 @@ address li {
     display: grid;
     grid-template-areas:
     "conclusion proto";
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 60% 40%;
     padding: 5% 20% 5% 20%;
   }
 
