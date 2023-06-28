@@ -2572,6 +2572,7 @@ address li {
 
   .conclusion {
     grid-area: conclusion;
+    width: 100%;
   }
 
   .end {
