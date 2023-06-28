@@ -811,7 +811,6 @@ tr:nth-child(even) {
  }
 
  .conclusion {
-   padding: 5%;
    width: 50%;
  }
 
@@ -1006,7 +1005,7 @@ address li {
 
   .intro {
     grid-area: intro;
-    padding: 5% 20% 0 20%;
+    padding: 15%;
   }
 
   .case-study-intro > .button {
