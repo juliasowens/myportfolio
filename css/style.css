@@ -82,6 +82,7 @@ h5 {
   font-family: 'Walter Turncoat';
   font-size: 2.4rem;
   line-height: 3.6rem;
+  text-transform: uppercase;
 }
 
 h6 {
@@ -235,12 +236,12 @@ h6 {
 
 .case-study-intro {
   background-color: #F1DBD4;
-  padding: 50% 10% 30% 10%;
+  padding: 20% 10% 10% 10%;
   width: 100%;
 }
 
 .title {
-  padding: 3rem 0 0 0;
+  padding: 1rem 0 0 0;
 }
 
 h3.title {
@@ -587,7 +588,7 @@ li {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 20%;
+  padding: 10%;
   align-items: center;
   display: flex;
   justify-content: center;
@@ -631,15 +632,15 @@ li {
 }
 
 
-.roles {
+ul.roles {
   align-items: flex-start;
   color: #16559D;
   display: flex;
   flex-direction: column;
   font-family: 'Poppins';
-  font-size: 2.1rem;
+  font-size: 2rem;
   font-weight: 600;
-  line-height: 2rem;
+  line-height: 3rem;
 }
 
 .description1 {
@@ -810,11 +811,12 @@ tr:nth-child(even) {
  }
 
  .conclusion {
-   padding: 10% 5% 5% 5%;
+   padding: 5%;
+   width: 50%;
  }
 
 .conclusion h5{
-   padding: 20% 0 0 0;
+   padding: 5% 0 0 0;
  }
 
 
@@ -1004,7 +1006,7 @@ address li {
 
   .intro {
     grid-area: intro;
-    padding: 10%;
+    padding: 5% 20% 0 20%;
   }
 
   .case-study-intro > .button {
@@ -1024,7 +1026,7 @@ address li {
     "button app-frame1"
     ". app-frame1";
     grid-template-columns: 50% 50%;
-    padding: 20% 10% 20% 10%;
+    padding: 5% 10% 5% 10%;
     width: 100%;
   }
 
@@ -1300,16 +1302,15 @@ address li {
     padding: 0;
   }
 
-  .roles {
+  ul.roles {
     align-items: flex-start;
     color: #16559D;
     display: flex;
     flex-direction: column;
     font-family: 'Poppins';
-    font-size: 1.6rem;
+    font-size: 1.2;
     font-weight: 600;
-    line-height: 1.6rem;
-    padding: 0 0 2rem 0;
+    line-height: 2.4;
   }
 
   .description1 {
@@ -1399,7 +1400,6 @@ address li {
 
   .research {
     display: inline-grid;
-    grid-gap: 5%;
     grid-template-areas:
     "title title"
     "participants findings"
@@ -1407,7 +1407,7 @@ address li {
     "tasks findings"
     ". findings";
     grid-template-columns: 50% 50%;
-    padding: 10%;
+    padding: 5%;
   }
 
   .analysis {
@@ -1456,7 +1456,7 @@ address li {
  .persona2 {
    grid-area: persona2;
    display: grid;
-   grid-gap: 5%;
+   grid-gap: 1rem;
    grid-template-areas:
    "upframe title"
    "upframe quote"
@@ -1882,7 +1882,7 @@ address li {
   }
 
   .case-study-intro {
-    padding: 15%;
+    padding: 5% 10% 0 10%;
   }
 
   .case-study-intro > .button {
@@ -2106,7 +2106,7 @@ address li {
     display: inline-flex;
     justify-content: flex-start;
     max-width: 100%;
-    padding: 10% 20% 10% 20%;
+    padding: 5% 20% 5% 20%;
     width: 100%;
   }
 
@@ -2116,7 +2116,6 @@ address li {
 
   .challenge h6 {
     max-width: 75%;
-    padding: 0 0 5% 0;
   }
 
   .app-frame3 {
@@ -2142,9 +2141,9 @@ address li {
     display: flex;
     flex-direction: column;
     font-family: 'Poppins';
-    font-size: 1.6rem;
+    font-size: 1.2;
     font-weight: 600;
-    padding: 0 0 5% 0;
+    line-height: 1.8;
   }
 
   .description1 {
@@ -2244,13 +2243,14 @@ address li {
 
   .research {
     display: grid;
+    grid-gap: 2rem;
     grid-template-areas:
     "title title"
     "participants findings"
     "mostused findings"
     "tasks findings";
     grid-template-columns: 50% 50%;
-    padding: 10% 20% 0 20%;
+    padding: 5% 20% 5% 20%;
   }
 
   .analysis {
@@ -2266,7 +2266,7 @@ address li {
     grid-template-areas:
     "competitors analysis";
     grid-template-columns: 50% 50%;
-    padding: 10% 20% 10% 20%;
+    padding: 5% 20% 5% 20%;
   }
 
   .upframe {
@@ -2275,7 +2275,7 @@ address li {
 
   .personas {
     background-color: #F1DBD4;
-    padding: 10% 20% 10% 20%;
+    padding: 5% 20% 5% 20%;
     transform: none;
   }
 
@@ -2323,7 +2323,7 @@ address li {
     "title title"
     "userstories userstory";
     grid-template-columns: 50% 50%;
-    padding: 10% 10% 0 20%;
+    padding: 5% 20% 5% 20%;
   }
 
   .userflows {
@@ -2417,7 +2417,7 @@ address li {
     "ProjectCTA impressions"
     ". impressions";
     grid-template-columns: 50% 50%;
-    padding: 10% 10% 10% 20%;
+    padding: 5% 20% 5% 20%;
     width: 100%;
   }
 
@@ -2477,13 +2477,13 @@ address li {
     display: flex;
     flex-direction: row-reverse;
     max-width: 1600px;
-    padding: 0 10% 10% 20%;
+    padding: 0 10% 0 20%;
 }
 
   .process {
     align-self: center;
     flex-direction: column;
-    padding: 0;
+    padding: 10% 0 5% 0;
     width: 100%;
   }
 
