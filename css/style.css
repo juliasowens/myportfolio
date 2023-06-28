@@ -1025,7 +1025,7 @@ address li {
     "button app-frame1"
     ". app-frame1";
     grid-template-columns: 50% 50%;
-    padding: 20% 10% 5% 10%;
+    padding: 30% 10% 5% 10%;
     width: 100%;
   }
 
