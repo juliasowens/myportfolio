@@ -2577,7 +2577,7 @@ address li {
   .end {
     display: grid;
     grid-template-areas:
-    "proto conclusion";
+    "conclusion proto";
     grid-template-columns: 50% 60%;
   }
 
