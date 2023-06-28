@@ -1739,8 +1739,8 @@ address li {
    .end {
      display: grid;
      grid-template-areas:
-     "proto conclusion";
-     grid-template-columns: 40% 60%;
+     "conclusion proto";
+     grid-template-columns: 60% 40%;
      padding: 10%;
    }
 
@@ -2578,7 +2578,7 @@ address li {
     display: grid;
     grid-template-areas:
     "conclusion proto";
-    grid-template-columns: 50% 60%;
+    grid-template-columns: 50% 50%;
     padding: 5% 20% 5% 20%;
   }
 
