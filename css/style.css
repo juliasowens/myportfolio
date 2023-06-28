@@ -1727,8 +1727,6 @@ address li {
 
    .conclusion {
      grid-area: conclusion;
-     padding: 0;
-     max-width: 75%;
    }
 
    .conclusion h5{
