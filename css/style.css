@@ -1702,7 +1702,6 @@ address li {
 
   .proto {
     grid-area: proto;
-    padding: 0 10% 0 0;
    }
 
    .protovideomobile {
@@ -1739,7 +1738,6 @@ address li {
 
    .end {
      display: grid;
-     grid-gap: 5%;
      grid-template-areas:
      "proto conclusion";
      grid-template-columns: 40% 60%;
