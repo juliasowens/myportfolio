@@ -2587,6 +2587,7 @@ address li {
     "proto conclusion"
     "proto .";
     grid-template-columns: 50% 60%;
+    padding: 0 10% 10% 10%;
   }
 
   .social {
