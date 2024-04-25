@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Julia Owens</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="css/reset.css">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,300;1,400;1,600&family=Beth+Ellen&family=Walter+Turncoat&display=swap">
+   </head>
+   <body>
+     <!--navigation with logo and hamburger menu-->
+   <div class="page-container">
+     <header>
+       <div class= "nav-container" id="nav-container" style="top: 0;">
+         <div class="logomobile">
+           <a href="/">
+             <img src="assets/header/ColorHead.svg" alt="julia owens logo" style="width:6rem;">
+           </a>
+           <h2 class="logomobile">julia owens</h2>
+         </div>
+         <div class="logodesk">
+             <a href="/">
+               <img src="assets/header/colorlogo.svg" alt="julia owens logo" style="width:15rem;">
+             </a>
+         </div>
+ <!-- "Hamburger menu" / "hamburger" to toggle the navigation links -->
+          <span onclick="openNav()" class="hamburger">
+             <img class='hamburger' src="assets/header/hamburger.svg" alt="menu icon">
+          </span>
+       </div>
+     </header>
+      <main>
+         <div class="content-container">
+<!--Video-->
+             <section class="about">
+                        <div class="youtube">
+                            <h3 class="recproj2">Poem & Art Film:<br>Guest Check</h3>
+                            <iframe width="100%" src="https://youtu.be/0SbzqUQuWpw">
+                              </iframe>
+                            <h6>This poem started in 2012 as a way to make art while waiting tables. While in art school, I was assured it would be easy to do both, but I found it impossible. The text is phrases I overheard in the restaurants where I worked. There is some lingo, some situational phrases, but all of it I find absurd.</h6>
+                       </div>
+            </section>       
+          </div> 
+        </main>
+      <script>
+        window.onscroll = function() {
+          var currentScrollPos = window.pageYOffset;
+            if (currentScrollPos > 20) {
+            document.getElementById("nav-container").style.display = "none";
+          } else {
+            document.getElementById("nav-container").style.display = "initial";
+          }
+          prevScrollpos = currentScrollPos;
+          }
+          function openNav() {
+          document.getElementById("menu-container").style.width = "100%";
+          }
+          function closeNav() {
+          document.getElementById("menu-container").style.width = "0%";
+          }
+      </script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-165975518-1">
+      </script>
+      <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-165975518-1');
+      </script>
+    </div>
+  </body>
+</html>
