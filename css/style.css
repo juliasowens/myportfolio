@@ -819,14 +819,14 @@ tr:nth-child(even) {
  }
 
 .youtube {
-  height: 75%;
+  height: 80%;
   position: relative;
 }
 
 .youtube {
   margin: 0;
   position: absolute;
-  top: 50%;
+  top: 75%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
